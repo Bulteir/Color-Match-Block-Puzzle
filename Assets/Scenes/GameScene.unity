@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 44133145}
   - component: {fileID: 44133146}
   - component: {fileID: 44133147}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (75)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &54469193
 GameObject:
@@ -378,9 +378,9 @@ GameObject:
   - component: {fileID: 76104247}
   - component: {fileID: 76104248}
   - component: {fileID: 76104249}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (12)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &105954316
 GameObject:
@@ -489,9 +489,9 @@ GameObject:
   - component: {fileID: 105954317}
   - component: {fileID: 105954318}
   - component: {fileID: 105954319}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (14)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &117466684
 GameObject:
@@ -600,9 +600,9 @@ GameObject:
   - component: {fileID: 117466685}
   - component: {fileID: 117466686}
   - component: {fileID: 117466687}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (47)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,7 +698,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &127692684
 GameObject:
@@ -711,9 +711,9 @@ GameObject:
   - component: {fileID: 127692685}
   - component: {fileID: 127692686}
   - component: {fileID: 127692687}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (33)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -809,7 +809,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &130602036
 GameObject:
@@ -955,9 +955,9 @@ GameObject:
   - component: {fileID: 144170320}
   - component: {fileID: 144170321}
   - component: {fileID: 144170322}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (4)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1053,8 +1053,40 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!1 &166357744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166357745}
+  m_Layer: 0
+  m_Name: BlockAParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166357745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166357744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.719999, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 669836721}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174257574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,9 +1098,9 @@ GameObject:
   - component: {fileID: 174257575}
   - component: {fileID: 174257576}
   - component: {fileID: 174257577}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (56)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,7 +1196,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &190542891
 GameObject:
@@ -1310,9 +1342,9 @@ GameObject:
   - component: {fileID: 195947331}
   - component: {fileID: 195947332}
   - component: {fileID: 195947333}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (19)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1408,7 +1440,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &211717027
 GameObject:
@@ -1421,9 +1453,9 @@ GameObject:
   - component: {fileID: 211717028}
   - component: {fileID: 211717029}
   - component: {fileID: 211717030}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (23)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1519,7 +1551,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &242768001
 GameObject:
@@ -1532,9 +1564,9 @@ GameObject:
   - component: {fileID: 242768002}
   - component: {fileID: 242768003}
   - component: {fileID: 242768004}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (30)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1630,7 +1662,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &259527755
 GameObject:
@@ -1776,9 +1808,9 @@ GameObject:
   - component: {fileID: 265393955}
   - component: {fileID: 265393956}
   - component: {fileID: 265393957}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (53)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1874,7 +1906,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &279457264
 GameObject:
@@ -1920,9 +1952,9 @@ GameObject:
   - component: {fileID: 302222524}
   - component: {fileID: 302222525}
   - component: {fileID: 302222526}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (52)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2018,7 +2050,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &341559737
 GameObject:
@@ -2031,9 +2063,9 @@ GameObject:
   - component: {fileID: 341559738}
   - component: {fileID: 341559739}
   - component: {fileID: 341559740}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (64)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2129,7 +2161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &358899940
 GameObject:
@@ -2275,9 +2307,9 @@ GameObject:
   - component: {fileID: 362503771}
   - component: {fileID: 362503772}
   - component: {fileID: 362503773}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (73)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2373,7 +2405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &366550988
 GameObject:
@@ -2386,9 +2418,9 @@ GameObject:
   - component: {fileID: 366550989}
   - component: {fileID: 366550990}
   - component: {fileID: 366550991}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (66)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2484,7 +2516,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &371757884
 GameObject:
@@ -2630,9 +2662,9 @@ GameObject:
   - component: {fileID: 388034194}
   - component: {fileID: 388034195}
   - component: {fileID: 388034196}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (7)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2728,7 +2760,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &390343826
 GameObject:
@@ -3007,9 +3039,9 @@ GameObject:
   - component: {fileID: 416542379}
   - component: {fileID: 416542380}
   - component: {fileID: 416542381}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (3)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3105,7 +3137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &417887387
 GameObject:
@@ -3251,9 +3283,9 @@ GameObject:
   - component: {fileID: 426583200}
   - component: {fileID: 426583201}
   - component: {fileID: 426583202}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (78)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3349,7 +3381,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &508073470
 GameObject:
@@ -3362,9 +3394,9 @@ GameObject:
   - component: {fileID: 508073471}
   - component: {fileID: 508073472}
   - component: {fileID: 508073473}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (18)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3460,7 +3492,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -3557,9 +3589,9 @@ GameObject:
   - component: {fileID: 523190222}
   - component: {fileID: 523190223}
   - component: {fileID: 523190224}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (63)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3655,7 +3687,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &534783344
 GameObject:
@@ -3801,9 +3833,9 @@ GameObject:
   - component: {fileID: 535502210}
   - component: {fileID: 535502211}
   - component: {fileID: 535502212}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (35)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3899,7 +3931,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &545019862
 GameObject:
@@ -4045,9 +4077,9 @@ GameObject:
   - component: {fileID: 550240676}
   - component: {fileID: 550240677}
   - component: {fileID: 550240678}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (58)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4143,7 +4175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &553260192
 GameObject:
@@ -4156,9 +4188,9 @@ GameObject:
   - component: {fileID: 553260193}
   - component: {fileID: 553260194}
   - component: {fileID: 553260195}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (93)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4254,7 +4286,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &562748467
 GameObject:
@@ -4267,9 +4299,9 @@ GameObject:
   - component: {fileID: 562748468}
   - component: {fileID: 562748469}
   - component: {fileID: 562748470}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (99)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4365,7 +4397,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &567415290
 GameObject:
@@ -4644,9 +4676,9 @@ GameObject:
   - component: {fileID: 602095718}
   - component: {fileID: 602095719}
   - component: {fileID: 602095720}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (9)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4742,7 +4774,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &607068245
 GameObject:
@@ -4888,9 +4920,9 @@ GameObject:
   - component: {fileID: 622642457}
   - component: {fileID: 622642458}
   - component: {fileID: 622642459}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (69)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4986,7 +5018,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &628485221
 GameObject:
@@ -4999,9 +5031,9 @@ GameObject:
   - component: {fileID: 628485222}
   - component: {fileID: 628485223}
   - component: {fileID: 628485224}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (54)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5097,7 +5129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &638116975
 GameObject:
@@ -5243,9 +5275,9 @@ GameObject:
   - component: {fileID: 657049422}
   - component: {fileID: 657049423}
   - component: {fileID: 657049424}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (36)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5341,7 +5373,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &664688789
 GameObject:
@@ -5354,9 +5386,9 @@ GameObject:
   - component: {fileID: 664688790}
   - component: {fileID: 664688791}
   - component: {fileID: 664688792}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (2)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5452,7 +5484,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &669836719
 GameObject:
@@ -5466,7 +5498,6 @@ GameObject:
   - component: {fileID: 669836720}
   - component: {fileID: 669836722}
   - component: {fileID: 669836723}
-  - component: {fileID: 669836724}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -5534,12 +5565,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669836719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.259999, y: 0.53999996, z: 0}
+  m_LocalPosition: {x: 0.53999996, y: 0.53999996, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 166357745}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &669836722
 BoxCollider2D:
@@ -5588,18 +5619,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &669836724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 669836719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5500492e847e20946aedbb6aead5ab39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &684711378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5611,9 +5630,9 @@ GameObject:
   - component: {fileID: 684711379}
   - component: {fileID: 684711380}
   - component: {fileID: 684711381}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (42)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5709,7 +5728,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &693000213
 GameObject:
@@ -5855,9 +5874,9 @@ GameObject:
   - component: {fileID: 698797270}
   - component: {fileID: 698797271}
   - component: {fileID: 698797272}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (31)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5953,7 +5972,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &709791423
 GameObject:
@@ -6099,9 +6118,9 @@ GameObject:
   - component: {fileID: 722729703}
   - component: {fileID: 722729704}
   - component: {fileID: 722729705}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (82)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6197,7 +6216,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &729739690
 GameObject:
@@ -6210,9 +6229,9 @@ GameObject:
   - component: {fileID: 729739691}
   - component: {fileID: 729739692}
   - component: {fileID: 729739693}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (24)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6308,7 +6327,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &736638538
 GameObject:
@@ -6454,9 +6473,9 @@ GameObject:
   - component: {fileID: 763447519}
   - component: {fileID: 763447520}
   - component: {fileID: 763447521}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (27)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6552,7 +6571,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &765275904
 GameObject:
@@ -6565,9 +6584,9 @@ GameObject:
   - component: {fileID: 765275905}
   - component: {fileID: 765275906}
   - component: {fileID: 765275907}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (79)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6663,7 +6682,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &767022661
 GameObject:
@@ -6676,9 +6695,9 @@ GameObject:
   - component: {fileID: 767022662}
   - component: {fileID: 767022663}
   - component: {fileID: 767022664}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (40)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6774,7 +6793,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &782547812
 GameObject:
@@ -6787,9 +6806,9 @@ GameObject:
   - component: {fileID: 782547813}
   - component: {fileID: 782547814}
   - component: {fileID: 782547815}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (67)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6885,7 +6904,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &789371422
 GameObject:
@@ -7031,9 +7050,9 @@ GameObject:
   - component: {fileID: 795035337}
   - component: {fileID: 795035338}
   - component: {fileID: 795035339}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (60)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7129,7 +7148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &800715516
 GameObject:
@@ -7142,9 +7161,9 @@ GameObject:
   - component: {fileID: 800715517}
   - component: {fileID: 800715518}
   - component: {fileID: 800715519}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (21)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7240,7 +7259,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &804696848
 GameObject:
@@ -7288,9 +7307,9 @@ GameObject:
   - component: {fileID: 838427337}
   - component: {fileID: 838427338}
   - component: {fileID: 838427339}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (11)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7386,7 +7405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &845081124
 GameObject:
@@ -7399,9 +7418,9 @@ GameObject:
   - component: {fileID: 845081125}
   - component: {fileID: 845081126}
   - component: {fileID: 845081127}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (28)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7497,7 +7516,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &849322343
 GameObject:
@@ -7510,9 +7529,9 @@ GameObject:
   - component: {fileID: 849322344}
   - component: {fileID: 849322345}
   - component: {fileID: 849322346}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (81)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7608,7 +7627,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &852101159
 GameObject:
@@ -7621,9 +7640,9 @@ GameObject:
   - component: {fileID: 852101160}
   - component: {fileID: 852101161}
   - component: {fileID: 852101162}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (10)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7719,7 +7738,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &872336039
 GameObject:
@@ -7865,9 +7884,9 @@ GameObject:
   - component: {fileID: 884943458}
   - component: {fileID: 884943459}
   - component: {fileID: 884943460}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (37)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7963,7 +7982,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &886775939
 GameObject:
@@ -7976,9 +7995,9 @@ GameObject:
   - component: {fileID: 886775940}
   - component: {fileID: 886775941}
   - component: {fileID: 886775942}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (97)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8074,7 +8093,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &909310108
 GameObject:
@@ -8087,9 +8106,9 @@ GameObject:
   - component: {fileID: 909310109}
   - component: {fileID: 909310110}
   - component: {fileID: 909310111}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (91)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8185,7 +8204,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &956182188
 GameObject:
@@ -8198,9 +8217,9 @@ GameObject:
   - component: {fileID: 956182189}
   - component: {fileID: 956182190}
   - component: {fileID: 956182191}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (16)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8296,7 +8315,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &959314305
 GameObject:
@@ -8309,9 +8328,9 @@ GameObject:
   - component: {fileID: 959314306}
   - component: {fileID: 959314307}
   - component: {fileID: 959314308}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (96)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8407,7 +8426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &963560189
 GameObject:
@@ -8589,9 +8608,9 @@ GameObject:
   - component: {fileID: 1009092867}
   - component: {fileID: 1009092868}
   - component: {fileID: 1009092869}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (90)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8687,7 +8706,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1011096440
 GameObject:
@@ -8833,9 +8852,9 @@ GameObject:
   - component: {fileID: 1013792194}
   - component: {fileID: 1013792195}
   - component: {fileID: 1013792196}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (38)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8931,7 +8950,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1023350650
 GameObject:
@@ -9077,9 +9096,9 @@ GameObject:
   - component: {fileID: 1037859185}
   - component: {fileID: 1037859186}
   - component: {fileID: 1037859187}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (46)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9175,8 +9194,40 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!1 &1043381559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043381560}
+  m_Layer: 0
+  m_Name: BlockBParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043381560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043381559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.719999, y: 1.0799999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1554019704}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052310659
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,7 +9237,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052310660}
-  - component: {fileID: 1052310661}
   - component: {fileID: 1052310662}
   m_Layer: 0
   m_Name: GeneralControls
@@ -9210,20 +9260,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1052310661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052310659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b403893c4b6cf054ab1959d3d6b7ed9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blueBlock: {fileID: 669836719}
-  redBlock: {fileID: 1554019702}
 --- !u!114 &1052310662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9247,9 +9283,9 @@ GameObject:
   - component: {fileID: 1065529753}
   - component: {fileID: 1065529754}
   - component: {fileID: 1065529755}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (57)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9345,7 +9381,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1113467143
 GameObject:
@@ -9624,9 +9660,9 @@ GameObject:
   - component: {fileID: 1121285276}
   - component: {fileID: 1121285277}
   - component: {fileID: 1121285278}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (62)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9722,7 +9758,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1137275495
 GameObject:
@@ -9735,9 +9771,9 @@ GameObject:
   - component: {fileID: 1137275496}
   - component: {fileID: 1137275497}
   - component: {fileID: 1137275498}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (41)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9833,7 +9869,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1149107752
 GameObject:
@@ -10112,9 +10148,9 @@ GameObject:
   - component: {fileID: 1182837224}
   - component: {fileID: 1182837225}
   - component: {fileID: 1182837226}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (76)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10210,7 +10246,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1182948843
 GameObject:
@@ -10257,9 +10293,9 @@ GameObject:
   - component: {fileID: 1230296511}
   - component: {fileID: 1230296512}
   - component: {fileID: 1230296513}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (59)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10355,7 +10391,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1245554824
 GameObject:
@@ -10368,9 +10404,9 @@ GameObject:
   - component: {fileID: 1245554825}
   - component: {fileID: 1245554826}
   - component: {fileID: 1245554827}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (34)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10466,7 +10502,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1258249023
 GameObject:
@@ -10745,9 +10781,9 @@ GameObject:
   - component: {fileID: 1274099935}
   - component: {fileID: 1274099936}
   - component: {fileID: 1274099937}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (68)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10843,7 +10879,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1276166598
 GameObject:
@@ -10856,9 +10892,9 @@ GameObject:
   - component: {fileID: 1276166599}
   - component: {fileID: 1276166600}
   - component: {fileID: 1276166601}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (5)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10954,7 +10990,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1276206069
 GameObject:
@@ -11100,9 +11136,9 @@ GameObject:
   - component: {fileID: 1284162867}
   - component: {fileID: 1284162868}
   - component: {fileID: 1284162869}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (89)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11198,7 +11234,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1296797309
 GameObject:
@@ -11211,9 +11247,9 @@ GameObject:
   - component: {fileID: 1296797310}
   - component: {fileID: 1296797311}
   - component: {fileID: 1296797312}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (13)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11309,7 +11345,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1305012898
 GameObject:
@@ -11322,9 +11358,9 @@ GameObject:
   - component: {fileID: 1305012899}
   - component: {fileID: 1305012900}
   - component: {fileID: 1305012901}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (94)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11420,7 +11456,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1311887827
 GameObject:
@@ -11433,9 +11469,9 @@ GameObject:
   - component: {fileID: 1311887828}
   - component: {fileID: 1311887829}
   - component: {fileID: 1311887830}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (95)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11531,7 +11567,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1345526138
 GameObject:
@@ -11677,9 +11713,9 @@ GameObject:
   - component: {fileID: 1366236259}
   - component: {fileID: 1366236260}
   - component: {fileID: 1366236261}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (48)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11775,7 +11811,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1373126610
 GameObject:
@@ -11788,9 +11824,9 @@ GameObject:
   - component: {fileID: 1373126611}
   - component: {fileID: 1373126612}
   - component: {fileID: 1373126613}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (80)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11886,7 +11922,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1390407444
 GameObject:
@@ -11899,9 +11935,9 @@ GameObject:
   - component: {fileID: 1390407445}
   - component: {fileID: 1390407446}
   - component: {fileID: 1390407447}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (88)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11997,7 +12033,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1402541381
 GameObject:
@@ -12409,9 +12445,9 @@ GameObject:
   - component: {fileID: 1422326859}
   - component: {fileID: 1422326860}
   - component: {fileID: 1422326861}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (84)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12507,7 +12543,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1444348575
 GameObject:
@@ -12520,9 +12556,9 @@ GameObject:
   - component: {fileID: 1444348576}
   - component: {fileID: 1444348577}
   - component: {fileID: 1444348578}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (72)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12618,7 +12654,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1445866602
 GameObject:
@@ -12631,9 +12667,9 @@ GameObject:
   - component: {fileID: 1445866603}
   - component: {fileID: 1445866604}
   - component: {fileID: 1445866605}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (65)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12729,7 +12765,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1450182954
 GameObject:
@@ -12742,9 +12778,9 @@ GameObject:
   - component: {fileID: 1450182955}
   - component: {fileID: 1450182956}
   - component: {fileID: 1450182957}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (51)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12840,7 +12876,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1454778956
 GameObject:
@@ -12853,9 +12889,9 @@ GameObject:
   - component: {fileID: 1454778957}
   - component: {fileID: 1454778958}
   - component: {fileID: 1454778959}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (77)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12951,7 +12987,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1471762298
 GameObject:
@@ -13363,9 +13399,9 @@ GameObject:
   - component: {fileID: 1528172412}
   - component: {fileID: 1528172413}
   - component: {fileID: 1528172414}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (45)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13461,7 +13497,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1535211026
 GameObject:
@@ -13474,9 +13510,9 @@ GameObject:
   - component: {fileID: 1535211027}
   - component: {fileID: 1535211028}
   - component: {fileID: 1535211029}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13572,7 +13608,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1554019702
 GameObject:
@@ -13652,13 +13688,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554019702}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.26, y: 7.0200005, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.53999996, y: 0.53999996, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1043381560}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1554019705
 BoxCollider2D:
@@ -13718,9 +13754,9 @@ GameObject:
   - component: {fileID: 1559019846}
   - component: {fileID: 1559019847}
   - component: {fileID: 1559019848}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (50)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13816,7 +13852,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1559049482
 GameObject:
@@ -13829,9 +13865,9 @@ GameObject:
   - component: {fileID: 1559049483}
   - component: {fileID: 1559049484}
   - component: {fileID: 1559049485}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (15)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13927,7 +13963,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1578911637
 GameObject:
@@ -14073,9 +14109,9 @@ GameObject:
   - component: {fileID: 1600609007}
   - component: {fileID: 1600609008}
   - component: {fileID: 1600609009}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (71)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14171,7 +14207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1602692477
 GameObject:
@@ -14184,9 +14220,9 @@ GameObject:
   - component: {fileID: 1602692478}
   - component: {fileID: 1602692479}
   - component: {fileID: 1602692480}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (49)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14282,7 +14318,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1611575254
 GameObject:
@@ -14295,9 +14331,9 @@ GameObject:
   - component: {fileID: 1611575255}
   - component: {fileID: 1611575256}
   - component: {fileID: 1611575257}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (22)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14393,7 +14429,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1634836927
 GameObject:
@@ -14406,9 +14442,9 @@ GameObject:
   - component: {fileID: 1634836928}
   - component: {fileID: 1634836929}
   - component: {fileID: 1634836930}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (26)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14504,7 +14540,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1668673841
 GameObject:
@@ -14517,9 +14553,9 @@ GameObject:
   - component: {fileID: 1668673842}
   - component: {fileID: 1668673843}
   - component: {fileID: 1668673844}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (86)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14615,7 +14651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1694346450
 GameObject:
@@ -14663,9 +14699,9 @@ GameObject:
   - component: {fileID: 1698647512}
   - component: {fileID: 1698647513}
   - component: {fileID: 1698647514}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (61)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14761,7 +14797,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1702111345
 GameObject:
@@ -14774,9 +14810,9 @@ GameObject:
   - component: {fileID: 1702111346}
   - component: {fileID: 1702111347}
   - component: {fileID: 1702111348}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (55)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14872,7 +14908,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1738761050
 GameObject:
@@ -14885,9 +14921,9 @@ GameObject:
   - component: {fileID: 1738761051}
   - component: {fileID: 1738761052}
   - component: {fileID: 1738761053}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (83)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14983,7 +15019,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1759161187
 GameObject:
@@ -15232,9 +15268,9 @@ GameObject:
   - component: {fileID: 1786554062}
   - component: {fileID: 1786554063}
   - component: {fileID: 1786554064}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (29)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15330,7 +15366,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1788496909
 GameObject:
@@ -15343,9 +15379,9 @@ GameObject:
   - component: {fileID: 1788496910}
   - component: {fileID: 1788496911}
   - component: {fileID: 1788496912}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (39)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15441,7 +15477,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1790590875
 GameObject:
@@ -15454,9 +15490,9 @@ GameObject:
   - component: {fileID: 1790590876}
   - component: {fileID: 1790590877}
   - component: {fileID: 1790590878}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (70)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15552,7 +15588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1832206045
 GameObject:
@@ -15565,9 +15601,9 @@ GameObject:
   - component: {fileID: 1832206046}
   - component: {fileID: 1832206047}
   - component: {fileID: 1832206048}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (8)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15663,7 +15699,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1833608017
 GameObject:
@@ -15676,9 +15712,9 @@ GameObject:
   - component: {fileID: 1833608018}
   - component: {fileID: 1833608019}
   - component: {fileID: 1833608020}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (1)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15774,7 +15810,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1848812119
 GameObject:
@@ -15920,9 +15956,9 @@ GameObject:
   - component: {fileID: 1857300883}
   - component: {fileID: 1857300884}
   - component: {fileID: 1857300885}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (25)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16018,7 +16054,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1860621213
 GameObject:
@@ -16031,9 +16067,9 @@ GameObject:
   - component: {fileID: 1860621214}
   - component: {fileID: 1860621215}
   - component: {fileID: 1860621216}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (32)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16129,7 +16165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1862119679
 GameObject:
@@ -16142,9 +16178,9 @@ GameObject:
   - component: {fileID: 1862119680}
   - component: {fileID: 1862119681}
   - component: {fileID: 1862119682}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (98)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16240,7 +16276,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1915982967
 GameObject:
@@ -16253,9 +16289,9 @@ GameObject:
   - component: {fileID: 1915982968}
   - component: {fileID: 1915982969}
   - component: {fileID: 1915982970}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (44)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16351,7 +16387,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1922625039
 GameObject:
@@ -16364,9 +16400,9 @@ GameObject:
   - component: {fileID: 1922625040}
   - component: {fileID: 1922625041}
   - component: {fileID: 1922625042}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (74)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16462,7 +16498,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1923345808
 GameObject:
@@ -16517,9 +16553,9 @@ GameObject:
   - component: {fileID: 1929911244}
   - component: {fileID: 1929911245}
   - component: {fileID: 1929911246}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (87)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16615,7 +16651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1939256576
 GameObject:
@@ -16628,9 +16664,9 @@ GameObject:
   - component: {fileID: 1939256577}
   - component: {fileID: 1939256578}
   - component: {fileID: 1939256579}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (20)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16726,7 +16762,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1964076209
 GameObject:
@@ -16872,9 +16908,9 @@ GameObject:
   - component: {fileID: 1967740771}
   - component: {fileID: 1967740772}
   - component: {fileID: 1967740773}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (6)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16970,7 +17006,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1976691396
 GameObject:
@@ -17052,9 +17088,9 @@ GameObject:
   - component: {fileID: 1984757968}
   - component: {fileID: 1984757969}
   - component: {fileID: 1984757970}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (92)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17150,7 +17186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1988504971
 GameObject:
@@ -17163,9 +17199,9 @@ GameObject:
   - component: {fileID: 1988504972}
   - component: {fileID: 1988504973}
   - component: {fileID: 1988504974}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (43)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17261,7 +17297,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &1992855799
 GameObject:
@@ -17420,7 +17456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028048723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17463,9 +17499,9 @@ Transform:
   - {fileID: 657049422}
   - {fileID: 884943458}
   - {fileID: 1013792194}
-  - {fileID: 1788496910}
   - {fileID: 767022662}
   - {fileID: 1137275496}
+  - {fileID: 1788496910}
   - {fileID: 684711379}
   - {fileID: 1988504972}
   - {fileID: 1915982968}
@@ -17538,9 +17574,9 @@ GameObject:
   - component: {fileID: 2035030841}
   - component: {fileID: 2035030842}
   - component: {fileID: 2035030843}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (85)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17636,7 +17672,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &2079868275
 GameObject:
@@ -17822,9 +17858,9 @@ GameObject:
   - component: {fileID: 2114366170}
   - component: {fileID: 2114366171}
   - component: {fileID: 2114366172}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: tekliIzgara (17)
-  m_TagString: Untagged
+  m_TagString: GridBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17920,7 +17956,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1 &2134430951
 GameObject:

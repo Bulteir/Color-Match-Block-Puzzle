@@ -5,25 +5,26 @@ using UnityEngine;
 public class BlockTouchControl : MonoBehaviour
 {
 
-    GameObject touchedBlock;
+    Transform touchedBlock;
+    Transform touchedBlockParent;
+    List<Transform> toBePlacedGrids;
+    List<Vector3> snapPosList;
     Vector3 deltaPos;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        toBePlacedGrids = new List<Transform>();
+        snapPosList = new List<Vector3>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (GlobalVariables.gameState == GlobalVariables.gameState_inGame)
-            ControlWithMouse();
-        //ControlWithTouch();
-
-        if (touchedBlock != null)
         {
-            touchedBlock.transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
-            touchedBlock.transform.position += deltaPos;
+            ControlWithMouse();
+            MoveSelectedBlocks();
         }
     }
 
@@ -36,36 +37,120 @@ public class BlockTouchControl : MonoBehaviour
             {
                 if (raycastHit.collider.gameObject.tag == GlobalVariables.block)
                 {
-                    touchedBlock = raycastHit.transform.gameObject;
-
-                    if (touchedBlock.transform.parent != null)
+                    touchedBlock = raycastHit.transform;
+                    if (touchedBlock.parent != null)
                     {
-                        touchedBlock = touchedBlock.transform.parent.gameObject;
+                        touchedBlockParent = touchedBlock.parent;
                     }
 
-                    SetBlocksSpriteLayer(touchedBlock.transform, GlobalVariables.orderInLayer_selectedBlock);
-                    deltaPos = touchedBlock.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    SetBlocksSpriteLayer(GlobalVariables.orderInLayer_selectedBlock);
+
+                    deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     deltaPos.z = 0;
+                    deltaPos.y += 1f;
                 }
             }
         }
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            if(touchedBlock != null)
+            if (touchedBlock != null)
             {
-                SetBlocksSpriteLayer(touchedBlock.transform, GlobalVariables.orderInLayer_blocks);
+                SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
+                for (int i = 0; i < touchedBlockParent.childCount; i++)
+                {
+                    if (toBePlacedGrids.Count > 0)
+                    {
+                        Vector3 snapPos = toBePlacedGrids[i].position;
+                        snapPos.z = 0;
+                        touchedBlockParent.GetChild(i).transform.position = snapPos;
+                    }
+                }
+
+                foreach (var item in toBePlacedGrids)
+                {
+                    item.GetComponent<SpriteRenderer>().color = Color.white;
+                }
+
                 touchedBlock = null;
+                touchedBlockParent = null;
                 deltaPos = Vector3.zero;
+                snapPosList.Clear();
+                toBePlacedGrids.Clear();
             }
         }
     }
 
-    void SetBlocksSpriteLayer(Transform parentTransfrom, int layer)
+    void MoveSelectedBlocks()
     {
-        foreach (var item in parentTransfrom.GetComponentsInChildren<SpriteRenderer>())
+        //dokunulan bir bloðun hareket ettirilmesi
+        if (touchedBlock != null)
+        {
+
+            Vector3 touchPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (touchedBlock.parent != null)
+            {
+                touchedBlock.parent.position = new Vector3(touchPoint.x, touchPoint.y, 0);
+                touchedBlock.parent.position += deltaPos;
+            }
+            else
+            {
+                touchedBlock.position = new Vector3(touchPoint.x, touchPoint.y, 0);
+                touchedBlock.position += deltaPos;
+            }
+
+            #region bir bloðu hareket ettirirken merkezinden ray fýrlatýp hangi gridin üstünde tespit ediyoruz.
+
+            if (touchedBlockParent != null)
+            {
+                List<Transform> tempToBePlacedGrids = new List<Transform>();
+                for (int i = 0; i < touchedBlockParent.childCount; i++)
+                {
+                    RaycastHit2D raycastHit = Physics2D.Raycast(touchedBlockParent.GetChild(i).position, Vector2.zero);
+                    if (raycastHit.collider != null)
+                    {
+                        if (raycastHit.collider.gameObject.tag == GlobalVariables.gridBlock)
+                        {
+                            raycastHit.collider.transform.GetComponent<SpriteRenderer>().color = Color.blue;
+                            tempToBePlacedGrids.Add(raycastHit.collider.transform);
+                            //snapPos = raycastHit.collider.transform.position;
+                            //snapPos.z = touchedBlock.position.z;
+                        }
+                    }
+                }
+
+                foreach (var item in toBePlacedGrids)
+                {
+                    if (!tempToBePlacedGrids.Contains(item))
+                    {
+                        item.GetComponent<SpriteRenderer>().color = Color.white;
+                    }
+                }
+
+                toBePlacedGrids.Clear();
+                toBePlacedGrids.AddRange(tempToBePlacedGrids);
+            }
+            #endregion
+        }
+    }
+
+    //birden çok bloklu parçalarýn hareket ettirilirken üst üste binme gibi görüntü bozulmasýný önler
+    void SetBlocksSpriteLayer(int layer)
+    {
+        foreach (var item in touchedBlockParent.GetComponentsInChildren<SpriteRenderer>())
         {
             item.sortingOrder = layer;
+
+            //Aþaðýdaki layer deðiþtirme iþlemi, bir blok seçildiðinde ray'in bloðun içinden geçip altýnda ne olduðunu bulabilmemiz için gerekli
+            if (layer == GlobalVariables.orderInLayer_selectedBlock)
+            {
+                item.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            }
+            else
+            {
+                item.gameObject.layer = LayerMask.NameToLayer("Default");
+            }
         }
     }
 }

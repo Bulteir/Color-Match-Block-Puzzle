@@ -5,6 +5,7 @@ using UnityEngine;
 public class GlobalVariables
 {
     public const string block = "Block";
+    public const string gridBlock = "GridBlock";
 
     public static int gameState = gameState_inGame;
     public const int gameState_MainMenu = 0;
