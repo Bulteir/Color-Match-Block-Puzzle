@@ -8,14 +8,13 @@ public class BlockTouchControl : MonoBehaviour
     Transform touchedBlock;
     Transform touchedBlockParent;
     List<Transform> toBePlacedGrids;
-    List<Vector3> snapPosList;
     Vector3 deltaPos;
+    Vector3 preCorrectPos;
 
     // Start is called before the first frame update
     void Start()
     {
         toBePlacedGrids = new List<Transform>();
-        snapPosList = new List<Vector3>();
     }
 
     // Update is called once per frame
@@ -47,7 +46,9 @@ public class BlockTouchControl : MonoBehaviour
 
                     deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     deltaPos.z = 0;
-                    deltaPos.y += 1f;
+                    deltaPos.y += 1;
+
+                    preCorrectPos = touchedBlockParent.position;
                 }
             }
         }
@@ -58,14 +59,19 @@ public class BlockTouchControl : MonoBehaviour
             {
                 SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
 
-                for (int i = 0; i < touchedBlockParent.childCount; i++)
+                //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
+                if (touchedBlockParent.childCount == toBePlacedGrids.Count)
                 {
-                    if (toBePlacedGrids.Count > 0)
+                    for (int i = 0; i < touchedBlockParent.childCount; i++)
                     {
                         Vector3 snapPos = toBePlacedGrids[i].position;
                         snapPos.z = 0;
                         touchedBlockParent.GetChild(i).transform.position = snapPos;
                     }
+                }
+                else
+                {
+                    touchedBlockParent.position = preCorrectPos;
                 }
 
                 foreach (var item in toBePlacedGrids)
@@ -76,8 +82,8 @@ public class BlockTouchControl : MonoBehaviour
                 touchedBlock = null;
                 touchedBlockParent = null;
                 deltaPos = Vector3.zero;
-                snapPosList.Clear();
                 toBePlacedGrids.Clear();
+                preCorrectPos = Vector3.zero;
             }
         }
     }
@@ -114,8 +120,6 @@ public class BlockTouchControl : MonoBehaviour
                         {
                             raycastHit.collider.transform.GetComponent<SpriteRenderer>().color = Color.blue;
                             tempToBePlacedGrids.Add(raycastHit.collider.transform);
-                            //snapPos = raycastHit.collider.transform.position;
-                            //snapPos.z = touchedBlock.position.z;
                         }
                     }
                 }
