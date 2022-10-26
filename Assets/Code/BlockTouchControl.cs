@@ -59,6 +59,7 @@ public class BlockTouchControl : MonoBehaviour
             {
                 SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
 
+                #region snap ettirme yeri
                 //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
                 if (touchedBlockParent.childCount == toBePlacedGrids.Count)
                 {
@@ -67,12 +68,17 @@ public class BlockTouchControl : MonoBehaviour
                         Vector3 snapPos = toBePlacedGrids[i].position;
                         snapPos.z = 0;
                         touchedBlockParent.GetChild(i).transform.position = snapPos;
+
+                        //þimdilik BlokA sonra renge göre atama deðiþtirilecek
+                        toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                        toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
                     }
                 }
-                else
+                else // deðilse eski doðru konumuna gönderilir
                 {
                     touchedBlockParent.position = preCorrectPos;
                 }
+                #endregion
 
                 foreach (var item in toBePlacedGrids)
                 {
@@ -84,6 +90,8 @@ public class BlockTouchControl : MonoBehaviour
                 deltaPos = Vector3.zero;
                 toBePlacedGrids.Clear();
                 preCorrectPos = Vector3.zero;
+
+                transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
             }
         }
     }
@@ -129,6 +137,9 @@ public class BlockTouchControl : MonoBehaviour
                     if (!tempToBePlacedGrids.Contains(item))
                     {
                         item.GetComponent<SpriteRenderer>().color = Color.white;
+                        
+                        item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
+                        item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                     }
                 }
 

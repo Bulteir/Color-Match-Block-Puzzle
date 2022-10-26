@@ -15,4 +15,7 @@ public class GlobalVariables
     public const int orderInLayer_blocks = 1;
     public const int orderInLayer_selectedBlock = 2;
 
+    public const int gridState_empty = 0;
+    public const int gridState_blokA = 1;
+    public const int gridState_blokB = 2;
 }

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 44133145}
   - component: {fileID: 44133146}
   - component: {fileID: 44133147}
+  - component: {fileID: 44133148}
   m_Layer: 0
   m_Name: tekliIzgara (75)
   m_TagString: GridBlock
@@ -234,6 +235,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &44133148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44133144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &54469193
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +392,7 @@ GameObject:
   - component: {fileID: 76104247}
   - component: {fileID: 76104248}
   - component: {fileID: 76104249}
+  - component: {fileID: 76104250}
   m_Layer: 0
   m_Name: tekliIzgara (12)
   m_TagString: GridBlock
@@ -478,6 +493,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &76104250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76104246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &105954316
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +517,7 @@ GameObject:
   - component: {fileID: 105954317}
   - component: {fileID: 105954318}
   - component: {fileID: 105954319}
+  - component: {fileID: 105954320}
   m_Layer: 0
   m_Name: tekliIzgara (14)
   m_TagString: GridBlock
@@ -589,6 +618,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &105954320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105954316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &117466684
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +642,7 @@ GameObject:
   - component: {fileID: 117466685}
   - component: {fileID: 117466686}
   - component: {fileID: 117466687}
+  - component: {fileID: 117466688}
   m_Layer: 0
   m_Name: tekliIzgara (47)
   m_TagString: GridBlock
@@ -700,6 +743,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &117466688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117466684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &127692684
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +767,7 @@ GameObject:
   - component: {fileID: 127692685}
   - component: {fileID: 127692686}
   - component: {fileID: 127692687}
+  - component: {fileID: 127692688}
   m_Layer: 0
   m_Name: tekliIzgara (33)
   m_TagString: GridBlock
@@ -811,6 +868,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &127692688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127692684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &130602036
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1025,7 @@ GameObject:
   - component: {fileID: 144170320}
   - component: {fileID: 144170321}
   - component: {fileID: 144170322}
+  - component: {fileID: 144170323}
   m_Layer: 0
   m_Name: tekliIzgara (4)
   m_TagString: GridBlock
@@ -1055,6 +1126,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &144170323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144170319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &166357744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1182,7 @@ GameObject:
   - component: {fileID: 174257575}
   - component: {fileID: 174257576}
   - component: {fileID: 174257577}
+  - component: {fileID: 174257578}
   m_Layer: 0
   m_Name: tekliIzgara (56)
   m_TagString: GridBlock
@@ -1198,6 +1283,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &174257578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174257574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &190542891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1440,7 @@ GameObject:
   - component: {fileID: 195947331}
   - component: {fileID: 195947332}
   - component: {fileID: 195947333}
+  - component: {fileID: 195947334}
   m_Layer: 0
   m_Name: tekliIzgara (19)
   m_TagString: GridBlock
@@ -1442,6 +1541,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &195947334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195947330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &211717027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1565,7 @@ GameObject:
   - component: {fileID: 211717028}
   - component: {fileID: 211717029}
   - component: {fileID: 211717030}
+  - component: {fileID: 211717031}
   m_Layer: 0
   m_Name: tekliIzgara (23)
   m_TagString: GridBlock
@@ -1553,6 +1666,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &211717031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211717027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &242768001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1690,7 @@ GameObject:
   - component: {fileID: 242768002}
   - component: {fileID: 242768003}
   - component: {fileID: 242768004}
+  - component: {fileID: 242768005}
   m_Layer: 0
   m_Name: tekliIzgara (30)
   m_TagString: GridBlock
@@ -1664,6 +1791,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &242768005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242768001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &259527755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,6 +1948,7 @@ GameObject:
   - component: {fileID: 265393955}
   - component: {fileID: 265393956}
   - component: {fileID: 265393957}
+  - component: {fileID: 265393958}
   m_Layer: 0
   m_Name: tekliIzgara (53)
   m_TagString: GridBlock
@@ -1908,6 +2049,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &265393958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265393954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &279457264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +2106,7 @@ GameObject:
   - component: {fileID: 302222524}
   - component: {fileID: 302222525}
   - component: {fileID: 302222526}
+  - component: {fileID: 302222527}
   m_Layer: 0
   m_Name: tekliIzgara (52)
   m_TagString: GridBlock
@@ -2052,6 +2207,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &302222527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302222523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &341559737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2231,7 @@ GameObject:
   - component: {fileID: 341559738}
   - component: {fileID: 341559739}
   - component: {fileID: 341559740}
+  - component: {fileID: 341559741}
   m_Layer: 0
   m_Name: tekliIzgara (64)
   m_TagString: GridBlock
@@ -2078,7 +2247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341559737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.86, y: 7.02, z: 0}
+  m_LocalPosition: {x: 4.859999, y: 7.02, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2163,6 +2332,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &341559741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341559737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &358899940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2489,7 @@ GameObject:
   - component: {fileID: 362503771}
   - component: {fileID: 362503772}
   - component: {fileID: 362503773}
+  - component: {fileID: 362503774}
   m_Layer: 0
   m_Name: tekliIzgara (73)
   m_TagString: GridBlock
@@ -2407,6 +2590,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &362503774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362503770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &366550988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2614,7 @@ GameObject:
   - component: {fileID: 366550989}
   - component: {fileID: 366550990}
   - component: {fileID: 366550991}
+  - component: {fileID: 366550992}
   m_Layer: 0
   m_Name: tekliIzgara (66)
   m_TagString: GridBlock
@@ -2518,6 +2715,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &366550992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366550988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &371757884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,6 +2872,7 @@ GameObject:
   - component: {fileID: 388034194}
   - component: {fileID: 388034195}
   - component: {fileID: 388034196}
+  - component: {fileID: 388034197}
   m_Layer: 0
   m_Name: tekliIzgara (7)
   m_TagString: GridBlock
@@ -2762,6 +2973,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &388034197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388034193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &390343826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,6 +3263,7 @@ GameObject:
   - component: {fileID: 416542379}
   - component: {fileID: 416542380}
   - component: {fileID: 416542381}
+  - component: {fileID: 416542382}
   m_Layer: 0
   m_Name: tekliIzgara (3)
   m_TagString: GridBlock
@@ -3139,6 +3364,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &416542382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416542378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &417887387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +3521,7 @@ GameObject:
   - component: {fileID: 426583200}
   - component: {fileID: 426583201}
   - component: {fileID: 426583202}
+  - component: {fileID: 426583203}
   m_Layer: 0
   m_Name: tekliIzgara (78)
   m_TagString: GridBlock
@@ -3383,6 +3622,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &426583203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426583199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &508073470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3646,7 @@ GameObject:
   - component: {fileID: 508073471}
   - component: {fileID: 508073472}
   - component: {fileID: 508073473}
+  - component: {fileID: 508073474}
   m_Layer: 0
   m_Name: tekliIzgara (18)
   m_TagString: GridBlock
@@ -3494,6 +3747,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &508073474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508073470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,6 +3855,7 @@ GameObject:
   - component: {fileID: 523190222}
   - component: {fileID: 523190223}
   - component: {fileID: 523190224}
+  - component: {fileID: 523190225}
   m_Layer: 0
   m_Name: tekliIzgara (63)
   m_TagString: GridBlock
@@ -3689,6 +3956,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &523190225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523190221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &534783344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,6 +4113,7 @@ GameObject:
   - component: {fileID: 535502210}
   - component: {fileID: 535502211}
   - component: {fileID: 535502212}
+  - component: {fileID: 535502213}
   m_Layer: 0
   m_Name: tekliIzgara (35)
   m_TagString: GridBlock
@@ -3933,6 +4214,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &535502213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535502209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &545019862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,6 +4371,7 @@ GameObject:
   - component: {fileID: 550240676}
   - component: {fileID: 550240677}
   - component: {fileID: 550240678}
+  - component: {fileID: 550240679}
   m_Layer: 0
   m_Name: tekliIzgara (58)
   m_TagString: GridBlock
@@ -4177,6 +4472,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &550240679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550240675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &553260192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4496,7 @@ GameObject:
   - component: {fileID: 553260193}
   - component: {fileID: 553260194}
   - component: {fileID: 553260195}
+  - component: {fileID: 553260196}
   m_Layer: 0
   m_Name: tekliIzgara (93)
   m_TagString: GridBlock
@@ -4288,6 +4597,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &553260196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553260192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &562748467
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,6 +4621,7 @@ GameObject:
   - component: {fileID: 562748468}
   - component: {fileID: 562748469}
   - component: {fileID: 562748470}
+  - component: {fileID: 562748471}
   m_Layer: 0
   m_Name: tekliIzgara (99)
   m_TagString: GridBlock
@@ -4399,6 +4722,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &562748471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562748467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &567415290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,6 +5012,7 @@ GameObject:
   - component: {fileID: 602095718}
   - component: {fileID: 602095719}
   - component: {fileID: 602095720}
+  - component: {fileID: 602095721}
   m_Layer: 0
   m_Name: tekliIzgara (9)
   m_TagString: GridBlock
@@ -4776,6 +5113,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &602095721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602095717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &607068245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,6 +5270,7 @@ GameObject:
   - component: {fileID: 622642457}
   - component: {fileID: 622642458}
   - component: {fileID: 622642459}
+  - component: {fileID: 622642460}
   m_Layer: 0
   m_Name: tekliIzgara (69)
   m_TagString: GridBlock
@@ -5020,6 +5371,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &622642460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622642456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &628485221
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,6 +5395,7 @@ GameObject:
   - component: {fileID: 628485222}
   - component: {fileID: 628485223}
   - component: {fileID: 628485224}
+  - component: {fileID: 628485225}
   m_Layer: 0
   m_Name: tekliIzgara (54)
   m_TagString: GridBlock
@@ -5131,6 +5496,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &628485225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628485221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &638116975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,6 +5653,7 @@ GameObject:
   - component: {fileID: 657049422}
   - component: {fileID: 657049423}
   - component: {fileID: 657049424}
+  - component: {fileID: 657049425}
   m_Layer: 0
   m_Name: tekliIzgara (36)
   m_TagString: GridBlock
@@ -5375,6 +5754,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &657049425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657049421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &664688789
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,6 +5778,7 @@ GameObject:
   - component: {fileID: 664688790}
   - component: {fileID: 664688791}
   - component: {fileID: 664688792}
+  - component: {fileID: 664688793}
   m_Layer: 0
   m_Name: tekliIzgara (2)
   m_TagString: GridBlock
@@ -5486,6 +5879,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &664688793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664688789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &669836719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,6 +6036,7 @@ GameObject:
   - component: {fileID: 684711379}
   - component: {fileID: 684711380}
   - component: {fileID: 684711381}
+  - component: {fileID: 684711382}
   m_Layer: 0
   m_Name: tekliIzgara (42)
   m_TagString: GridBlock
@@ -5730,6 +6137,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &684711382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684711378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &693000213
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,6 +6294,7 @@ GameObject:
   - component: {fileID: 698797270}
   - component: {fileID: 698797271}
   - component: {fileID: 698797272}
+  - component: {fileID: 698797273}
   m_Layer: 0
   m_Name: tekliIzgara (31)
   m_TagString: GridBlock
@@ -5974,6 +6395,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &698797273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698797269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &709791423
 GameObject:
   m_ObjectHideFlags: 0
@@ -6118,6 +6552,7 @@ GameObject:
   - component: {fileID: 722729703}
   - component: {fileID: 722729704}
   - component: {fileID: 722729705}
+  - component: {fileID: 722729706}
   m_Layer: 0
   m_Name: tekliIzgara (82)
   m_TagString: GridBlock
@@ -6218,6 +6653,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &722729706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722729702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &729739690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,6 +6677,7 @@ GameObject:
   - component: {fileID: 729739691}
   - component: {fileID: 729739692}
   - component: {fileID: 729739693}
+  - component: {fileID: 729739694}
   m_Layer: 0
   m_Name: tekliIzgara (24)
   m_TagString: GridBlock
@@ -6329,6 +6778,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &729739694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729739690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &736638538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6473,6 +6935,7 @@ GameObject:
   - component: {fileID: 763447519}
   - component: {fileID: 763447520}
   - component: {fileID: 763447521}
+  - component: {fileID: 763447522}
   m_Layer: 0
   m_Name: tekliIzgara (27)
   m_TagString: GridBlock
@@ -6573,6 +7036,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &763447522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763447518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &765275904
 GameObject:
   m_ObjectHideFlags: 0
@@ -6584,6 +7060,7 @@ GameObject:
   - component: {fileID: 765275905}
   - component: {fileID: 765275906}
   - component: {fileID: 765275907}
+  - component: {fileID: 765275908}
   m_Layer: 0
   m_Name: tekliIzgara (79)
   m_TagString: GridBlock
@@ -6684,6 +7161,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &765275908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765275904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &767022661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6695,6 +7185,7 @@ GameObject:
   - component: {fileID: 767022662}
   - component: {fileID: 767022663}
   - component: {fileID: 767022664}
+  - component: {fileID: 767022665}
   m_Layer: 0
   m_Name: tekliIzgara (40)
   m_TagString: GridBlock
@@ -6795,6 +7286,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &767022665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767022661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &782547812
 GameObject:
   m_ObjectHideFlags: 0
@@ -6806,6 +7310,7 @@ GameObject:
   - component: {fileID: 782547813}
   - component: {fileID: 782547814}
   - component: {fileID: 782547815}
+  - component: {fileID: 782547816}
   m_Layer: 0
   m_Name: tekliIzgara (67)
   m_TagString: GridBlock
@@ -6906,6 +7411,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &782547816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782547812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &789371422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,6 +7568,7 @@ GameObject:
   - component: {fileID: 795035337}
   - component: {fileID: 795035338}
   - component: {fileID: 795035339}
+  - component: {fileID: 795035340}
   m_Layer: 0
   m_Name: tekliIzgara (60)
   m_TagString: GridBlock
@@ -7065,7 +7584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795035336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.53999996, y: 7.02, z: 0}
+  m_LocalPosition: {x: 0.539999, y: 7.02, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7150,6 +7669,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &795035340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795035336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &800715516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7161,6 +7693,7 @@ GameObject:
   - component: {fileID: 800715517}
   - component: {fileID: 800715518}
   - component: {fileID: 800715519}
+  - component: {fileID: 800715520}
   m_Layer: 0
   m_Name: tekliIzgara (21)
   m_TagString: GridBlock
@@ -7261,6 +7794,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &800715520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800715516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &804696848
 GameObject:
   m_ObjectHideFlags: 0
@@ -7307,6 +7853,7 @@ GameObject:
   - component: {fileID: 838427337}
   - component: {fileID: 838427338}
   - component: {fileID: 838427339}
+  - component: {fileID: 838427340}
   m_Layer: 0
   m_Name: tekliIzgara (11)
   m_TagString: GridBlock
@@ -7407,6 +7954,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &838427340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838427336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &845081124
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,6 +7978,7 @@ GameObject:
   - component: {fileID: 845081125}
   - component: {fileID: 845081126}
   - component: {fileID: 845081127}
+  - component: {fileID: 845081128}
   m_Layer: 0
   m_Name: tekliIzgara (28)
   m_TagString: GridBlock
@@ -7518,6 +8079,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &845081128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845081124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &849322343
 GameObject:
   m_ObjectHideFlags: 0
@@ -7529,6 +8103,7 @@ GameObject:
   - component: {fileID: 849322344}
   - component: {fileID: 849322345}
   - component: {fileID: 849322346}
+  - component: {fileID: 849322347}
   m_Layer: 0
   m_Name: tekliIzgara (81)
   m_TagString: GridBlock
@@ -7629,6 +8204,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &849322347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849322343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &852101159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,6 +8228,7 @@ GameObject:
   - component: {fileID: 852101160}
   - component: {fileID: 852101161}
   - component: {fileID: 852101162}
+  - component: {fileID: 852101163}
   m_Layer: 0
   m_Name: tekliIzgara (10)
   m_TagString: GridBlock
@@ -7740,6 +8329,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &852101163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852101159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &872336039
 GameObject:
   m_ObjectHideFlags: 0
@@ -7884,6 +8486,7 @@ GameObject:
   - component: {fileID: 884943458}
   - component: {fileID: 884943459}
   - component: {fileID: 884943460}
+  - component: {fileID: 884943461}
   m_Layer: 0
   m_Name: tekliIzgara (37)
   m_TagString: GridBlock
@@ -7984,6 +8587,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &884943461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884943457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &886775939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,6 +8611,7 @@ GameObject:
   - component: {fileID: 886775940}
   - component: {fileID: 886775941}
   - component: {fileID: 886775942}
+  - component: {fileID: 886775943}
   m_Layer: 0
   m_Name: tekliIzgara (97)
   m_TagString: GridBlock
@@ -8095,6 +8712,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &886775943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886775939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &909310108
 GameObject:
   m_ObjectHideFlags: 0
@@ -8106,6 +8736,7 @@ GameObject:
   - component: {fileID: 909310109}
   - component: {fileID: 909310110}
   - component: {fileID: 909310111}
+  - component: {fileID: 909310112}
   m_Layer: 0
   m_Name: tekliIzgara (91)
   m_TagString: GridBlock
@@ -8206,6 +8837,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &909310112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909310108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &956182188
 GameObject:
   m_ObjectHideFlags: 0
@@ -8217,6 +8861,7 @@ GameObject:
   - component: {fileID: 956182189}
   - component: {fileID: 956182190}
   - component: {fileID: 956182191}
+  - component: {fileID: 956182192}
   m_Layer: 0
   m_Name: tekliIzgara (16)
   m_TagString: GridBlock
@@ -8317,6 +8962,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &956182192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956182188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &959314305
 GameObject:
   m_ObjectHideFlags: 0
@@ -8328,6 +8986,7 @@ GameObject:
   - component: {fileID: 959314306}
   - component: {fileID: 959314307}
   - component: {fileID: 959314308}
+  - component: {fileID: 959314309}
   m_Layer: 0
   m_Name: tekliIzgara (96)
   m_TagString: GridBlock
@@ -8428,6 +9087,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &959314309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959314305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &963560189
 GameObject:
   m_ObjectHideFlags: 0
@@ -8608,6 +9280,7 @@ GameObject:
   - component: {fileID: 1009092867}
   - component: {fileID: 1009092868}
   - component: {fileID: 1009092869}
+  - component: {fileID: 1009092870}
   m_Layer: 0
   m_Name: tekliIzgara (90)
   m_TagString: GridBlock
@@ -8708,6 +9381,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1009092870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009092866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1011096440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8852,6 +9538,7 @@ GameObject:
   - component: {fileID: 1013792194}
   - component: {fileID: 1013792195}
   - component: {fileID: 1013792196}
+  - component: {fileID: 1013792197}
   m_Layer: 0
   m_Name: tekliIzgara (38)
   m_TagString: GridBlock
@@ -8952,6 +9639,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1013792197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013792193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1023350650
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,6 +9796,7 @@ GameObject:
   - component: {fileID: 1037859185}
   - component: {fileID: 1037859186}
   - component: {fileID: 1037859187}
+  - component: {fileID: 1037859188}
   m_Layer: 0
   m_Name: tekliIzgara (46)
   m_TagString: GridBlock
@@ -9196,6 +9897,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1037859188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037859184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1043381559
 GameObject:
   m_ObjectHideFlags: 0
@@ -9238,6 +9952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052310660}
   - component: {fileID: 1052310662}
+  - component: {fileID: 1052310663}
   m_Layer: 0
   m_Name: GeneralControls
   m_TagString: Untagged
@@ -9272,6 +9987,238 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d054385779deb944b48077a1fe2efce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1052310663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052310659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01d524daf02b2947809dd71f05c8bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row1:
+  - {fileID: 1535211027}
+  - {fileID: 1833608018}
+  - {fileID: 664688790}
+  - {fileID: 416542379}
+  - {fileID: 144170320}
+  - {fileID: 1276166599}
+  - {fileID: 1967740771}
+  - {fileID: 388034194}
+  - {fileID: 1832206046}
+  - {fileID: 602095718}
+  row2:
+  - {fileID: 852101160}
+  - {fileID: 838427337}
+  - {fileID: 76104247}
+  - {fileID: 1296797310}
+  - {fileID: 105954317}
+  - {fileID: 1559049483}
+  - {fileID: 956182189}
+  - {fileID: 2114366170}
+  - {fileID: 508073471}
+  - {fileID: 195947331}
+  row3:
+  - {fileID: 1939256577}
+  - {fileID: 800715517}
+  - {fileID: 1611575255}
+  - {fileID: 211717028}
+  - {fileID: 729739691}
+  - {fileID: 1857300883}
+  - {fileID: 1634836928}
+  - {fileID: 763447519}
+  - {fileID: 845081125}
+  - {fileID: 1786554062}
+  row4:
+  - {fileID: 242768002}
+  - {fileID: 698797270}
+  - {fileID: 1860621214}
+  - {fileID: 127692685}
+  - {fileID: 1245554825}
+  - {fileID: 535502210}
+  - {fileID: 657049422}
+  - {fileID: 884943458}
+  - {fileID: 1013792194}
+  - {fileID: 1788496910}
+  row5:
+  - {fileID: 767022662}
+  - {fileID: 1137275496}
+  - {fileID: 684711379}
+  - {fileID: 1988504972}
+  - {fileID: 1915982968}
+  - {fileID: 1528172412}
+  - {fileID: 1037859185}
+  - {fileID: 117466685}
+  - {fileID: 1366236259}
+  - {fileID: 1602692478}
+  row6:
+  - {fileID: 1559019846}
+  - {fileID: 1450182955}
+  - {fileID: 302222524}
+  - {fileID: 265393955}
+  - {fileID: 628485222}
+  - {fileID: 1702111346}
+  - {fileID: 174257575}
+  - {fileID: 1065529753}
+  - {fileID: 550240676}
+  - {fileID: 1230296511}
+  row7:
+  - {fileID: 795035337}
+  - {fileID: 1698647512}
+  - {fileID: 1121285276}
+  - {fileID: 523190222}
+  - {fileID: 341559738}
+  - {fileID: 1445866603}
+  - {fileID: 366550989}
+  - {fileID: 782547813}
+  - {fileID: 1274099935}
+  - {fileID: 622642457}
+  row8:
+  - {fileID: 1790590876}
+  - {fileID: 1600609007}
+  - {fileID: 1444348576}
+  - {fileID: 362503771}
+  - {fileID: 1922625040}
+  - {fileID: 44133145}
+  - {fileID: 1182837224}
+  - {fileID: 1454778957}
+  - {fileID: 426583200}
+  - {fileID: 765275905}
+  row9:
+  - {fileID: 1373126611}
+  - {fileID: 849322344}
+  - {fileID: 722729703}
+  - {fileID: 1738761051}
+  - {fileID: 1422326859}
+  - {fileID: 2035030841}
+  - {fileID: 1668673842}
+  - {fileID: 1929911244}
+  - {fileID: 1390407445}
+  - {fileID: 1284162867}
+  row10:
+  - {fileID: 1009092867}
+  - {fileID: 909310109}
+  - {fileID: 1984757968}
+  - {fileID: 553260193}
+  - {fileID: 1305012899}
+  - {fileID: 1311887828}
+  - {fileID: 959314306}
+  - {fileID: 886775940}
+  - {fileID: 1862119680}
+  - {fileID: 562748468}
+  column1:
+  - {fileID: 1535211027}
+  - {fileID: 852101160}
+  - {fileID: 1939256577}
+  - {fileID: 242768002}
+  - {fileID: 767022662}
+  - {fileID: 1559019846}
+  - {fileID: 795035337}
+  - {fileID: 1790590876}
+  - {fileID: 1373126611}
+  - {fileID: 1009092867}
+  column2:
+  - {fileID: 1833608018}
+  - {fileID: 838427337}
+  - {fileID: 800715517}
+  - {fileID: 698797270}
+  - {fileID: 1137275496}
+  - {fileID: 1450182955}
+  - {fileID: 1698647512}
+  - {fileID: 1600609007}
+  - {fileID: 849322344}
+  - {fileID: 909310109}
+  column3:
+  - {fileID: 664688790}
+  - {fileID: 76104247}
+  - {fileID: 1611575255}
+  - {fileID: 1860621214}
+  - {fileID: 684711379}
+  - {fileID: 302222524}
+  - {fileID: 1121285276}
+  - {fileID: 1444348576}
+  - {fileID: 722729703}
+  - {fileID: 1984757968}
+  column4:
+  - {fileID: 416542379}
+  - {fileID: 1296797310}
+  - {fileID: 211717028}
+  - {fileID: 127692685}
+  - {fileID: 1988504972}
+  - {fileID: 265393955}
+  - {fileID: 523190222}
+  - {fileID: 362503771}
+  - {fileID: 1738761051}
+  - {fileID: 553260193}
+  column5:
+  - {fileID: 144170320}
+  - {fileID: 105954317}
+  - {fileID: 729739691}
+  - {fileID: 1245554825}
+  - {fileID: 1915982968}
+  - {fileID: 628485222}
+  - {fileID: 341559738}
+  - {fileID: 1922625040}
+  - {fileID: 1422326859}
+  - {fileID: 1305012899}
+  column6:
+  - {fileID: 1276166599}
+  - {fileID: 1559049483}
+  - {fileID: 1857300883}
+  - {fileID: 535502210}
+  - {fileID: 1528172412}
+  - {fileID: 1702111346}
+  - {fileID: 1445866603}
+  - {fileID: 44133145}
+  - {fileID: 2035030841}
+  - {fileID: 1311887828}
+  column7:
+  - {fileID: 1967740771}
+  - {fileID: 956182189}
+  - {fileID: 1634836928}
+  - {fileID: 657049422}
+  - {fileID: 1037859185}
+  - {fileID: 174257575}
+  - {fileID: 366550989}
+  - {fileID: 1182837224}
+  - {fileID: 1668673842}
+  - {fileID: 959314306}
+  column8:
+  - {fileID: 388034194}
+  - {fileID: 2114366170}
+  - {fileID: 763447519}
+  - {fileID: 884943458}
+  - {fileID: 117466685}
+  - {fileID: 1065529753}
+  - {fileID: 782547813}
+  - {fileID: 1454778957}
+  - {fileID: 1929911244}
+  - {fileID: 886775940}
+  column9:
+  - {fileID: 1832206046}
+  - {fileID: 508073471}
+  - {fileID: 845081125}
+  - {fileID: 1013792194}
+  - {fileID: 1366236259}
+  - {fileID: 550240676}
+  - {fileID: 1274099935}
+  - {fileID: 426583200}
+  - {fileID: 1390407445}
+  - {fileID: 1862119680}
+  column10:
+  - {fileID: 602095718}
+  - {fileID: 195947331}
+  - {fileID: 1786554062}
+  - {fileID: 1788496910}
+  - {fileID: 1602692478}
+  - {fileID: 1230296511}
+  - {fileID: 622642457}
+  - {fileID: 765275905}
+  - {fileID: 1284162867}
+  - {fileID: 562748468}
 --- !u!1 &1065529752
 GameObject:
   m_ObjectHideFlags: 0
@@ -9283,6 +10230,7 @@ GameObject:
   - component: {fileID: 1065529753}
   - component: {fileID: 1065529754}
   - component: {fileID: 1065529755}
+  - component: {fileID: 1065529756}
   m_Layer: 0
   m_Name: tekliIzgara (57)
   m_TagString: GridBlock
@@ -9383,6 +10331,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1065529756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065529752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1113467143
 GameObject:
   m_ObjectHideFlags: 0
@@ -9660,6 +10621,7 @@ GameObject:
   - component: {fileID: 1121285276}
   - component: {fileID: 1121285277}
   - component: {fileID: 1121285278}
+  - component: {fileID: 1121285279}
   m_Layer: 0
   m_Name: tekliIzgara (62)
   m_TagString: GridBlock
@@ -9760,6 +10722,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1121285279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121285275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1137275495
 GameObject:
   m_ObjectHideFlags: 0
@@ -9771,6 +10746,7 @@ GameObject:
   - component: {fileID: 1137275496}
   - component: {fileID: 1137275497}
   - component: {fileID: 1137275498}
+  - component: {fileID: 1137275499}
   m_Layer: 0
   m_Name: tekliIzgara (41)
   m_TagString: GridBlock
@@ -9871,6 +10847,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1137275499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137275495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1149107752
 GameObject:
   m_ObjectHideFlags: 0
@@ -10148,6 +11137,7 @@ GameObject:
   - component: {fileID: 1182837224}
   - component: {fileID: 1182837225}
   - component: {fileID: 1182837226}
+  - component: {fileID: 1182837227}
   m_Layer: 0
   m_Name: tekliIzgara (76)
   m_TagString: GridBlock
@@ -10248,6 +11238,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1182837227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182837223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1182948843
 GameObject:
   m_ObjectHideFlags: 0
@@ -10293,6 +11296,7 @@ GameObject:
   - component: {fileID: 1230296511}
   - component: {fileID: 1230296512}
   - component: {fileID: 1230296513}
+  - component: {fileID: 1230296514}
   m_Layer: 0
   m_Name: tekliIzgara (59)
   m_TagString: GridBlock
@@ -10393,6 +11397,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1230296514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230296510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1245554824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10404,6 +11421,7 @@ GameObject:
   - component: {fileID: 1245554825}
   - component: {fileID: 1245554826}
   - component: {fileID: 1245554827}
+  - component: {fileID: 1245554828}
   m_Layer: 0
   m_Name: tekliIzgara (34)
   m_TagString: GridBlock
@@ -10504,6 +11522,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1245554828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245554824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1258249023
 GameObject:
   m_ObjectHideFlags: 0
@@ -10781,6 +11812,7 @@ GameObject:
   - component: {fileID: 1274099935}
   - component: {fileID: 1274099936}
   - component: {fileID: 1274099937}
+  - component: {fileID: 1274099938}
   m_Layer: 0
   m_Name: tekliIzgara (68)
   m_TagString: GridBlock
@@ -10881,6 +11913,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1274099938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274099934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1276166598
 GameObject:
   m_ObjectHideFlags: 0
@@ -10892,6 +11937,7 @@ GameObject:
   - component: {fileID: 1276166599}
   - component: {fileID: 1276166600}
   - component: {fileID: 1276166601}
+  - component: {fileID: 1276166602}
   m_Layer: 0
   m_Name: tekliIzgara (5)
   m_TagString: GridBlock
@@ -10992,6 +12038,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1276166602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276166598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1276206069
 GameObject:
   m_ObjectHideFlags: 0
@@ -11136,6 +12195,7 @@ GameObject:
   - component: {fileID: 1284162867}
   - component: {fileID: 1284162868}
   - component: {fileID: 1284162869}
+  - component: {fileID: 1284162870}
   m_Layer: 0
   m_Name: tekliIzgara (89)
   m_TagString: GridBlock
@@ -11236,6 +12296,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1284162870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284162866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1296797309
 GameObject:
   m_ObjectHideFlags: 0
@@ -11247,6 +12320,7 @@ GameObject:
   - component: {fileID: 1296797310}
   - component: {fileID: 1296797311}
   - component: {fileID: 1296797312}
+  - component: {fileID: 1296797313}
   m_Layer: 0
   m_Name: tekliIzgara (13)
   m_TagString: GridBlock
@@ -11347,6 +12421,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1296797313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296797309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1305012898
 GameObject:
   m_ObjectHideFlags: 0
@@ -11358,6 +12445,7 @@ GameObject:
   - component: {fileID: 1305012899}
   - component: {fileID: 1305012900}
   - component: {fileID: 1305012901}
+  - component: {fileID: 1305012902}
   m_Layer: 0
   m_Name: tekliIzgara (94)
   m_TagString: GridBlock
@@ -11458,6 +12546,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1305012902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305012898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1311887827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11469,6 +12570,7 @@ GameObject:
   - component: {fileID: 1311887828}
   - component: {fileID: 1311887829}
   - component: {fileID: 1311887830}
+  - component: {fileID: 1311887831}
   m_Layer: 0
   m_Name: tekliIzgara (95)
   m_TagString: GridBlock
@@ -11569,6 +12671,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1311887831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311887827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1345526138
 GameObject:
   m_ObjectHideFlags: 0
@@ -11713,6 +12828,7 @@ GameObject:
   - component: {fileID: 1366236259}
   - component: {fileID: 1366236260}
   - component: {fileID: 1366236261}
+  - component: {fileID: 1366236262}
   m_Layer: 0
   m_Name: tekliIzgara (48)
   m_TagString: GridBlock
@@ -11813,6 +12929,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1366236262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366236258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1373126610
 GameObject:
   m_ObjectHideFlags: 0
@@ -11824,6 +12953,7 @@ GameObject:
   - component: {fileID: 1373126611}
   - component: {fileID: 1373126612}
   - component: {fileID: 1373126613}
+  - component: {fileID: 1373126614}
   m_Layer: 0
   m_Name: tekliIzgara (80)
   m_TagString: GridBlock
@@ -11924,6 +13054,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1373126614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373126610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1390407444
 GameObject:
   m_ObjectHideFlags: 0
@@ -11935,6 +13078,7 @@ GameObject:
   - component: {fileID: 1390407445}
   - component: {fileID: 1390407446}
   - component: {fileID: 1390407447}
+  - component: {fileID: 1390407448}
   m_Layer: 0
   m_Name: tekliIzgara (88)
   m_TagString: GridBlock
@@ -12035,6 +13179,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1390407448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390407444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1402541381
 GameObject:
   m_ObjectHideFlags: 0
@@ -12445,6 +13602,7 @@ GameObject:
   - component: {fileID: 1422326859}
   - component: {fileID: 1422326860}
   - component: {fileID: 1422326861}
+  - component: {fileID: 1422326862}
   m_Layer: 0
   m_Name: tekliIzgara (84)
   m_TagString: GridBlock
@@ -12545,6 +13703,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1422326862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422326858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1444348575
 GameObject:
   m_ObjectHideFlags: 0
@@ -12556,6 +13727,7 @@ GameObject:
   - component: {fileID: 1444348576}
   - component: {fileID: 1444348577}
   - component: {fileID: 1444348578}
+  - component: {fileID: 1444348579}
   m_Layer: 0
   m_Name: tekliIzgara (72)
   m_TagString: GridBlock
@@ -12656,6 +13828,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1444348579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444348575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1445866602
 GameObject:
   m_ObjectHideFlags: 0
@@ -12667,6 +13852,7 @@ GameObject:
   - component: {fileID: 1445866603}
   - component: {fileID: 1445866604}
   - component: {fileID: 1445866605}
+  - component: {fileID: 1445866606}
   m_Layer: 0
   m_Name: tekliIzgara (65)
   m_TagString: GridBlock
@@ -12767,6 +13953,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1445866606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445866602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1450182954
 GameObject:
   m_ObjectHideFlags: 0
@@ -12778,6 +13977,7 @@ GameObject:
   - component: {fileID: 1450182955}
   - component: {fileID: 1450182956}
   - component: {fileID: 1450182957}
+  - component: {fileID: 1450182958}
   m_Layer: 0
   m_Name: tekliIzgara (51)
   m_TagString: GridBlock
@@ -12878,6 +14078,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1450182958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450182954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1454778956
 GameObject:
   m_ObjectHideFlags: 0
@@ -12889,6 +14102,7 @@ GameObject:
   - component: {fileID: 1454778957}
   - component: {fileID: 1454778958}
   - component: {fileID: 1454778959}
+  - component: {fileID: 1454778960}
   m_Layer: 0
   m_Name: tekliIzgara (77)
   m_TagString: GridBlock
@@ -12989,6 +14203,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1454778960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454778956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1471762298
 GameObject:
   m_ObjectHideFlags: 0
@@ -13399,6 +14626,7 @@ GameObject:
   - component: {fileID: 1528172412}
   - component: {fileID: 1528172413}
   - component: {fileID: 1528172414}
+  - component: {fileID: 1528172415}
   m_Layer: 0
   m_Name: tekliIzgara (45)
   m_TagString: GridBlock
@@ -13499,6 +14727,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1528172415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528172411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1535211026
 GameObject:
   m_ObjectHideFlags: 0
@@ -13510,6 +14751,7 @@ GameObject:
   - component: {fileID: 1535211027}
   - component: {fileID: 1535211028}
   - component: {fileID: 1535211029}
+  - component: {fileID: 1535211030}
   m_Layer: 0
   m_Name: tekliIzgara
   m_TagString: GridBlock
@@ -13610,6 +14852,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1535211030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535211026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1554019702
 GameObject:
   m_ObjectHideFlags: 0
@@ -13754,6 +15009,7 @@ GameObject:
   - component: {fileID: 1559019846}
   - component: {fileID: 1559019847}
   - component: {fileID: 1559019848}
+  - component: {fileID: 1559019849}
   m_Layer: 0
   m_Name: tekliIzgara (50)
   m_TagString: GridBlock
@@ -13854,6 +15110,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1559019849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559019845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1559049482
 GameObject:
   m_ObjectHideFlags: 0
@@ -13865,6 +15134,7 @@ GameObject:
   - component: {fileID: 1559049483}
   - component: {fileID: 1559049484}
   - component: {fileID: 1559049485}
+  - component: {fileID: 1559049486}
   m_Layer: 0
   m_Name: tekliIzgara (15)
   m_TagString: GridBlock
@@ -13965,6 +15235,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1559049486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559049482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1578911637
 GameObject:
   m_ObjectHideFlags: 0
@@ -14109,6 +15392,7 @@ GameObject:
   - component: {fileID: 1600609007}
   - component: {fileID: 1600609008}
   - component: {fileID: 1600609009}
+  - component: {fileID: 1600609010}
   m_Layer: 0
   m_Name: tekliIzgara (71)
   m_TagString: GridBlock
@@ -14209,6 +15493,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1600609010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600609006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1602692477
 GameObject:
   m_ObjectHideFlags: 0
@@ -14220,6 +15517,7 @@ GameObject:
   - component: {fileID: 1602692478}
   - component: {fileID: 1602692479}
   - component: {fileID: 1602692480}
+  - component: {fileID: 1602692481}
   m_Layer: 0
   m_Name: tekliIzgara (49)
   m_TagString: GridBlock
@@ -14320,6 +15618,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1602692481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602692477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1611575254
 GameObject:
   m_ObjectHideFlags: 0
@@ -14331,6 +15642,7 @@ GameObject:
   - component: {fileID: 1611575255}
   - component: {fileID: 1611575256}
   - component: {fileID: 1611575257}
+  - component: {fileID: 1611575258}
   m_Layer: 0
   m_Name: tekliIzgara (22)
   m_TagString: GridBlock
@@ -14431,6 +15743,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1611575258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611575254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1634836927
 GameObject:
   m_ObjectHideFlags: 0
@@ -14442,6 +15767,7 @@ GameObject:
   - component: {fileID: 1634836928}
   - component: {fileID: 1634836929}
   - component: {fileID: 1634836930}
+  - component: {fileID: 1634836931}
   m_Layer: 0
   m_Name: tekliIzgara (26)
   m_TagString: GridBlock
@@ -14542,6 +15868,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1634836931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634836927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1668673841
 GameObject:
   m_ObjectHideFlags: 0
@@ -14553,6 +15892,7 @@ GameObject:
   - component: {fileID: 1668673842}
   - component: {fileID: 1668673843}
   - component: {fileID: 1668673844}
+  - component: {fileID: 1668673845}
   m_Layer: 0
   m_Name: tekliIzgara (86)
   m_TagString: GridBlock
@@ -14653,6 +15993,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1668673845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668673841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1694346450
 GameObject:
   m_ObjectHideFlags: 0
@@ -14699,6 +16052,7 @@ GameObject:
   - component: {fileID: 1698647512}
   - component: {fileID: 1698647513}
   - component: {fileID: 1698647514}
+  - component: {fileID: 1698647515}
   m_Layer: 0
   m_Name: tekliIzgara (61)
   m_TagString: GridBlock
@@ -14714,7 +16068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698647511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6200018, y: 7.02, z: 0}
+  m_LocalPosition: {x: 1.6200008, y: 7.02, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14799,6 +16153,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1698647515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698647511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1702111345
 GameObject:
   m_ObjectHideFlags: 0
@@ -14810,6 +16177,7 @@ GameObject:
   - component: {fileID: 1702111346}
   - component: {fileID: 1702111347}
   - component: {fileID: 1702111348}
+  - component: {fileID: 1702111349}
   m_Layer: 0
   m_Name: tekliIzgara (55)
   m_TagString: GridBlock
@@ -14910,6 +16278,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1702111349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702111345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1738761050
 GameObject:
   m_ObjectHideFlags: 0
@@ -14921,6 +16302,7 @@ GameObject:
   - component: {fileID: 1738761051}
   - component: {fileID: 1738761052}
   - component: {fileID: 1738761053}
+  - component: {fileID: 1738761054}
   m_Layer: 0
   m_Name: tekliIzgara (83)
   m_TagString: GridBlock
@@ -15021,6 +16403,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1738761054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738761050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1759161187
 GameObject:
   m_ObjectHideFlags: 0
@@ -15268,6 +16663,7 @@ GameObject:
   - component: {fileID: 1786554062}
   - component: {fileID: 1786554063}
   - component: {fileID: 1786554064}
+  - component: {fileID: 1786554065}
   m_Layer: 0
   m_Name: tekliIzgara (29)
   m_TagString: GridBlock
@@ -15368,6 +16764,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1786554065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786554061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1788496909
 GameObject:
   m_ObjectHideFlags: 0
@@ -15379,6 +16788,7 @@ GameObject:
   - component: {fileID: 1788496910}
   - component: {fileID: 1788496911}
   - component: {fileID: 1788496912}
+  - component: {fileID: 1788496913}
   m_Layer: 0
   m_Name: tekliIzgara (39)
   m_TagString: GridBlock
@@ -15479,6 +16889,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1788496913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788496909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1790590875
 GameObject:
   m_ObjectHideFlags: 0
@@ -15490,6 +16913,7 @@ GameObject:
   - component: {fileID: 1790590876}
   - component: {fileID: 1790590877}
   - component: {fileID: 1790590878}
+  - component: {fileID: 1790590879}
   m_Layer: 0
   m_Name: tekliIzgara (70)
   m_TagString: GridBlock
@@ -15590,6 +17014,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1790590879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790590875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1832206045
 GameObject:
   m_ObjectHideFlags: 0
@@ -15601,6 +17038,7 @@ GameObject:
   - component: {fileID: 1832206046}
   - component: {fileID: 1832206047}
   - component: {fileID: 1832206048}
+  - component: {fileID: 1832206049}
   m_Layer: 0
   m_Name: tekliIzgara (8)
   m_TagString: GridBlock
@@ -15701,6 +17139,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1832206049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832206045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1833608017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15712,6 +17163,7 @@ GameObject:
   - component: {fileID: 1833608018}
   - component: {fileID: 1833608019}
   - component: {fileID: 1833608020}
+  - component: {fileID: 1833608021}
   m_Layer: 0
   m_Name: tekliIzgara (1)
   m_TagString: GridBlock
@@ -15812,6 +17264,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1833608021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833608017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1848812119
 GameObject:
   m_ObjectHideFlags: 0
@@ -15956,6 +17421,7 @@ GameObject:
   - component: {fileID: 1857300883}
   - component: {fileID: 1857300884}
   - component: {fileID: 1857300885}
+  - component: {fileID: 1857300886}
   m_Layer: 0
   m_Name: tekliIzgara (25)
   m_TagString: GridBlock
@@ -16056,6 +17522,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1857300886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857300882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1860621213
 GameObject:
   m_ObjectHideFlags: 0
@@ -16067,6 +17546,7 @@ GameObject:
   - component: {fileID: 1860621214}
   - component: {fileID: 1860621215}
   - component: {fileID: 1860621216}
+  - component: {fileID: 1860621217}
   m_Layer: 0
   m_Name: tekliIzgara (32)
   m_TagString: GridBlock
@@ -16167,6 +17647,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1860621217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860621213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1862119679
 GameObject:
   m_ObjectHideFlags: 0
@@ -16178,6 +17671,7 @@ GameObject:
   - component: {fileID: 1862119680}
   - component: {fileID: 1862119681}
   - component: {fileID: 1862119682}
+  - component: {fileID: 1862119683}
   m_Layer: 0
   m_Name: tekliIzgara (98)
   m_TagString: GridBlock
@@ -16278,6 +17772,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1862119683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862119679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1915982967
 GameObject:
   m_ObjectHideFlags: 0
@@ -16289,6 +17796,7 @@ GameObject:
   - component: {fileID: 1915982968}
   - component: {fileID: 1915982969}
   - component: {fileID: 1915982970}
+  - component: {fileID: 1915982971}
   m_Layer: 0
   m_Name: tekliIzgara (44)
   m_TagString: GridBlock
@@ -16389,6 +17897,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1915982971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915982967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1922625039
 GameObject:
   m_ObjectHideFlags: 0
@@ -16400,6 +17921,7 @@ GameObject:
   - component: {fileID: 1922625040}
   - component: {fileID: 1922625041}
   - component: {fileID: 1922625042}
+  - component: {fileID: 1922625043}
   m_Layer: 0
   m_Name: tekliIzgara (74)
   m_TagString: GridBlock
@@ -16500,6 +18022,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1922625043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922625039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1923345808
 GameObject:
   m_ObjectHideFlags: 0
@@ -16553,6 +18088,7 @@ GameObject:
   - component: {fileID: 1929911244}
   - component: {fileID: 1929911245}
   - component: {fileID: 1929911246}
+  - component: {fileID: 1929911247}
   m_Layer: 0
   m_Name: tekliIzgara (87)
   m_TagString: GridBlock
@@ -16653,6 +18189,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1929911247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929911243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1939256576
 GameObject:
   m_ObjectHideFlags: 0
@@ -16664,6 +18213,7 @@ GameObject:
   - component: {fileID: 1939256577}
   - component: {fileID: 1939256578}
   - component: {fileID: 1939256579}
+  - component: {fileID: 1939256580}
   m_Layer: 0
   m_Name: tekliIzgara (20)
   m_TagString: GridBlock
@@ -16764,6 +18314,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1939256580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939256576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1964076209
 GameObject:
   m_ObjectHideFlags: 0
@@ -16908,6 +18471,7 @@ GameObject:
   - component: {fileID: 1967740771}
   - component: {fileID: 1967740772}
   - component: {fileID: 1967740773}
+  - component: {fileID: 1967740774}
   m_Layer: 0
   m_Name: tekliIzgara (6)
   m_TagString: GridBlock
@@ -17008,6 +18572,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1967740774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967740770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1976691396
 GameObject:
   m_ObjectHideFlags: 0
@@ -17088,6 +18665,7 @@ GameObject:
   - component: {fileID: 1984757968}
   - component: {fileID: 1984757969}
   - component: {fileID: 1984757970}
+  - component: {fileID: 1984757971}
   m_Layer: 0
   m_Name: tekliIzgara (92)
   m_TagString: GridBlock
@@ -17188,6 +18766,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1984757971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984757967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1988504971
 GameObject:
   m_ObjectHideFlags: 0
@@ -17199,6 +18790,7 @@ GameObject:
   - component: {fileID: 1988504972}
   - component: {fileID: 1988504973}
   - component: {fileID: 1988504974}
+  - component: {fileID: 1988504975}
   m_Layer: 0
   m_Name: tekliIzgara (43)
   m_TagString: GridBlock
@@ -17299,6 +18891,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &1988504975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988504971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &1992855799
 GameObject:
   m_ObjectHideFlags: 0
@@ -17461,104 +19066,104 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1535211027}
-  - {fileID: 1833608018}
-  - {fileID: 664688790}
-  - {fileID: 416542379}
-  - {fileID: 144170320}
-  - {fileID: 1276166599}
-  - {fileID: 1967740771}
-  - {fileID: 388034194}
-  - {fileID: 1832206046}
-  - {fileID: 602095718}
   - {fileID: 852101160}
-  - {fileID: 838427337}
-  - {fileID: 76104247}
-  - {fileID: 1296797310}
-  - {fileID: 105954317}
-  - {fileID: 1559049483}
-  - {fileID: 956182189}
-  - {fileID: 2114366170}
-  - {fileID: 508073471}
-  - {fileID: 195947331}
   - {fileID: 1939256577}
-  - {fileID: 800715517}
-  - {fileID: 1611575255}
-  - {fileID: 211717028}
-  - {fileID: 729739691}
-  - {fileID: 1857300883}
-  - {fileID: 1634836928}
-  - {fileID: 763447519}
-  - {fileID: 845081125}
-  - {fileID: 1786554062}
   - {fileID: 242768002}
-  - {fileID: 698797270}
-  - {fileID: 1860621214}
-  - {fileID: 127692685}
-  - {fileID: 1245554825}
-  - {fileID: 535502210}
-  - {fileID: 657049422}
-  - {fileID: 884943458}
-  - {fileID: 1013792194}
   - {fileID: 767022662}
-  - {fileID: 1137275496}
-  - {fileID: 1788496910}
-  - {fileID: 684711379}
-  - {fileID: 1988504972}
-  - {fileID: 1915982968}
-  - {fileID: 1528172412}
-  - {fileID: 1037859185}
-  - {fileID: 117466685}
-  - {fileID: 1366236259}
-  - {fileID: 1602692478}
   - {fileID: 1559019846}
-  - {fileID: 1450182955}
-  - {fileID: 302222524}
-  - {fileID: 265393955}
-  - {fileID: 628485222}
-  - {fileID: 1702111346}
-  - {fileID: 174257575}
-  - {fileID: 1065529753}
-  - {fileID: 550240676}
-  - {fileID: 1230296511}
   - {fileID: 795035337}
-  - {fileID: 1698647512}
-  - {fileID: 1121285276}
-  - {fileID: 523190222}
-  - {fileID: 341559738}
-  - {fileID: 1445866603}
-  - {fileID: 366550989}
-  - {fileID: 782547813}
-  - {fileID: 1274099935}
-  - {fileID: 622642457}
   - {fileID: 1790590876}
-  - {fileID: 1600609007}
-  - {fileID: 1444348576}
-  - {fileID: 362503771}
-  - {fileID: 1922625040}
-  - {fileID: 44133145}
-  - {fileID: 1182837224}
-  - {fileID: 1454778957}
-  - {fileID: 426583200}
-  - {fileID: 765275905}
   - {fileID: 1373126611}
-  - {fileID: 849322344}
-  - {fileID: 722729703}
-  - {fileID: 1738761051}
-  - {fileID: 1422326859}
-  - {fileID: 2035030841}
-  - {fileID: 1668673842}
-  - {fileID: 1929911244}
-  - {fileID: 1390407445}
-  - {fileID: 1284162867}
   - {fileID: 1009092867}
+  - {fileID: 1833608018}
+  - {fileID: 838427337}
+  - {fileID: 800715517}
+  - {fileID: 698797270}
+  - {fileID: 1137275496}
+  - {fileID: 1450182955}
+  - {fileID: 1698647512}
+  - {fileID: 1600609007}
+  - {fileID: 849322344}
   - {fileID: 909310109}
+  - {fileID: 664688790}
+  - {fileID: 76104247}
+  - {fileID: 1611575255}
+  - {fileID: 1860621214}
+  - {fileID: 684711379}
+  - {fileID: 302222524}
+  - {fileID: 1121285276}
+  - {fileID: 1444348576}
+  - {fileID: 722729703}
   - {fileID: 1984757968}
+  - {fileID: 416542379}
+  - {fileID: 1296797310}
+  - {fileID: 211717028}
+  - {fileID: 127692685}
+  - {fileID: 1988504972}
+  - {fileID: 265393955}
+  - {fileID: 523190222}
+  - {fileID: 362503771}
+  - {fileID: 1738761051}
   - {fileID: 553260193}
+  - {fileID: 144170320}
+  - {fileID: 105954317}
+  - {fileID: 729739691}
+  - {fileID: 1245554825}
+  - {fileID: 1915982968}
+  - {fileID: 628485222}
+  - {fileID: 341559738}
+  - {fileID: 1922625040}
+  - {fileID: 1422326859}
   - {fileID: 1305012899}
+  - {fileID: 1276166599}
+  - {fileID: 1559049483}
+  - {fileID: 1857300883}
+  - {fileID: 535502210}
+  - {fileID: 1528172412}
+  - {fileID: 1702111346}
+  - {fileID: 1445866603}
+  - {fileID: 44133145}
+  - {fileID: 2035030841}
   - {fileID: 1311887828}
+  - {fileID: 1967740771}
+  - {fileID: 956182189}
+  - {fileID: 1634836928}
+  - {fileID: 657049422}
+  - {fileID: 1037859185}
+  - {fileID: 174257575}
+  - {fileID: 366550989}
+  - {fileID: 1182837224}
+  - {fileID: 1668673842}
   - {fileID: 959314306}
+  - {fileID: 388034194}
+  - {fileID: 2114366170}
+  - {fileID: 763447519}
+  - {fileID: 884943458}
+  - {fileID: 117466685}
+  - {fileID: 1065529753}
+  - {fileID: 782547813}
+  - {fileID: 1454778957}
+  - {fileID: 1929911244}
   - {fileID: 886775940}
+  - {fileID: 1832206046}
+  - {fileID: 508073471}
+  - {fileID: 845081125}
+  - {fileID: 1013792194}
+  - {fileID: 1366236259}
+  - {fileID: 550240676}
+  - {fileID: 1274099935}
+  - {fileID: 426583200}
+  - {fileID: 1390407445}
   - {fileID: 1862119680}
+  - {fileID: 602095718}
+  - {fileID: 195947331}
+  - {fileID: 1786554062}
+  - {fileID: 1788496910}
+  - {fileID: 1602692478}
+  - {fileID: 1230296511}
+  - {fileID: 622642457}
+  - {fileID: 765275905}
+  - {fileID: 1284162867}
   - {fileID: 562748468}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -17574,6 +19179,7 @@ GameObject:
   - component: {fileID: 2035030841}
   - component: {fileID: 2035030842}
   - component: {fileID: 2035030843}
+  - component: {fileID: 2035030844}
   m_Layer: 0
   m_Name: tekliIzgara (85)
   m_TagString: GridBlock
@@ -17674,6 +19280,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &2035030844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035030840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &2079868275
 GameObject:
   m_ObjectHideFlags: 0
@@ -17858,6 +19477,7 @@ GameObject:
   - component: {fileID: 2114366170}
   - component: {fileID: 2114366171}
   - component: {fileID: 2114366172}
+  - component: {fileID: 2114366173}
   m_Layer: 0
   m_Name: tekliIzgara (17)
   m_TagString: GridBlock
@@ -17958,6 +19578,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!114 &2114366173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114366169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254870b9820197e468fb94fc8f194227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridState: 0
 --- !u!1 &2134430951
 GameObject:
   m_ObjectHideFlags: 0
