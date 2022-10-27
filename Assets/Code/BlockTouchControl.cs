@@ -25,6 +25,15 @@ public class BlockTouchControl : MonoBehaviour
             ControlWithMouse();
             MoveSelectedBlocks();
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+            if (touchedBlockParent.rotation.z >= 360)
+            {
+                touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
+            }
+        }
     }
 
     void ControlWithMouse()
@@ -34,7 +43,7 @@ public class BlockTouchControl : MonoBehaviour
             RaycastHit2D raycastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (raycastHit.collider != null)
             {
-                if (raycastHit.collider.gameObject.tag == GlobalVariables.block)
+                if (raycastHit.collider.gameObject.tag == GlobalVariables.block && raycastHit.collider.gameObject.GetComponent<BlockProperties>().isSnapped == false)
                 {
                     touchedBlock = raycastHit.transform;
                     if (touchedBlock.parent != null)
@@ -69,10 +78,26 @@ public class BlockTouchControl : MonoBehaviour
                         snapPos.z = 0;
                         touchedBlockParent.GetChild(i).transform.position = snapPos;
 
-                        //þimdilik BlokA sonra renge göre atama deðiþtirilecek
-                        toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                        if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
+                        {
+                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                        }
+                        else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
+                        {
+                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
+                        }
+
                         toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
                     }
+
+                    //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
+                    foreach (Transform item in touchedBlockParent)
+                    {
+                        item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = false;
+                        item.GetComponent<BlockProperties>().isSnapped = true;
+                    }
+
+                    transform.GetComponent<CreateBlocks>().CreateRandomBlocks();
                 }
                 else // deðilse eski doðru konumuna gönderilir
                 {

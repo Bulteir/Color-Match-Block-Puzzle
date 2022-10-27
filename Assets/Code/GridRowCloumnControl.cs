@@ -64,7 +64,7 @@ public class GridRowCloumnControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+ 
     }
 
     //BlockTouchControl'den çaðrýlýyor. Bloklar snapped olduðunda çaðrýlýyor
@@ -101,7 +101,12 @@ public class GridRowCloumnControl : MonoBehaviour
             {
                 foreach (var item in rows[i])
                 {
-                    Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject); 
+                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject != null)
+                    {
+                        Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+                        item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
+                        item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
+                    }
                 }
             }
 
@@ -110,6 +115,8 @@ public class GridRowCloumnControl : MonoBehaviour
                 foreach (var item in columns[i])
                 {
                     Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+                    item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
+                    item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                 }
             }
         }

@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &54469193
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +261,7 @@ GameObject:
   - component: {fileID: 54469195}
   - component: {fileID: 54469197}
   - component: {fileID: 54469196}
+  - component: {fileID: 54469198}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -381,6 +383,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &54469198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54469193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &76104246
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &105954316
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &117466684
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &127692684
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &130602036
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +913,7 @@ GameObject:
   - component: {fileID: 130602038}
   - component: {fileID: 130602040}
   - component: {fileID: 130602039}
+  - component: {fileID: 130602041}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -1014,6 +1035,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &130602041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130602036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &144170319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &166357744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &166357745
 Transform:
   m_ObjectHideFlags: 0
@@ -1296,6 +1332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &190542891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1345,7 @@ GameObject:
   - component: {fileID: 190542893}
   - component: {fileID: 190542895}
   - component: {fileID: 190542894}
+  - component: {fileID: 190542896}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -1429,6 +1467,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &190542896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190542891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &195947330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &211717027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &242768001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &259527755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1871,7 @@ GameObject:
   - component: {fileID: 259527757}
   - component: {fileID: 259527759}
   - component: {fileID: 259527758}
+  - component: {fileID: 259527760}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -1937,6 +1993,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &259527760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259527755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &265393954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &279457264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &341559737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,6 +2417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &358899940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,6 +2430,7 @@ GameObject:
   - component: {fileID: 358899942}
   - component: {fileID: 358899944}
   - component: {fileID: 358899943}
+  - component: {fileID: 358899945}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -2372,7 +2446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358899940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6199999, y: 0.53999996, z: 0}
+  m_LocalPosition: {x: 1.6199995, y: 0.54000044, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2478,6 +2552,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &358899945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358899940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &362503770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,6 +2691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &366550988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,6 +2817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &371757884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,6 +2830,7 @@ GameObject:
   - component: {fileID: 371757886}
   - component: {fileID: 371757888}
   - component: {fileID: 371757887}
+  - component: {fileID: 371757889}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -2861,6 +2952,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &371757889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371757884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &388034193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &390343826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3104,7 @@ GameObject:
   - component: {fileID: 390343828}
   - component: {fileID: 390343830}
   - component: {fileID: 390343829}
+  - component: {fileID: 390343831}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -3119,6 +3226,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &390343831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390343826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &406060073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,6 +3252,7 @@ GameObject:
   - component: {fileID: 406060075}
   - component: {fileID: 406060077}
   - component: {fileID: 406060076}
+  - component: {fileID: 406060078}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -3252,6 +3374,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &406060078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406060073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &416542378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,6 +3513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &417887387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,6 +3526,7 @@ GameObject:
   - component: {fileID: 417887389}
   - component: {fileID: 417887391}
   - component: {fileID: 417887390}
+  - component: {fileID: 417887392}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -3510,6 +3648,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &417887392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417887387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &426583199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,6 +3787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &508073470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,6 +3913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,6 +3998,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &521896310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521896311}
+  - component: {fileID: 521896312}
+  - component: {fileID: 521896313}
+  m_Layer: 2
+  m_Name: SpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &521896311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521896310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1600003, y: -4.09, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &521896312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521896310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &521896313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521896310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBlocks: 0
 --- !u!1 &523190221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3969,6 +4195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &534783344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,6 +4208,7 @@ GameObject:
   - component: {fileID: 534783346}
   - component: {fileID: 534783348}
   - component: {fileID: 534783347}
+  - component: {fileID: 534783349}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -4102,6 +4330,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &534783349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534783344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &535502209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,6 +4469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &545019862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,6 +4482,7 @@ GameObject:
   - component: {fileID: 545019864}
   - component: {fileID: 545019866}
   - component: {fileID: 545019865}
+  - component: {fileID: 545019867}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -4360,6 +4604,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &545019867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545019862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &550240675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,6 +4743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &553260192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &562748467
 GameObject:
   m_ObjectHideFlags: 0
@@ -4735,6 +4995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &567415290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4747,6 +5008,7 @@ GameObject:
   - component: {fileID: 567415292}
   - component: {fileID: 567415294}
   - component: {fileID: 567415293}
+  - component: {fileID: 567415295}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -4868,6 +5130,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &567415295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567415290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &568166089
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,6 +5156,7 @@ GameObject:
   - component: {fileID: 568166091}
   - component: {fileID: 568166093}
   - component: {fileID: 568166092}
+  - component: {fileID: 568166094}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -5001,6 +5278,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &568166094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568166089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &602095717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,6 +5417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &607068245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5430,7 @@ GameObject:
   - component: {fileID: 607068247}
   - component: {fileID: 607068249}
   - component: {fileID: 607068248}
+  - component: {fileID: 607068250}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -5259,6 +5552,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &607068250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607068245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &622642456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5384,6 +5691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &628485221
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,6 +5817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &638116975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,6 +5830,7 @@ GameObject:
   - component: {fileID: 638116977}
   - component: {fileID: 638116979}
   - component: {fileID: 638116978}
+  - component: {fileID: 638116980}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -5642,6 +5952,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &638116980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638116975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &657049421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,6 +6091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &664688789
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +6217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &669836719
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,6 +6476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &693000213
 GameObject:
   m_ObjectHideFlags: 0
@@ -6162,6 +6489,7 @@ GameObject:
   - component: {fileID: 693000215}
   - component: {fileID: 693000217}
   - component: {fileID: 693000216}
+  - component: {fileID: 693000218}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -6283,6 +6611,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &693000218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693000213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &698797269
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &709791423
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,6 +6763,7 @@ GameObject:
   - component: {fileID: 709791425}
   - component: {fileID: 709791427}
   - component: {fileID: 709791426}
+  - component: {fileID: 709791428}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -6541,6 +6885,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &709791428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709791423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &722729702
 GameObject:
   m_ObjectHideFlags: 0
@@ -6666,6 +7024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &729739690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6791,6 +7150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &736638538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6803,6 +7163,7 @@ GameObject:
   - component: {fileID: 736638540}
   - component: {fileID: 736638542}
   - component: {fileID: 736638541}
+  - component: {fileID: 736638543}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -6924,6 +7285,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &736638543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736638538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &763447518
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,6 +7424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &765275904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7174,6 +7550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &767022661
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +7676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &782547812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7424,6 +7802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &789371422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7436,6 +7815,7 @@ GameObject:
   - component: {fileID: 789371424}
   - component: {fileID: 789371426}
   - component: {fileID: 789371425}
+  - component: {fileID: 789371427}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -7557,6 +7937,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &789371427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789371422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &795035336
 GameObject:
   m_ObjectHideFlags: 0
@@ -7682,6 +8076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &800715516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,6 +8202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &804696848
 GameObject:
   m_ObjectHideFlags: 0
@@ -7967,6 +8363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &845081124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8092,6 +8489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &849322343
 GameObject:
   m_ObjectHideFlags: 0
@@ -8217,6 +8615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &852101159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8342,6 +8741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &872336039
 GameObject:
   m_ObjectHideFlags: 0
@@ -8354,6 +8754,7 @@ GameObject:
   - component: {fileID: 872336041}
   - component: {fileID: 872336043}
   - component: {fileID: 872336042}
+  - component: {fileID: 872336044}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -8475,6 +8876,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &872336044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872336039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &884943457
 GameObject:
   m_ObjectHideFlags: 0
@@ -8600,6 +9015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &886775939
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,6 +9141,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
+--- !u!1 &903604077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903604079}
+  - component: {fileID: 903604078}
+  - component: {fileID: 903604080}
+  m_Layer: 2
+  m_Name: SpawnPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &903604078
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903604077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &903604079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903604077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.639999, y: -4.09, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903604080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903604077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBlocks: 0
 --- !u!1 &909310108
 GameObject:
   m_ObjectHideFlags: 0
@@ -8850,6 +9339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &956182188
 GameObject:
   m_ObjectHideFlags: 0
@@ -8975,6 +9465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &959314305
 GameObject:
   m_ObjectHideFlags: 0
@@ -9100,6 +9591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &963560189
 GameObject:
   m_ObjectHideFlags: 0
@@ -9112,6 +9604,7 @@ GameObject:
   - component: {fileID: 963560191}
   - component: {fileID: 963560193}
   - component: {fileID: 963560192}
+  - component: {fileID: 963560194}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -9127,7 +9620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963560189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6199996, y: 1.6199999, z: 0}
+  m_LocalPosition: {x: 1.6199995, y: 1.6200004, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9233,6 +9726,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &963560194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963560189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &985341555
 GameObject:
   m_ObjectHideFlags: 0
@@ -9394,6 +9901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1011096440
 GameObject:
   m_ObjectHideFlags: 0
@@ -9406,6 +9914,7 @@ GameObject:
   - component: {fileID: 1011096442}
   - component: {fileID: 1011096444}
   - component: {fileID: 1011096443}
+  - component: {fileID: 1011096445}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -9527,6 +10036,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1011096445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011096440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1013792193
 GameObject:
   m_ObjectHideFlags: 0
@@ -9652,6 +10175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1023350650
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,6 +10188,7 @@ GameObject:
   - component: {fileID: 1023350652}
   - component: {fileID: 1023350654}
   - component: {fileID: 1023350653}
+  - component: {fileID: 1023350655}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -9785,6 +10310,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1023350655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023350650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1037859184
 GameObject:
   m_ObjectHideFlags: 0
@@ -9910,6 +10449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1043381559
 GameObject:
   m_ObjectHideFlags: 0
@@ -9925,7 +10465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1043381560
 Transform:
   m_ObjectHideFlags: 0
@@ -9953,6 +10493,7 @@ GameObject:
   - component: {fileID: 1052310660}
   - component: {fileID: 1052310662}
   - component: {fileID: 1052310663}
+  - component: {fileID: 1052310664}
   m_Layer: 0
   m_Name: GeneralControls
   m_TagString: Untagged
@@ -10219,6 +10760,37 @@ MonoBehaviour:
   - {fileID: 765275905}
   - {fileID: 1284162867}
   - {fileID: 562748468}
+--- !u!114 &1052310664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052310659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86777ba6479346a4ca529aa95d63ff91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockSprites:
+  - {fileID: 21300000, guid: 5bb5de100b6144a41a9e1c3728a9797e, type: 3}
+  - {fileID: 21300000, guid: 6ec822d167e16884bafaa05361fddcb6, type: 3}
+  blocks:
+  - {fileID: 1759161188}
+  - {fileID: 1767019058}
+  - {fileID: 279457265}
+  - {fileID: 1182948844}
+  - {fileID: 1976691397}
+  - {fileID: 1776432244}
+  - {fileID: 1694346451}
+  - {fileID: 2079868276}
+  - {fileID: 1978593424}
+  - {fileID: 985341556}
+  - {fileID: 804696849}
+  SpawnPoints:
+  - {fileID: 521896311}
+  - {fileID: 1444004049}
+  - {fileID: 903604079}
 --- !u!1 &1065529752
 GameObject:
   m_ObjectHideFlags: 0
@@ -10344,6 +10916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1113467143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10356,6 +10929,7 @@ GameObject:
   - component: {fileID: 1113467145}
   - component: {fileID: 1113467147}
   - component: {fileID: 1113467146}
+  - component: {fileID: 1113467148}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -10477,6 +11051,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1113467148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113467143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1114675994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10489,6 +11077,7 @@ GameObject:
   - component: {fileID: 1114675996}
   - component: {fileID: 1114675998}
   - component: {fileID: 1114675997}
+  - component: {fileID: 1114675999}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -10610,6 +11199,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1114675999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114675994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1121285275
 GameObject:
   m_ObjectHideFlags: 0
@@ -10735,6 +11338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1137275495
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,6 +11464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1149107752
 GameObject:
   m_ObjectHideFlags: 0
@@ -10872,6 +11477,7 @@ GameObject:
   - component: {fileID: 1149107754}
   - component: {fileID: 1149107756}
   - component: {fileID: 1149107755}
+  - component: {fileID: 1149107757}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -10993,6 +11599,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1149107757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149107752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1179732512
 GameObject:
   m_ObjectHideFlags: 0
@@ -11005,6 +11625,7 @@ GameObject:
   - component: {fileID: 1179732514}
   - component: {fileID: 1179732516}
   - component: {fileID: 1179732515}
+  - component: {fileID: 1179732517}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -11126,6 +11747,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1179732517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179732512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1182837223
 GameObject:
   m_ObjectHideFlags: 0
@@ -11251,6 +11886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1182948843
 GameObject:
   m_ObjectHideFlags: 0
@@ -11410,6 +12046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1245554824
 GameObject:
   m_ObjectHideFlags: 0
@@ -11535,6 +12172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1258249023
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,6 +12185,7 @@ GameObject:
   - component: {fileID: 1258249025}
   - component: {fileID: 1258249027}
   - component: {fileID: 1258249026}
+  - component: {fileID: 1258249028}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -11668,6 +12307,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1258249028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258249023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1264723130
 GameObject:
   m_ObjectHideFlags: 0
@@ -11680,6 +12333,7 @@ GameObject:
   - component: {fileID: 1264723132}
   - component: {fileID: 1264723134}
   - component: {fileID: 1264723133}
+  - component: {fileID: 1264723135}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -11801,6 +12455,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1264723135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264723130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1274099934
 GameObject:
   m_ObjectHideFlags: 0
@@ -11926,6 +12594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1276166598
 GameObject:
   m_ObjectHideFlags: 0
@@ -12051,6 +12720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1276206069
 GameObject:
   m_ObjectHideFlags: 0
@@ -12063,6 +12733,7 @@ GameObject:
   - component: {fileID: 1276206071}
   - component: {fileID: 1276206073}
   - component: {fileID: 1276206072}
+  - component: {fileID: 1276206074}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -12184,6 +12855,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1276206074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276206069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1284162866
 GameObject:
   m_ObjectHideFlags: 0
@@ -12309,6 +12994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1296797309
 GameObject:
   m_ObjectHideFlags: 0
@@ -12434,6 +13120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1305012898
 GameObject:
   m_ObjectHideFlags: 0
@@ -12559,6 +13246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1311887827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12684,6 +13372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1345526138
 GameObject:
   m_ObjectHideFlags: 0
@@ -12696,6 +13385,7 @@ GameObject:
   - component: {fileID: 1345526140}
   - component: {fileID: 1345526142}
   - component: {fileID: 1345526141}
+  - component: {fileID: 1345526143}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -12817,6 +13507,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1345526143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345526138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1366236258
 GameObject:
   m_ObjectHideFlags: 0
@@ -12942,6 +13646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1373126610
 GameObject:
   m_ObjectHideFlags: 0
@@ -13067,6 +13772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1390407444
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,6 +13898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1402541381
 GameObject:
   m_ObjectHideFlags: 0
@@ -13204,6 +13911,7 @@ GameObject:
   - component: {fileID: 1402541383}
   - component: {fileID: 1402541385}
   - component: {fileID: 1402541384}
+  - component: {fileID: 1402541386}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -13325,6 +14033,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1402541386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402541381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1411949768
 GameObject:
   m_ObjectHideFlags: 0
@@ -13337,6 +14059,7 @@ GameObject:
   - component: {fileID: 1411949770}
   - component: {fileID: 1411949772}
   - component: {fileID: 1411949771}
+  - component: {fileID: 1411949773}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -13458,6 +14181,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1411949773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411949768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1414293293
 GameObject:
   m_ObjectHideFlags: 0
@@ -13470,6 +14207,7 @@ GameObject:
   - component: {fileID: 1414293295}
   - component: {fileID: 1414293297}
   - component: {fileID: 1414293296}
+  - component: {fileID: 1414293298}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -13485,7 +14223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414293293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5399995, y: 0.5399995, z: 0}
+  m_LocalPosition: {x: 0.5399996, y: 0.53999996, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13591,6 +14329,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1414293298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414293293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1422326858
 GameObject:
   m_ObjectHideFlags: 0
@@ -13716,6 +14468,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
+--- !u!1 &1444004048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444004049}
+  - component: {fileID: 1444004050}
+  - component: {fileID: 1444004051}
+  m_Layer: 2
+  m_Name: SpawnPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444004049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444004048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.4, y: -4.09, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1444004050
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444004048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1444004051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444004048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBlocks: 0
 --- !u!1 &1444348575
 GameObject:
   m_ObjectHideFlags: 0
@@ -13841,6 +14666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1445866602
 GameObject:
   m_ObjectHideFlags: 0
@@ -13966,6 +14792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1450182954
 GameObject:
   m_ObjectHideFlags: 0
@@ -14091,6 +14918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1454778956
 GameObject:
   m_ObjectHideFlags: 0
@@ -14216,6 +15044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1471762298
 GameObject:
   m_ObjectHideFlags: 0
@@ -14228,6 +15057,7 @@ GameObject:
   - component: {fileID: 1471762300}
   - component: {fileID: 1471762302}
   - component: {fileID: 1471762301}
+  - component: {fileID: 1471762303}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -14349,6 +15179,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1471762303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471762298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1473814847
 GameObject:
   m_ObjectHideFlags: 0
@@ -14361,6 +15205,7 @@ GameObject:
   - component: {fileID: 1473814849}
   - component: {fileID: 1473814851}
   - component: {fileID: 1473814850}
+  - component: {fileID: 1473814852}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -14482,6 +15327,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1473814852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473814847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1524715423
 GameObject:
   m_ObjectHideFlags: 0
@@ -14494,6 +15353,7 @@ GameObject:
   - component: {fileID: 1524715424}
   - component: {fileID: 1524715427}
   - component: {fileID: 1524715426}
+  - component: {fileID: 1524715428}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -14561,7 +15421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524715423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6999996, y: 0.53999996, z: 0}
+  m_LocalPosition: {x: 2.6999993, y: 0.54000044, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14615,6 +15475,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1524715428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524715423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1528172411
 GameObject:
   m_ObjectHideFlags: 0
@@ -14740,6 +15614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1535211026
 GameObject:
   m_ObjectHideFlags: 0
@@ -14865,6 +15740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1554019702
 GameObject:
   m_ObjectHideFlags: 0
@@ -15123,6 +15999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1559049482
 GameObject:
   m_ObjectHideFlags: 0
@@ -15248,6 +16125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1578911637
 GameObject:
   m_ObjectHideFlags: 0
@@ -15260,6 +16138,7 @@ GameObject:
   - component: {fileID: 1578911639}
   - component: {fileID: 1578911641}
   - component: {fileID: 1578911640}
+  - component: {fileID: 1578911642}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -15381,6 +16260,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1578911642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578911637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1600609006
 GameObject:
   m_ObjectHideFlags: 0
@@ -15506,6 +16399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1602692477
 GameObject:
   m_ObjectHideFlags: 0
@@ -15631,6 +16525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1611575254
 GameObject:
   m_ObjectHideFlags: 0
@@ -15756,6 +16651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1634836927
 GameObject:
   m_ObjectHideFlags: 0
@@ -15881,6 +16777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1668673841
 GameObject:
   m_ObjectHideFlags: 0
@@ -16006,6 +16903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1694346450
 GameObject:
   m_ObjectHideFlags: 0
@@ -16166,6 +17064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1702111345
 GameObject:
   m_ObjectHideFlags: 0
@@ -16291,6 +17190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1738761050
 GameObject:
   m_ObjectHideFlags: 0
@@ -16416,6 +17316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1759161187
 GameObject:
   m_ObjectHideFlags: 0
@@ -16440,7 +17341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759161187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: -4.85, z: 0.12663117}
+  m_LocalPosition: {x: 0.20000017, y: -4.8500004, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16495,6 +17396,7 @@ GameObject:
   - component: {fileID: 1776321001}
   - component: {fileID: 1776321003}
   - component: {fileID: 1776321002}
+  - component: {fileID: 1776321004}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -16616,6 +17518,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1776321004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776320999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1776432243
 GameObject:
   m_ObjectHideFlags: 0
@@ -16777,6 +17693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1788496909
 GameObject:
   m_ObjectHideFlags: 0
@@ -16902,6 +17819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1790590875
 GameObject:
   m_ObjectHideFlags: 0
@@ -17027,6 +17945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1832206045
 GameObject:
   m_ObjectHideFlags: 0
@@ -17152,6 +18071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1833608017
 GameObject:
   m_ObjectHideFlags: 0
@@ -17277,6 +18197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1848812119
 GameObject:
   m_ObjectHideFlags: 0
@@ -17289,6 +18210,7 @@ GameObject:
   - component: {fileID: 1848812121}
   - component: {fileID: 1848812123}
   - component: {fileID: 1848812122}
+  - component: {fileID: 1848812124}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -17410,6 +18332,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1848812124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848812119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1857300882
 GameObject:
   m_ObjectHideFlags: 0
@@ -17535,6 +18471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1860621213
 GameObject:
   m_ObjectHideFlags: 0
@@ -17660,6 +18597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1862119679
 GameObject:
   m_ObjectHideFlags: 0
@@ -17785,6 +18723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1915982967
 GameObject:
   m_ObjectHideFlags: 0
@@ -17910,6 +18849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1922625039
 GameObject:
   m_ObjectHideFlags: 0
@@ -18035,6 +18975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1923345808
 GameObject:
   m_ObjectHideFlags: 0
@@ -18050,7 +18991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1923345809
 Transform:
   m_ObjectHideFlags: 0
@@ -18059,7 +19000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923345808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13.74, y: 9.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18202,6 +19143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1939256576
 GameObject:
   m_ObjectHideFlags: 0
@@ -18327,6 +19269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1964076209
 GameObject:
   m_ObjectHideFlags: 0
@@ -18339,6 +19282,7 @@ GameObject:
   - component: {fileID: 1964076211}
   - component: {fileID: 1964076213}
   - component: {fileID: 1964076212}
+  - component: {fileID: 1964076214}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -18460,6 +19404,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1964076214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964076209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &1967740770
 GameObject:
   m_ObjectHideFlags: 0
@@ -18585,6 +19543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1976691396
 GameObject:
   m_ObjectHideFlags: 0
@@ -18779,6 +19738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1988504971
 GameObject:
   m_ObjectHideFlags: 0
@@ -18904,6 +19864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &1992855799
 GameObject:
   m_ObjectHideFlags: 0
@@ -18916,6 +19877,7 @@ GameObject:
   - component: {fileID: 1992855801}
   - component: {fileID: 1992855803}
   - component: {fileID: 1992855802}
+  - component: {fileID: 1992855804}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -19037,6 +19999,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1992855804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992855799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &2028048723
 GameObject:
   m_ObjectHideFlags: 0
@@ -19293,6 +20269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &2079868275
 GameObject:
   m_ObjectHideFlags: 0
@@ -19345,6 +20322,7 @@ GameObject:
   - component: {fileID: 2085479804}
   - component: {fileID: 2085479806}
   - component: {fileID: 2085479805}
+  - component: {fileID: 2085479807}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -19466,6 +20444,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2085479807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085479802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}
 --- !u!1 &2114366169
 GameObject:
   m_ObjectHideFlags: 0
@@ -19591,6 +20583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridState: 0
+  snapedBlockTile: {fileID: 0}
 --- !u!1 &2134430951
 GameObject:
   m_ObjectHideFlags: 0
@@ -19603,6 +20596,7 @@ GameObject:
   - component: {fileID: 2134430953}
   - component: {fileID: 2134430955}
   - component: {fileID: 2134430954}
+  - component: {fileID: 2134430956}
   m_Layer: 0
   m_Name: BlockA
   m_TagString: Block
@@ -19724,3 +20718,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2134430956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134430951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a3d92fefb8f024e9ac4fe65842121b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlockColor: 0
+  SpawnPoint: {fileID: 0}

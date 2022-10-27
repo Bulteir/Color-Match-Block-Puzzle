@@ -18,4 +18,8 @@ public class GlobalVariables
     public const int gridState_empty = 0;
     public const int gridState_blokA = 1;
     public const int gridState_blokB = 2;
+
+    public static int blockColorType = blockColorType_BlockA;
+    public const int blockColorType_BlockA = 0;
+    public const int blockColorType_BlockB = 1;
 }
