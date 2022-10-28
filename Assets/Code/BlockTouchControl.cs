@@ -22,20 +22,126 @@ public class BlockTouchControl : MonoBehaviour
     {
         if (GlobalVariables.gameState == GlobalVariables.gameState_inGame)
         {
-            ControlWithMouse();
-            MoveSelectedBlocks();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
-            if (touchedBlockParent.rotation.z >= 360)
+            if (Application.isEditor)
             {
-                touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
+                ControlWithMouse();
+                MoveSelectedBlocks();
+            }
+            else
+            {
+                ControlWithTouch();
             }
         }
     }
 
+    void ControlWithTouch()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                RaycastHit2D raycastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+                if (raycastHit.collider != null)
+                {
+                    if (raycastHit.collider.gameObject.tag == GlobalVariables.block && raycastHit.collider.gameObject.GetComponent<BlockProperties>().isSnapped == false)
+                    {
+                        touchedBlock = raycastHit.transform;
+                        if (touchedBlock.parent != null)
+                        {
+                            touchedBlockParent = touchedBlock.parent;
+                        }
+
+                        SetBlocksSpriteLayer(GlobalVariables.orderInLayer_selectedBlock);
+
+                        deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        deltaPos.z = 0;
+                        deltaPos.y += 1;
+
+                        preCorrectPos = touchedBlockParent.position;
+                    }
+                }
+            }
+
+            if (touch.phase == TouchPhase.Moved)
+            {
+                MoveSelectedBlocks();
+            }
+
+            if (touch.phase == TouchPhase.Ended)
+            {
+                if (touchedBlock != null)
+                {
+                    SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
+                    #region snap ettirme yeri
+                    //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
+                    if (touchedBlockParent.childCount == toBePlacedGrids.Count)
+                    {
+                        for (int i = 0; i < touchedBlockParent.childCount; i++)
+                        {
+                            Vector3 snapPos = toBePlacedGrids[i].position;
+                            snapPos.z = 0;
+                            touchedBlockParent.GetChild(i).transform.position = snapPos;
+
+                            if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
+                            {
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                            }
+                            else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
+                            {
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
+                            }
+
+                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+                        }
+
+                        //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
+                        foreach (Transform item in touchedBlockParent)
+                        {
+                            item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = false;
+                            item.GetComponent<BlockProperties>().isSnapped = true;
+                        }
+
+                        transform.GetComponent<CreateBlocks>().CreateRandomBlocks();
+                    }
+                    else // deðilse eski doðru konumuna gönderilir
+                    {
+                        touchedBlockParent.position = preCorrectPos;
+                    }
+                    #endregion
+
+                    foreach (var item in toBePlacedGrids)
+                    {
+                        item.GetComponent<SpriteRenderer>().color = Color.white;
+                    }
+
+                    touchedBlock = null;
+                    touchedBlockParent = null;
+                    deltaPos = Vector3.zero;
+                    toBePlacedGrids.Clear();
+                    preCorrectPos = Vector3.zero;
+
+                    transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
+                }
+            }
+            if (Input.touchCount > 1)
+            {
+                Touch touch2 = Input.GetTouch(1);
+
+                if (touch2.phase == TouchPhase.Began)
+                {
+                    touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                    if (touchedBlockParent.rotation.z >= 360)
+                    {
+                        touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    #region mouse ile editörde kontol etme. Eski kalabilir.
     void ControlWithMouse()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -119,8 +225,17 @@ public class BlockTouchControl : MonoBehaviour
                 transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
             }
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+            if (touchedBlockParent.rotation.z >= 360)
+            {
+                touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
+            }
+        }
+    }
+    #endregion
     void MoveSelectedBlocks()
     {
         //dokunulan bir bloðun hareket ettirilmesi
@@ -162,7 +277,7 @@ public class BlockTouchControl : MonoBehaviour
                     if (!tempToBePlacedGrids.Contains(item))
                     {
                         item.GetComponent<SpriteRenderer>().color = Color.white;
-                        
+
                         item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                         item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                     }
@@ -194,41 +309,3 @@ public class BlockTouchControl : MonoBehaviour
         }
     }
 }
-/*
-    void ControlWithTouch()
-    {
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began)
-            {
-                Debug.Log("dokunma baþladý");
-                RaycastHit raycastHit;
-                Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                if (Physics.Raycast(ray, out raycastHit, 100f))
-                {
-                    if (raycastHit.transform.gameObject.tag == GlobalVariables.block)
-                    {
-                        Debug.Log("bloklara dokundun");
-                    }
-                }
-                else
-                {
-
-                }
-            }
-
-            if (touch.phase == TouchPhase.Moved)
-            {
-
-            }
-
-            if (touch.phase == TouchPhase.Ended)
-            {
-
-            }
-
-        }
-    }
-}
-*/
