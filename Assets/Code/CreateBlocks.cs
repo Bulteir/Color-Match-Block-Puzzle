@@ -31,6 +31,12 @@ public class CreateBlocks : MonoBehaviour
         int randomBlockColor = Random.Range(0, 2);
         int randomBlockAngle = Random.Range(0, 4);
 
+        //görsel test için
+        //int randomBlockType = 5;
+        //int randomBlockColor = Random.Range(0, 2);
+        //int randomBlockAngle = 0;
+
+
         GameObject randomBlock =  GameObject.Instantiate(blocks[randomBlockType].gameObject);
         
         Vector3 sumVector = new Vector3(0f, 0f, 0f);
@@ -68,6 +74,7 @@ public class CreateBlocks : MonoBehaviour
 
         blockGroupParent.position = spawnPoint.position;
         blockGroupParent.rotation = Quaternion.Euler(0, 0, 90 * randomBlockAngle);
+        blockGroupParent.localScale = GlobalVariables.scaleSpawnBlocks;
         spawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = true;
     }
 }

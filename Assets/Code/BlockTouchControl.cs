@@ -36,7 +36,20 @@ public class BlockTouchControl : MonoBehaviour
 
     void ControlWithTouch()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchCount == 2)
+        {
+            Touch touch2 = Input.GetTouch(1);
+
+            if (touch2.phase == TouchPhase.Began)
+            {
+                touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                if (touchedBlockParent.rotation.z >= 360)
+                {
+                    touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
+                }
+            }
+        }
+        else if (Input.touchCount == 1)
         {
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Began)
@@ -59,6 +72,7 @@ public class BlockTouchControl : MonoBehaviour
                         deltaPos.y += 1;
 
                         preCorrectPos = touchedBlockParent.position;
+                        touchedBlockParent.localScale = new Vector3(1, 1, 1);
                     }
                 }
             }
@@ -108,6 +122,10 @@ public class BlockTouchControl : MonoBehaviour
                     else // deðilse eski doðru konumuna gönderilir
                     {
                         touchedBlockParent.position = preCorrectPos;
+                        if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
+                        {
+                            touchedBlockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+                        }
                     }
                     #endregion
 
@@ -123,19 +141,6 @@ public class BlockTouchControl : MonoBehaviour
                     preCorrectPos = Vector3.zero;
 
                     transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
-                }
-            }
-            if (Input.touchCount > 1)
-            {
-                Touch touch2 = Input.GetTouch(1);
-
-                if (touch2.phase == TouchPhase.Began)
-                {
-                    touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
-                    if (touchedBlockParent.rotation.z >= 360)
-                    {
-                        touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
-                    }
                 }
             }
         }
@@ -161,9 +166,10 @@ public class BlockTouchControl : MonoBehaviour
 
                     deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     deltaPos.z = 0;
-                    deltaPos.y += 1;
+                    deltaPos.y += 2;
 
                     preCorrectPos = touchedBlockParent.position;
+                    touchedBlockParent.localScale = new Vector3(1, 1, 1);
                 }
             }
         }
@@ -208,6 +214,12 @@ public class BlockTouchControl : MonoBehaviour
                 else // deðilse eski doðru konumuna gönderilir
                 {
                     touchedBlockParent.position = preCorrectPos;
+
+                    if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
+                    {
+                        touchedBlockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+                    }
+
                 }
                 #endregion
 
