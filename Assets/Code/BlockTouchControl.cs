@@ -10,6 +10,8 @@ public class BlockTouchControl : MonoBehaviour
     List<Transform> toBePlacedGrids;
     Vector3 deltaPos;
     Vector3 preCorrectPos;
+    bool blockScaleAnimationStarted = false;
+    Coroutine BlockScaleSmoothLerpCoroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +74,13 @@ public class BlockTouchControl : MonoBehaviour
                         deltaPos.y += 1;
 
                         preCorrectPos = touchedBlockParent.position;
-                        touchedBlockParent.localScale = new Vector3(1, 1, 1);
+
+                        //dokunulan block animasyonlu þekilde büyür
+                        if (blockScaleAnimationStarted)
+                        {
+                            StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                        }
+                        BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, true));
                     }
                 }
             }
@@ -122,9 +130,14 @@ public class BlockTouchControl : MonoBehaviour
                     else // deðilse eski doðru konumuna gönderilir
                     {
                         touchedBlockParent.position = preCorrectPos;
+                        //block spawn noktasýna gönderiliyorsa tekrar küçültülür
                         if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
                         {
-                            touchedBlockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+                            if (blockScaleAnimationStarted)
+                            {
+                                StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                            }
+                            BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
                         }
                     }
                     #endregion
@@ -169,7 +182,13 @@ public class BlockTouchControl : MonoBehaviour
                     deltaPos.y += 2;
 
                     preCorrectPos = touchedBlockParent.position;
-                    touchedBlockParent.localScale = new Vector3(1, 1, 1);
+
+                    //dokunulan block animasyonlu þekilde büyür
+                    if (blockScaleAnimationStarted)
+                    {
+                        StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                    }
+                    BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, true));
                 }
             }
         }
@@ -215,11 +234,15 @@ public class BlockTouchControl : MonoBehaviour
                 {
                     touchedBlockParent.position = preCorrectPos;
 
+                    //block spawn noktasýna gönderiliyorsa tekrar küçültülür
                     if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
                     {
-                        touchedBlockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+                        if (blockScaleAnimationStarted)
+                        {
+                            StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                        }
+                        BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
                     }
-
                 }
                 #endregion
 
@@ -278,7 +301,7 @@ public class BlockTouchControl : MonoBehaviour
                     {
                         if (raycastHit.collider.gameObject.tag == GlobalVariables.gridBlock)
                         {
-                            raycastHit.collider.transform.GetComponent<SpriteRenderer>().color = Color.blue;
+                            raycastHit.collider.transform.GetComponent<SpriteRenderer>().color = Color.gray;
                             tempToBePlacedGrids.Add(raycastHit.collider.transform);
                         }
                     }
@@ -319,5 +342,31 @@ public class BlockTouchControl : MonoBehaviour
                 item.gameObject.layer = LayerMask.NameToLayer("Default");
             }
         }
+    }
+
+    IEnumerator BlockScaleSmoothLerp(Transform blockParent, bool scaleUp)
+    {
+        blockScaleAnimationStarted = true;
+        if (scaleUp)
+        {
+            while (blockParent.localScale != new Vector3(1,1,1))
+            {
+                blockParent.localScale = Vector3.Lerp(blockParent.localScale, new Vector3(1, 1, 1), 0.5f);
+                yield return null;
+            }
+            blockParent.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            while (blockParent.localScale != new Vector3(1, 1, 1))
+            {
+                blockParent.localScale = Vector3.Lerp(blockParent.localScale, GlobalVariables.scaleSpawnBlocks, 0.5f);
+                yield return null;
+            }
+            blockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+
+        }
+
+        blockScaleAnimationStarted = false;
     }
 }

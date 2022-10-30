@@ -24,6 +24,4 @@ public class GlobalVariables
     public const int blockColorType_BlockB = 1;
 
     public static Vector3 scaleSpawnBlocks = new Vector3(0.65f, 0.65f, 1); 
-
-
 }

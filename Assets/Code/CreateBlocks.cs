@@ -7,6 +7,7 @@ public class CreateBlocks : MonoBehaviour
     public List<Sprite> blockSprites;
     public List<Transform> blocks;
     public List<Transform> SpawnPoints;
+    public Transform CreatedBlocksGroup;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,5 +77,7 @@ public class CreateBlocks : MonoBehaviour
         blockGroupParent.rotation = Quaternion.Euler(0, 0, 90 * randomBlockAngle);
         blockGroupParent.localScale = GlobalVariables.scaleSpawnBlocks;
         spawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = true;
+
+        blockGroupParent.parent = CreatedBlocksGroup;
     }
 }
