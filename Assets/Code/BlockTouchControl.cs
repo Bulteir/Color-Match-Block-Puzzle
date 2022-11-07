@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BlockTouchControl : MonoBehaviour
 {
+    public Transform gridForScale;
+    public Transform canvasForScale;
 
     Transform touchedBlock;
     Transform touchedBlockParent;
@@ -347,26 +349,26 @@ public class BlockTouchControl : MonoBehaviour
     IEnumerator BlockScaleSmoothLerp(Transform blockParent, bool scaleUp)
     {
         blockScaleAnimationStarted = true;
+        Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
         if (scaleUp)
         {
-            while (blockParent.localScale != new Vector3(1,1,1))
+            while (blockParent.localScale != blockScale)
             {
-                blockParent.localScale = Vector3.Lerp(blockParent.localScale, new Vector3(1, 1, 1), 0.5f);
+                blockParent.localScale = Vector3.Lerp(blockParent.localScale, blockScale, 0.5f);
                 yield return null;
             }
-            blockParent.localScale = new Vector3(1, 1, 1);
+            blockParent.localScale = blockScale;
         }
         else
         {
-            while (blockParent.localScale != new Vector3(1, 1, 1))
+            while (blockParent.localScale != Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks))
             {
-                blockParent.localScale = Vector3.Lerp(blockParent.localScale, GlobalVariables.scaleSpawnBlocks, 0.5f);
+                blockParent.localScale = Vector3.Lerp(blockParent.localScale, Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks), 0.5f);
                 yield return null;
             }
-            blockParent.localScale = GlobalVariables.scaleSpawnBlocks;
+            blockParent.localScale = Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks);
 
         }
-
         blockScaleAnimationStarted = false;
     }
 }

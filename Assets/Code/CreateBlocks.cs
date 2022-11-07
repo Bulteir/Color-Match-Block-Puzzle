@@ -8,6 +8,8 @@ public class CreateBlocks : MonoBehaviour
     public List<Transform> blocks;
     public List<Transform> SpawnPoints;
     public Transform CreatedBlocksGroup;
+    public Transform gridForScale;
+    public Transform canvasForScale;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +30,14 @@ public class CreateBlocks : MonoBehaviour
     //rastgele renkte rastgele bir küp oluþturur. Blok parçalarýnýn orta noktasýný bulur ve spawn noktasýna yerleþtirir.
     void createRandomBlock(Transform spawnPoint)
     {
-        int randomBlockType = Random.Range(0, blocks.Count);
-        int randomBlockColor = Random.Range(0, 2);
-        int randomBlockAngle = Random.Range(0, 4);
+        //int randomBlockType = Random.Range(0, blocks.Count);
+        //int randomBlockColor = Random.Range(0, 2);
+        //int randomBlockAngle = Random.Range(0, 4);
 
         //görsel test için
-        //int randomBlockType = 5;
-        //int randomBlockColor = Random.Range(0, 2);
-        //int randomBlockAngle = 0;
+        int randomBlockType = 5;
+        int randomBlockColor = Random.Range(0, 2);
+        int randomBlockAngle = 0;
 
 
         GameObject randomBlock =  GameObject.Instantiate(blocks[randomBlockType].gameObject);
@@ -75,9 +77,9 @@ public class CreateBlocks : MonoBehaviour
 
         blockGroupParent.position = spawnPoint.position;
         blockGroupParent.rotation = Quaternion.Euler(0, 0, 90 * randomBlockAngle);
-        blockGroupParent.localScale = GlobalVariables.scaleSpawnBlocks;
+        Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
+        blockScale = Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks);
+        blockGroupParent.localScale = blockScale;
         spawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = true;
-
-        blockGroupParent.parent = CreatedBlocksGroup;
     }
 }
