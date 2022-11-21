@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GridRowCloumnControl : MonoBehaviour
 {
@@ -30,6 +31,9 @@ public class GridRowCloumnControl : MonoBehaviour
     Vector2[] rowsCounter;
     Vector2[] columnsCounter;
 
+    public TMP_Text score_Prefab;
+    public TMP_Text scoreText;
+    public Transform canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +72,7 @@ public class GridRowCloumnControl : MonoBehaviour
     }
 
     //BlockTouchControl'den çaðrýlýyor. Bloklar snapped olduðunda çaðrýlýyor
-    public void RowColumnControl()
+    public void RowColumnControl(Transform grid)
     {
         //vector2.x=blockA counter vector2.y=blockB counter 
         for (int i = 0; i < 10; i++)
@@ -108,6 +112,7 @@ public class GridRowCloumnControl : MonoBehaviour
                         item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                     }
                 }
+                CreateScore(grid,GlobalVariables.baseScore);
             }
 
             if (columnsCounter[i].x == 10 || columnsCounter[i].y == 10)
@@ -118,6 +123,8 @@ public class GridRowCloumnControl : MonoBehaviour
                     item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                     item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                 }
+                CreateScore(grid, GlobalVariables.baseScore);
+
             }
         }
 
@@ -127,6 +134,46 @@ public class GridRowCloumnControl : MonoBehaviour
             rowsCounter[i] = Vector2.zero;
             columnsCounter[i] = Vector2.zero;
         }
+    }
 
+    void CreateScore(Transform grid,int score)
+    {
+        GameObject scoreLabel = GameObject.Instantiate(score_Prefab.gameObject);
+        scoreLabel.transform.SetParent(canvas);
+        scoreLabel.transform.localScale = new Vector3(1, 1, 1);
+        Vector3 score_PrefabPos = grid.position;
+        score_PrefabPos.z = 0;
+        scoreLabel.transform.position = score_PrefabPos;
+
+        scoreLabel.GetComponent<TMP_Text>().text = score.ToString();
+        scoreLabel.SetActive(true);
+        StartCoroutine(scoreAnimation(scoreLabel));
+    }
+
+    IEnumerator scoreAnimation(GameObject score)
+    {
+        while (score.transform.localScale.x < 3f)
+        {
+            score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 10f * Time.deltaTime );
+            if (score.transform.localScale.x > 2.99f)
+            {
+                score.transform.localScale = new Vector3(3, 3, 1);
+            }
+            yield return null;
+        }
+
+        float velocity = 0.2f;
+        while (Vector3.Distance(score.transform.position, scoreText.transform.position) > 5f)
+        {
+            score.transform.position = Vector3.Lerp(score.transform.position, scoreText.transform.position, velocity * 0.1f * Time.deltaTime);
+            velocity = velocity * 1.05f;
+            yield return null;
+        }
+
+        int totalScore = int.Parse(scoreText.text);
+        totalScore += int.Parse(score.GetComponent<TMP_Text>().text);
+        scoreText.text = totalScore.ToString();
+
+        GameObject.Destroy(score);
     }
 }

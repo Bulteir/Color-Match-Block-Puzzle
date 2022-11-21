@@ -6,6 +6,7 @@ public class GlobalVariables
 {
     public const string block = "Block";
     public const string gridBlock = "GridBlock";
+    public const string scoreText = "ScoreText";
 
     public static int gameState = gameState_inGame;
     public const int gameState_MainMenu = 0;
@@ -23,5 +24,7 @@ public class GlobalVariables
     public const int blockColorType_BlockA = 0;
     public const int blockColorType_BlockB = 1;
 
-    public static Vector3 scaleSpawnBlocks = new Vector3(0.65f, 0.65f, 1); 
+    public static Vector3 scaleSpawnBlocks = new Vector3(0.65f, 0.65f, 1);
+    
+    public const int baseScore = 10;
 }

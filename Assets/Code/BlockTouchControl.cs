@@ -126,7 +126,7 @@ public class BlockTouchControl : MonoBehaviour
                             item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = false;
                             item.GetComponent<BlockProperties>().isSnapped = true;
                         }
-
+                        
                         transform.GetComponent<CreateBlocks>().CreateRandomBlocks();
                     }
                     else // deðilse eski doðru konumuna gönderilir
@@ -148,14 +148,13 @@ public class BlockTouchControl : MonoBehaviour
                     {
                         item.GetComponent<SpriteRenderer>().color = Color.white;
                     }
+                    transform.GetComponent<GridRowCloumnControl>().RowColumnControl(toBePlacedGrids[0]);
 
                     touchedBlock = null;
                     touchedBlockParent = null;
                     deltaPos = Vector3.zero;
                     toBePlacedGrids.Clear();
                     preCorrectPos = Vector3.zero;
-
-                    transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
                 }
             }
         }
@@ -208,7 +207,7 @@ public class BlockTouchControl : MonoBehaviour
                     for (int i = 0; i < touchedBlockParent.childCount; i++)
                     {
                         Vector3 snapPos = toBePlacedGrids[i].position;
-                        snapPos.z = 0;
+                        snapPos.z = gridForScale.GetChild(1).position.z - 1;
                         touchedBlockParent.GetChild(i).transform.position = snapPos;
 
                         if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
@@ -228,8 +227,9 @@ public class BlockTouchControl : MonoBehaviour
                     {
                         item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = false;
                         item.GetComponent<BlockProperties>().isSnapped = true;
+                        item.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     }
-
+                    touchedBlockParent.SetParent(canvasForScale);
                     transform.GetComponent<CreateBlocks>().CreateRandomBlocks();
                 }
                 else // deðilse eski doðru konumuna gönderilir
@@ -252,6 +252,8 @@ public class BlockTouchControl : MonoBehaviour
                 {
                     item.GetComponent<SpriteRenderer>().color = Color.white;
                 }
+                
+                transform.GetComponent<GridRowCloumnControl>().RowColumnControl(touchedBlockParent);
 
                 touchedBlock = null;
                 touchedBlockParent = null;
@@ -259,7 +261,6 @@ public class BlockTouchControl : MonoBehaviour
                 toBePlacedGrids.Clear();
                 preCorrectPos = Vector3.zero;
 
-                transform.GetComponent<GridRowCloumnControl>().RowColumnControl();
             }
         }
 
