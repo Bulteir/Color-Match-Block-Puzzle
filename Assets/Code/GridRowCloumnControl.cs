@@ -71,10 +71,12 @@ public class GridRowCloumnControl : MonoBehaviour
  
     }
 
-    //BlockTouchControl'den çaðrýlýyor. Bloklar snapped olduðunda çaðrýlýyor
+    //BlockTouchControl'den çaðrýlýyor. Herhangi bir blok býrakýldýðýnda çaðrýlýyor
     public void RowColumnControl(Transform grid)
     {
-        //vector2.x=blockA counter vector2.y=blockB counter 
+        int sameTimeCompletedRowCount = 0;
+        int sameTimeCompletedColumnCount = 0;
+
         for (int i = 0; i < 10; i++)
         {
             for (int j = 0; j < 10; j++)
@@ -101,31 +103,42 @@ public class GridRowCloumnControl : MonoBehaviour
 
         for (int i = 0; i < 10; i++)
         {
-            if (rowsCounter[i].x==10 || rowsCounter[i].y == 10)
+            if (rowsCounter[i].x == 10 || rowsCounter[i].y == 10)
             {
+                sameTimeCompletedRowCount++;
                 foreach (var item in rows[i])
                 {
-                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject != null)
+                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile != null)
                     {
-                        Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+                        if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject)
+                        {
+                            Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+                        }
                         item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                         item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                     }
                 }
-                CreateScore(grid,GlobalVariables.baseScore);
             }
 
             if (columnsCounter[i].x == 10 || columnsCounter[i].y == 10)
             {
+                sameTimeCompletedColumnCount++;
                 foreach (var item in columns[i])
                 {
-                    Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+
+                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile != null)
+                    {
+                        Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
+                    }
                     item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                     item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
                 }
-                CreateScore(grid, GlobalVariables.baseScore);
-
             }
+        }
+
+        if (sameTimeCompletedColumnCount > 0 || sameTimeCompletedRowCount > 0)
+        {
+            CreateScore(grid, GlobalVariables.baseScore * (sameTimeCompletedColumnCount + sameTimeCompletedRowCount));
         }
 
         //counter'larý sýfýrlýyoruz
