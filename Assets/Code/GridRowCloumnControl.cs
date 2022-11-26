@@ -138,7 +138,8 @@ public class GridRowCloumnControl : MonoBehaviour
 
         if (sameTimeCompletedColumnCount > 0 || sameTimeCompletedRowCount > 0)
         {
-            CreateScore(grid, GlobalVariables.baseScore * (sameTimeCompletedColumnCount + sameTimeCompletedRowCount));
+            CreateScore(grid, GlobalVariables.baseScore * (sameTimeCompletedColumnCount + sameTimeCompletedRowCount) * this.GetComponent<ComboBarControl>().comboMultiplier);
+            this.GetComponent<ComboBarControl>().FillTheBar();
         }
 
         //counter'larý sýfýrlýyoruz

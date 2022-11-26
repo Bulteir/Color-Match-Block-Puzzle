@@ -28,4 +28,5 @@ public class GlobalVariables
     
     public const int baseScore = 10;
     public const int maxScoreMultiplier = 5;
+
 }
