@@ -193,31 +193,75 @@ public class GridRowCloumnControl : MonoBehaviour
         {
             for (int j = 0; j < 10 && isThereAvaiblePlace == false; j++)
             {
-                int availableGrids = 0;
-                foreach (Transform cell in spawnedBlock)
-                {
-                    int rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate.x;
-                    int rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate.y;
-
-                    //grid sýnýrlarý içinde
-                    if (rowX >= 0 && rowX < 10 && rowY >= 0 && rowY < 10)
-                    {
-                        if (rows[rowY][rowX].GetComponent<GridRowColumnControlHelper>().gridState == GlobalVariables.gridState_empty)
-                        {
-                            availableGrids++;
-                        }
-                    }
-                }
-
-                //bloðun tüm hücreleri yerleþtirilebilir.
-                if (availableGrids == spawnedBlock.childCount)
+                if (IsGameOverHelper(spawnedBlock, i, j,0))
                 {
                     isThereAvaiblePlace = true;
-                    
+                }
+
+                if (IsGameOverHelper(spawnedBlock, i, j, 90))
+                {
+                    isThereAvaiblePlace = true;
+                }
+
+                if (IsGameOverHelper(spawnedBlock, i, j, 180))
+                {
+                    isThereAvaiblePlace = true;
+                }
+
+                if (IsGameOverHelper(spawnedBlock, i, j, 270))
+                {
+                    isThereAvaiblePlace = true;
+                }
+            }
+        }
+        return !isThereAvaiblePlace;
+    }
+
+    bool IsGameOverHelper(Transform spawnedBlock,int i,int j,int coordinate)
+    {
+        bool isThereAvaiblePlace = false;
+        int availableGrids = 0;
+        foreach (Transform cell in spawnedBlock)
+        {
+            int rowX = 0;
+            int rowY = 0;
+
+            if (coordinate == 0)
+            {
+                rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate.x;
+                rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate.y;
+            }
+            else if (coordinate == 90)
+            {
+                rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate90.x;
+                rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate90.y;
+            }
+            else if (coordinate == 180)
+            {
+                rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate180.x;
+                rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate180.y;
+            }
+            else if (coordinate == 270)
+            {
+                rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate270.x;
+                rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate270.y;
+            }
+
+            //grid sýnýrlarý içinde
+            if (rowX >= 0 && rowX < 10 && rowY >= 0 && rowY < 10)
+            {
+                if (rows[rowY][rowX].GetComponent<GridRowColumnControlHelper>().gridState == GlobalVariables.gridState_empty)
+                {
+                    availableGrids++;
                 }
             }
         }
 
-        return !isThereAvaiblePlace;
+        //bloðun tüm hücreleri yerleþtirilebilir.
+        if (availableGrids == spawnedBlock.childCount)
+        {
+            isThereAvaiblePlace = true;
+        }
+        return isThereAvaiblePlace;
     }
 }

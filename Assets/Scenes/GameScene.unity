@@ -398,11 +398,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 2085479803}
   coordinate: {x: 0, y: 2}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 2, y: 2}
 --- !u!1 &62900123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,11 +1131,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &144170319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,11 +1568,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 545019863}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &195947330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,11 +2099,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1113467144}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 1848812120}
   coordinate: {x: 0, y: 1}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 1, y: 1}
 --- !u!1 &265393954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,11 +2663,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1414293294}
-  rightCell: {fileID: 1524715425}
-  topCell: {fileID: 963560190}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &362503770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,11 +3068,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1411949769}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &388034193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,11 +3347,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1276206070}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 0, y: 1}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &406060073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,11 +3500,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 709791424}
-  rightCell: {fileID: 607068246}
-  topCell: {fileID: 1578911638}
-  bottomCell: {fileID: 568166090}
   coordinate: {x: 1, y: 1}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 1, y: 1}
 --- !u!1 &416542378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,11 +3779,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1578911638}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 607068246}
   coordinate: {x: 2, y: 2}
+  coordinate90: {x: 0, y: 2}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 2, y: 0}
 --- !u!1 &426583199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,11 +4471,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1179732513}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 2, y: 1}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &535502209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4760,11 +4750,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 190542892}
-  rightCell: {fileID: 1023350651}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &550240675
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,11 +5281,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1264723131}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 4, y: 0}
+  coordinate90: {x: 0, y: 4}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &568166089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,11 +5434,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 2134430952}
-  rightCell: {fileID: 638116976}
-  topCell: {fileID: 406060074}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 2, y: 1}
+  coordinate180: {x: 1, y: 2}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &602095717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5726,11 +5713,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 406060074}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 417887388}
-  bottomCell: {fileID: 638116976}
   coordinate: {x: 2, y: 1}
+  coordinate90: {x: 1, y: 2}
+  coordinate180: {x: 0, y: 1}
+  coordinate270: {x: 1, y: 0}
 --- !u!1 &622642456
 GameObject:
   m_ObjectHideFlags: 0
@@ -6132,11 +6118,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 568166090}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 607068246}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 2, y: 2}
+  coordinate180: {x: 0, y: 2}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &657049421
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,11 +6782,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1402541382}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 2, y: 2}
+  coordinate180: {x: 0, y: 2}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &698797269
 GameObject:
   m_ObjectHideFlags: 0
@@ -7114,11 +7098,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 406060074}
-  topCell: {fileID: 1992855800}
-  bottomCell: {fileID: 2134430952}
   coordinate: {x: 0, y: 1}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 2, y: 1}
+  coordinate270: {x: 1, y: 2}
 --- !u!1 &722729702
 GameObject:
   m_ObjectHideFlags: 0
@@ -7520,11 +7503,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1345526139}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 4, y: 0}
+  coordinate270: {x: 0, y: 4}
 --- !u!1 &763447518
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,11 +8160,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1964076210}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 3, y: 0}
+  coordinate270: {x: 0, y: 3}
 --- !u!1 &795035336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8459,7 +8440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804696848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.2800007, y: -6.04, z: 0.12663117}
+  m_LocalPosition: {x: 6.2, y: -6.04, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9190,11 +9171,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1258249024}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 1179732513}
   coordinate: {x: 1, y: 1}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 1, y: 1}
 --- !u!1 &884943457
 GameObject:
   m_ObjectHideFlags: 0
@@ -10127,11 +10107,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 358899941}
   coordinate: {x: 1, y: 1}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 1, y: 1}
 --- !u!1 &985341555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10344,11 +10323,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1955330952}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 1}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 1, y: 2}
 --- !u!61 &1009353342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10597,11 +10575,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1149107753}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 3, y: 0}
+  coordinate90: {x: 0, y: 3}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &1013792193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10877,11 +10854,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 545019863}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 0, y: 2}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &1037859184
 GameObject:
   m_ObjectHideFlags: 0
@@ -11525,7 +11501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103712215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.09, y: -9.8, z: 0.12663117}
+  m_LocalPosition: {x: 4.99, y: -9.8, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11586,11 +11562,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1285504285}
-  topCell: {fileID: 1955330952}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 0, y: 1}
 --- !u!61 &1112871328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11839,11 +11814,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 259527756}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 1473814848}
   coordinate: {x: 1, y: 1}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 1, y: 0}
 --- !u!1 &1114675994
 GameObject:
   m_ObjectHideFlags: 0
@@ -11993,11 +11967,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1345526139}
-  rightCell: {fileID: 1264723131}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 0, y: 2}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &1121285275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12399,11 +12372,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1964076210}
-  rightCell: {fileID: 1011096441}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 0, y: 2}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1179732512
 GameObject:
   m_ObjectHideFlags: 0
@@ -12553,11 +12525,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 534783345}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 872336040}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1182837223
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,7 +12679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182948843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.51, y: -7.84, z: 0.12663117}
+  m_LocalPosition: {x: 8.6, y: -8.11, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13119,11 +13090,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 872336040}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 1}
+  coordinate90: {x: 0, y: 2}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 1, y: 0}
 --- !u!1 &1264723130
 GameObject:
   m_ObjectHideFlags: 0
@@ -13273,11 +13243,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1114675995}
-  rightCell: {fileID: 567415291}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 3, y: 0}
+  coordinate90: {x: 0, y: 3}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1274099934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13679,11 +13648,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 390343827}
-  topCell: {fileID: 1471762299}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1284162866
 GameObject:
   m_ObjectHideFlags: 0
@@ -13860,11 +13828,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1112871326}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 1, y: 2}
+  coordinate180: {x: 0, y: 1}
+  coordinate270: {x: 0, y: 0}
 --- !u!61 &1285504287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14628,11 +14595,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 736638539}
-  rightCell: {fileID: 1114675995}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 3, y: 0}
+  coordinate270: {x: 0, y: 3}
 --- !u!1 &1357069181
 GameObject:
   m_ObjectHideFlags: 0
@@ -15295,11 +15261,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1776321000}
-  rightCell: {fileID: 693000214}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 2, y: 1}
+  coordinate180: {x: 1, y: 2}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1411949768
 GameObject:
   m_ObjectHideFlags: 0
@@ -15449,11 +15414,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 371757885}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 0, y: 0}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &1414293293
 GameObject:
   m_ObjectHideFlags: 0
@@ -15603,11 +15567,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 358899941}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 2, y: 1}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &1422326858
 GameObject:
   m_ObjectHideFlags: 0
@@ -16464,11 +16427,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 1276206070}
   coordinate: {x: 0, y: 1}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 1, y: 1}
 --- !u!1 &1473814847
 GameObject:
   m_ObjectHideFlags: 0
@@ -16618,11 +16580,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1848812120}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 1113467144}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 1, y: 1}
+  coordinate180: {x: 0, y: 1}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &1524715423
 GameObject:
   m_ObjectHideFlags: 0
@@ -16772,11 +16733,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 358899941}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 2, y: 0}
+  coordinate90: {x: 1, y: 2}
+  coordinate180: {x: 0, y: 1}
+  coordinate270: {x: 0, y: 0}
 --- !u!1 &1528172411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17563,11 +17523,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1992855800}
-  rightCell: {fileID: 417887388}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 406060074}
   coordinate: {x: 1, y: 2}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 2, y: 1}
 --- !u!1 &1600609006
 GameObject:
   m_ObjectHideFlags: 0
@@ -18375,7 +18334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694346450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.62, y: -6.04, z: 0.12663117}
+  m_LocalPosition: {x: 9.66, y: -6.6, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18922,8 +18881,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759161187}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.29, y: -4.8500004, z: 0.12663117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2, y: -4.85, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19115,11 +19074,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1402541382}
-  topCell: {fileID: 2085479803}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 2, y: 0}
+  coordinate180: {x: 2, y: 2}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &1776432243
 GameObject:
   m_ObjectHideFlags: 0
@@ -19144,7 +19102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776432243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.4141846, y: -3.631072, z: 0.12663117}
+  m_LocalPosition: {x: 6.55, y: -3.631072, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20043,11 +20001,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1473814848}
-  topCell: {fileID: 259527756}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 1, y: 1}
+  coordinate270: {x: 0, y: 1}
 --- !u!1 &1857300882
 GameObject:
   m_ObjectHideFlags: 0
@@ -21115,11 +21072,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 1009353340}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 1112871326}
   coordinate: {x: 1, y: 1}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 1, y: 0}
+  coordinate270: {x: 1, y: 1}
 --- !u!61 &1955330954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21368,11 +21324,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 789371423}
-  rightCell: {fileID: 1149107753}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 0}
   coordinate: {x: 1, y: 0}
+  coordinate90: {x: 0, y: 1}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 0, y: 2}
 --- !u!1 &1967740770
 GameObject:
   m_ObjectHideFlags: 0
@@ -21523,7 +21478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976691396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.37, y: -2.361072, z: 0.12663117}
+  m_LocalPosition: {x: 7.37, y: -2.28, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21558,7 +21513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978593423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7299998, y: -3.5610719, z: 0.12663117}
+  m_LocalPosition: {x: 3.9, y: -3.5610719, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21969,11 +21924,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 1578911638}
-  topCell: {fileID: 0}
-  bottomCell: {fileID: 709791424}
   coordinate: {x: 0, y: 2}
+  coordinate90: {x: 0, y: 0}
+  coordinate180: {x: 2, y: 0}
+  coordinate270: {x: 2, y: 2}
 --- !u!1 &2028048723
 GameObject:
   m_ObjectHideFlags: 0
@@ -22260,7 +22214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079868275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3800004, y: -8.33, z: 0.12663117}
+  m_LocalPosition: {x: 1.29, y: -8.81, z: 0.12663117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22425,11 +22379,10 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 0}
-  topCell: {fileID: 54469194}
-  bottomCell: {fileID: 1776321000}
   coordinate: {x: 0, y: 1}
+  coordinate90: {x: 1, y: 0}
+  coordinate180: {x: 2, y: 1}
+  coordinate270: {x: 1, y: 2}
 --- !u!1 &2114366169
 GameObject:
   m_ObjectHideFlags: 0
@@ -22705,8 +22658,7 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
-  leftCell: {fileID: 0}
-  rightCell: {fileID: 568166090}
-  topCell: {fileID: 709791424}
-  bottomCell: {fileID: 0}
   coordinate: {x: 0, y: 0}
+  coordinate90: {x: 2, y: 0}
+  coordinate180: {x: 2, y: 2}
+  coordinate270: {x: 0, y: 2}
