@@ -13,22 +13,22 @@ public class CreateBlocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreateRandomBlocks();
+        CreateRandomBlocks(false);
     }
 
-    public void CreateRandomBlocks()
+    public void CreateRandomBlocks(bool playSpawnAnimation)
     {
         for (int i = 0; i < SpawnPoints.Count; i++)
         {
             if (SpawnPoints[i].GetComponent<SpawnPointHelper>().block == null)
             {
-                createRandomBlock(SpawnPoints[i]);
+                createRandomBlock(SpawnPoints[i], playSpawnAnimation);
             }
         }
     }
 
     //rastgele renkte rastgele bir küp oluþturur. Blok parçalarýnýn orta noktasýný bulur ve spawn noktasýna yerleþtirir.
-    void createRandomBlock(Transform spawnPoint)
+    void createRandomBlock(Transform spawnPoint,bool playSpawnAnimation)
     {
         int randomBlockType = Random.Range(0, blocks.Count);
         int randomBlockColor = Random.Range(0, 2);
@@ -82,6 +82,7 @@ public class CreateBlocks : MonoBehaviour
         blockScale = Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks);
         blockGroupParent.localScale = blockScale;
         spawnPoint.GetComponent<SpawnPointHelper>().block = blockGroupParent;
+        blockGroupParent.GetComponent<Animator>().enabled = playSpawnAnimation;
 
         #region oyun bitiþini anlamak için spawn olmuþ olan bloklarýn tümümün grid üzerinde uygun yeri var mý kontrol ediliyor
         int totalAvaiblePlace = 0;

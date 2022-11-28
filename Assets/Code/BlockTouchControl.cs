@@ -232,7 +232,7 @@ public class BlockTouchControl : MonoBehaviour
                         item.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     }
                     touchedBlockParent.SetParent(canvasForScale);
-                    transform.GetComponent<CreateBlocks>().CreateRandomBlocks();
+                    transform.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
                 }
                 else // deðilse eski doðru konumuna gönderilir
                 {
@@ -353,6 +353,7 @@ public class BlockTouchControl : MonoBehaviour
 
     IEnumerator BlockScaleSmoothLerp(Transform blockParent, bool scaleUp)
     {
+        blockParent.GetComponent<Animator>().enabled = false;
         blockScaleAnimationStarted = true;
         Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
         if (scaleUp)
