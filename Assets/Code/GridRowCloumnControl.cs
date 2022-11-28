@@ -65,12 +65,6 @@ public class GridRowCloumnControl : MonoBehaviour
         columns.Add(column10);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
- 
-    }
-
     //BlockTouchControl'den çaðrýlýyor. Herhangi bir blok býrakýldýðýnda çaðrýlýyor
     public void RowColumnControl(Transform grid)
     {
@@ -189,5 +183,41 @@ public class GridRowCloumnControl : MonoBehaviour
         scoreText.text = totalScore.ToString();
 
         GameObject.Destroy(score);
+    }
+
+    //yeni bloklar spawn edildikten sonra çaðrýlýr ve spawn edilen bloklarýn grid üzerinde yerleþririlecek yeri olup olmadýðýný kontrol eder.
+    public bool IsGameOver (Transform spawnedBlock)
+    {
+        bool isThereAvaiblePlace = false;
+        for (int i = 0; i < 10 && isThereAvaiblePlace == false; i++)
+        {
+            for (int j = 0; j < 10 && isThereAvaiblePlace == false; j++)
+            {
+                int availableGrids = 0;
+                foreach (Transform cell in spawnedBlock)
+                {
+                    int rowX = j + (int)cell.GetComponent<BlockProperties>().coordinate.x;
+                    int rowY = i + (int)cell.GetComponent<BlockProperties>().coordinate.y;
+
+                    //grid sýnýrlarý içinde
+                    if (rowX >= 0 && rowX < 10 && rowY >= 0 && rowY < 10)
+                    {
+                        if (rows[rowY][rowX].GetComponent<GridRowColumnControlHelper>().gridState == GlobalVariables.gridState_empty)
+                        {
+                            availableGrids++;
+                        }
+                    }
+                }
+
+                //bloðun tüm hücreleri yerleþtirilebilir.
+                if (availableGrids == spawnedBlock.childCount)
+                {
+                    isThereAvaiblePlace = true;
+                    
+                }
+            }
+        }
+
+        return !isThereAvaiblePlace;
     }
 }

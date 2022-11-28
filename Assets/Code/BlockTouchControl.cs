@@ -227,7 +227,7 @@ public class BlockTouchControl : MonoBehaviour
                     //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
                     foreach (Transform item in touchedBlockParent)
                     {
-                        item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = false;
+                        item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().block = null;
                         item.GetComponent<BlockProperties>().isSnapped = true;
                         item.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     }

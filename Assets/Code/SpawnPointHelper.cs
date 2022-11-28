@@ -4,6 +4,5 @@ using UnityEngine;
 
 public class SpawnPointHelper : MonoBehaviour
 {
-    public bool hasBlocks = false;
-
+    public Transform block;
 }

@@ -20,7 +20,7 @@ public class CreateBlocks : MonoBehaviour
     {
         for (int i = 0; i < SpawnPoints.Count; i++)
         {
-            if (!SpawnPoints[i].GetComponent<SpawnPointHelper>().hasBlocks)
+            if (SpawnPoints[i].GetComponent<SpawnPointHelper>().block == null)
             {
                 createRandomBlock(SpawnPoints[i]);
             }
@@ -35,13 +35,14 @@ public class CreateBlocks : MonoBehaviour
         //int randomBlockAngle = Random.Range(0, 4);
 
         //görsel test için
-        int randomBlockType = 5;
-        int randomBlockColor = 0;
+        //int randomBlockType = 5;
+        int randomBlockType = Random.Range(0, blocks.Count);
+        int randomBlockColor = Random.Range(0, 2);
         int randomBlockAngle = 0;
 
 
-        GameObject randomBlock =  GameObject.Instantiate(blocks[randomBlockType].gameObject);
-        
+        GameObject randomBlock = GameObject.Instantiate(blocks[randomBlockType].gameObject);
+
         Vector3 sumVector = new Vector3(0f, 0f, 0f);
         List<Transform> children = new List<Transform>();
         Transform blockGroupParent = randomBlock.transform;
@@ -80,6 +81,23 @@ public class CreateBlocks : MonoBehaviour
         Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
         blockScale = Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks);
         blockGroupParent.localScale = blockScale;
-        spawnPoint.GetComponent<SpawnPointHelper>().hasBlocks = true;
+        spawnPoint.GetComponent<SpawnPointHelper>().block = blockGroupParent;
+
+        #region oyun bitiþini anlamak için spawn olmuþ olan bloklarýn tümümün grid üzerinde uygun yeri var mý kontrol ediliyor
+        int totalAvaiblePlace = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            if (SpawnPoints[i].GetComponent<SpawnPointHelper>().block && this.GetComponent<GridRowCloumnControl>().IsGameOver(SpawnPoints[i].GetComponent<SpawnPointHelper>().block))
+            {
+                totalAvaiblePlace++;
+            }
+        }
+
+        if (totalAvaiblePlace == 3)
+        {
+            Debug.Log("oyun bitti.");
+        }
+        //Debug.Log("oyun bitti mi? " + this.GetComponent<GridRowCloumnControl>().IsGameOver(blockGroupParent));
+        #endregion
     }
 }

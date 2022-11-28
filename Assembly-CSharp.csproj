@@ -60,10 +60,10 @@
     <Compile Include="Assets\Code\BlockProperties.cs" />
     <Compile Include="Assets\Code\CreateBlocks.cs" />
     <Compile Include="Assets\Code\SpawnPointHelper.cs" />
+    <Compile Include="Assets\Code\ComboBarControl.cs" />
     <Compile Include="Assets\Code\GlobalVariables.cs" />
     <Compile Include="Assets\Code\GridRowColumnControlHelper.cs" />
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
-    <Compile Include="Assets\Code\ComboBarControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

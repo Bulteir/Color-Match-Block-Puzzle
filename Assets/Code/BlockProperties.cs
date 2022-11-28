@@ -7,4 +7,9 @@ public class BlockProperties : MonoBehaviour
     public int BlockColor;
     public Transform SpawnPoint;
     public bool isSnapped = false;
+
+    /*game over kontrolü için.
+    Her blok hayali bir 5'e 5 grid üzerinde yerleþmiþcesine düþünülerek her bir blok hücresinin bu 5'e 5 lik gridde hangi hücrede olduðu iþlenecek.
+    x yatay, y dikey'i temsil ediyor*/
+    public Vector2 coordinate;
 }

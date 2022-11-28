@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 54469196}
   - component: {fileID: 54469198}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_4
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +398,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 2085479803}
+  coordinate: {x: 0, y: 2}
 --- !u!1 &62900123
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +997,7 @@ GameObject:
   - component: {fileID: 130602039}
   - component: {fileID: 130602041}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1127,6 +1132,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &144170319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1435,7 @@ GameObject:
   - component: {fileID: 190542894}
   - component: {fileID: 190542896}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1560,6 +1570,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 545019863}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &195947330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1967,7 @@ GameObject:
   - component: {fileID: 259527758}
   - component: {fileID: 259527760}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2087,6 +2102,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1113467144}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 1848812120}
+  coordinate: {x: 0, y: 1}
 --- !u!1 &265393954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,8 +2261,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1411949769}
   - {fileID: 371757885}
+  - {fileID: 1411949769}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2512,7 +2532,7 @@ GameObject:
   - component: {fileID: 358899943}
   - component: {fileID: 358899945}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2647,6 +2667,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1414293294}
+  rightCell: {fileID: 1524715425}
+  topCell: {fileID: 963560190}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &362503770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,7 +2938,7 @@ GameObject:
   - component: {fileID: 371757887}
   - component: {fileID: 371757889}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3048,6 +3073,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1411949769}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &388034193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,7 +3218,7 @@ GameObject:
   - component: {fileID: 390343829}
   - component: {fileID: 390343831}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,6 +3353,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1276206070}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &406060073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,7 +3372,7 @@ GameObject:
   - component: {fileID: 406060076}
   - component: {fileID: 406060078}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_4
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3472,6 +3507,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 709791424}
+  rightCell: {fileID: 607068246}
+  topCell: {fileID: 1578911638}
+  bottomCell: {fileID: 568166090}
+  coordinate: {x: 1, y: 1}
 --- !u!1 &416542378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,7 +3652,7 @@ GameObject:
   - component: {fileID: 417887390}
   - component: {fileID: 417887392}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_8
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3747,6 +3787,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1578911638}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 607068246}
+  coordinate: {x: 2, y: 2}
 --- !u!1 &426583199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,7 +4204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasBlocks: 0
+  block: {fileID: 0}
 --- !u!1 &523190221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4300,7 +4345,7 @@ GameObject:
   - component: {fileID: 534783347}
   - component: {fileID: 534783349}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4435,6 +4480,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1179732513}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &535502209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4575,7 +4625,7 @@ GameObject:
   - component: {fileID: 545019865}
   - component: {fileID: 545019867}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4710,6 +4760,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 190542892}
+  rightCell: {fileID: 1023350651}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &550240675
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,7 +5157,7 @@ GameObject:
   - component: {fileID: 567415293}
   - component: {fileID: 567415295}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_4
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5237,6 +5292,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1264723131}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 4, y: 0}
 --- !u!1 &568166089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5311,7 @@ GameObject:
   - component: {fileID: 568166092}
   - component: {fileID: 568166094}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5386,6 +5446,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 2134430952}
+  rightCell: {fileID: 638116976}
+  topCell: {fileID: 406060074}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &602095717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,7 +5591,7 @@ GameObject:
   - component: {fileID: 607068248}
   - component: {fileID: 607068250}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_5
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5661,6 +5726,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 406060074}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 417887388}
+  bottomCell: {fileID: 638116976}
+  coordinate: {x: 2, y: 1}
 --- !u!1 &622642456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5927,7 +5997,7 @@ GameObject:
   - component: {fileID: 638116978}
   - component: {fileID: 638116980}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6062,6 +6132,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 568166090}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 607068246}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &657049421
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,7 +6662,7 @@ GameObject:
   - component: {fileID: 693000216}
   - component: {fileID: 693000218}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6722,6 +6797,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1402541382}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &698797269
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,7 +6979,7 @@ GameObject:
   - component: {fileID: 709791426}
   - component: {fileID: 709791428}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7034,6 +7114,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 406060074}
+  topCell: {fileID: 1992855800}
+  bottomCell: {fileID: 2134430952}
+  coordinate: {x: 0, y: 1}
 --- !u!1 &722729702
 GameObject:
   m_ObjectHideFlags: 0
@@ -7300,7 +7385,7 @@ GameObject:
   - component: {fileID: 736638541}
   - component: {fileID: 736638543}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7435,6 +7520,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1345526139}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &763447518
 GameObject:
   m_ObjectHideFlags: 0
@@ -7953,7 +8043,7 @@ GameObject:
   - component: {fileID: 789371425}
   - component: {fileID: 789371427}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8088,6 +8178,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1964076210}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &795035336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8960,7 +9055,7 @@ GameObject:
   - component: {fileID: 872336042}
   - component: {fileID: 872336044}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9095,6 +9190,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1258249024}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 1179732513}
+  coordinate: {x: 1, y: 1}
 --- !u!1 &884943457
 GameObject:
   m_ObjectHideFlags: 0
@@ -9423,7 +9523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasBlocks: 0
+  block: {fileID: 0}
 --- !u!1 &909310108
 GameObject:
   m_ObjectHideFlags: 0
@@ -9892,7 +9992,7 @@ GameObject:
   - component: {fileID: 963560192}
   - component: {fileID: 963560194}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10027,6 +10127,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 358899941}
+  coordinate: {x: 1, y: 1}
 --- !u!1 &985341555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10055,9 +10160,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 693000214}
-  - {fileID: 1402541382}
   - {fileID: 1776321000}
+  - {fileID: 1402541382}
+  - {fileID: 693000214}
   - {fileID: 2085479803}
   - {fileID: 54469194}
   m_Father: {fileID: 1923345809}
@@ -10203,7 +10308,7 @@ GameObject:
   - component: {fileID: 1009353342}
   - component: {fileID: 1009353341}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10239,6 +10344,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1955330952}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 1}
 --- !u!61 &1009353342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10352,7 +10462,7 @@ GameObject:
   - component: {fileID: 1011096443}
   - component: {fileID: 1011096445}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10487,6 +10597,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1149107753}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 3, y: 0}
 --- !u!1 &1013792193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10627,7 +10742,7 @@ GameObject:
   - component: {fileID: 1023350653}
   - component: {fileID: 1023350655}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10762,6 +10877,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 545019863}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &1037859184
 GameObject:
   m_ObjectHideFlags: 0
@@ -11409,10 +11529,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1955330952}
   - {fileID: 1112871326}
-  - {fileID: 1009353340}
   - {fileID: 1285504285}
+  - {fileID: 1955330952}
+  - {fileID: 1009353340}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11430,7 +11550,7 @@ GameObject:
   - component: {fileID: 1112871328}
   - component: {fileID: 1112871327}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11466,6 +11586,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1285504285}
+  topCell: {fileID: 1955330952}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!61 &1112871328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11579,7 +11704,7 @@ GameObject:
   - component: {fileID: 1113467146}
   - component: {fileID: 1113467148}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11714,6 +11839,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 259527756}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 1473814848}
+  coordinate: {x: 1, y: 1}
 --- !u!1 &1114675994
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,7 +11858,7 @@ GameObject:
   - component: {fileID: 1114675997}
   - component: {fileID: 1114675999}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11863,6 +11993,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1345526139}
+  rightCell: {fileID: 1264723131}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &1121285275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12129,7 +12264,7 @@ GameObject:
   - component: {fileID: 1149107755}
   - component: {fileID: 1149107757}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12264,6 +12399,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1964076210}
+  rightCell: {fileID: 1011096441}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &1179732512
 GameObject:
   m_ObjectHideFlags: 0
@@ -12278,7 +12418,7 @@ GameObject:
   - component: {fileID: 1179732515}
   - component: {fileID: 1179732517}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12413,6 +12553,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 534783345}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 872336040}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1182837223
 GameObject:
   m_ObjectHideFlags: 0
@@ -12567,9 +12712,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1023350651}
-  - {fileID: 545019863}
   - {fileID: 190542892}
+  - {fileID: 545019863}
+  - {fileID: 1023350651}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12839,7 +12984,7 @@ GameObject:
   - component: {fileID: 1258249026}
   - component: {fileID: 1258249028}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12974,6 +13119,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 872336040}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 1}
 --- !u!1 &1264723130
 GameObject:
   m_ObjectHideFlags: 0
@@ -12988,7 +13138,7 @@ GameObject:
   - component: {fileID: 1264723133}
   - component: {fileID: 1264723135}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13123,6 +13273,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1114675995}
+  rightCell: {fileID: 567415291}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 3, y: 0}
 --- !u!1 &1274099934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13389,7 +13544,7 @@ GameObject:
   - component: {fileID: 1276206072}
   - component: {fileID: 1276206074}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13524,6 +13679,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 390343827}
+  topCell: {fileID: 1471762299}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &1284162866
 GameObject:
   m_ObjectHideFlags: 0
@@ -13664,7 +13824,7 @@ GameObject:
   - component: {fileID: 1285504287}
   - component: {fileID: 1285504286}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13700,6 +13860,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1112871326}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!61 &1285504287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14328,7 +14493,7 @@ GameObject:
   - component: {fileID: 1345526141}
   - component: {fileID: 1345526143}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14463,6 +14628,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 736638539}
+  rightCell: {fileID: 1114675995}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1357069181
 GameObject:
   m_ObjectHideFlags: 0
@@ -14990,7 +15160,7 @@ GameObject:
   - component: {fileID: 1402541384}
   - component: {fileID: 1402541386}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15125,6 +15295,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1776321000}
+  rightCell: {fileID: 693000214}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1411949768
 GameObject:
   m_ObjectHideFlags: 0
@@ -15139,7 +15314,7 @@ GameObject:
   - component: {fileID: 1411949771}
   - component: {fileID: 1411949773}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15274,6 +15449,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 371757885}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1414293293
 GameObject:
   m_ObjectHideFlags: 0
@@ -15288,7 +15468,7 @@ GameObject:
   - component: {fileID: 1414293296}
   - component: {fileID: 1414293298}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15423,6 +15603,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 358899941}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &1422326858
 GameObject:
   m_ObjectHideFlags: 0
@@ -15625,7 +15810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d488af0070876547a2bd57a75b100fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasBlocks: 0
+  block: {fileID: 0}
 --- !u!1 &1444348575
 GameObject:
   m_ObjectHideFlags: 0
@@ -16144,7 +16329,7 @@ GameObject:
   - component: {fileID: 1471762301}
   - component: {fileID: 1471762303}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16279,6 +16464,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 1276206070}
+  coordinate: {x: 0, y: 1}
 --- !u!1 &1473814847
 GameObject:
   m_ObjectHideFlags: 0
@@ -16293,7 +16483,7 @@ GameObject:
   - component: {fileID: 1473814850}
   - component: {fileID: 1473814852}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16428,6 +16618,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1848812120}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 1113467144}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1524715423
 GameObject:
   m_ObjectHideFlags: 0
@@ -16442,7 +16637,7 @@ GameObject:
   - component: {fileID: 1524715426}
   - component: {fileID: 1524715428}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16577,6 +16772,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 358899941}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 2, y: 0}
 --- !u!1 &1528172411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17228,7 +17428,7 @@ GameObject:
   - component: {fileID: 1578911640}
   - component: {fileID: 1578911642}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_7
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17363,6 +17563,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1992855800}
+  rightCell: {fileID: 417887388}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 406060074}
+  coordinate: {x: 1, y: 2}
 --- !u!1 &1600609006
 GameObject:
   m_ObjectHideFlags: 0
@@ -18174,8 +18379,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1473814848}
   - {fileID: 1848812120}
+  - {fileID: 1473814848}
   - {fileID: 259527756}
   - {fileID: 1113467144}
   m_Father: {fileID: 1923345809}
@@ -18775,7 +18980,7 @@ GameObject:
   - component: {fileID: 1776321002}
   - component: {fileID: 1776321004}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18910,6 +19115,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1402541382}
+  topCell: {fileID: 2085479803}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &1776432243
 GameObject:
   m_ObjectHideFlags: 0
@@ -18938,11 +19148,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 567415291}
-  - {fileID: 1264723131}
-  - {fileID: 1114675995}
-  - {fileID: 1345526139}
   - {fileID: 736638539}
+  - {fileID: 1345526139}
+  - {fileID: 1114675995}
+  - {fileID: 1264723131}
+  - {fileID: 567415291}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19698,7 +19908,7 @@ GameObject:
   - component: {fileID: 1848812122}
   - component: {fileID: 1848812124}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19833,6 +20043,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1473814848}
+  topCell: {fileID: 259527756}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
 --- !u!1 &1857300882
 GameObject:
   m_ObjectHideFlags: 0
@@ -20864,7 +21079,7 @@ GameObject:
   - component: {fileID: 1955330954}
   - component: {fileID: 1955330953}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20900,6 +21115,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 1009353340}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 1112871326}
+  coordinate: {x: 1, y: 1}
 --- !u!61 &1955330954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21013,7 +21233,7 @@ GameObject:
   - component: {fileID: 1964076212}
   - component: {fileID: 1964076214}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21148,6 +21368,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 789371423}
+  rightCell: {fileID: 1149107753}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 1, y: 0}
 --- !u!1 &1967740770
 GameObject:
   m_ObjectHideFlags: 0
@@ -21302,10 +21527,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1011096441}
-  - {fileID: 1149107753}
-  - {fileID: 1964076210}
   - {fileID: 789371423}
+  - {fileID: 1964076210}
+  - {fileID: 1149107753}
+  - {fileID: 1011096441}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21337,8 +21562,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 390343827}
   - {fileID: 1276206070}
+  - {fileID: 390343827}
   - {fileID: 1471762299}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
@@ -21609,7 +21834,7 @@ GameObject:
   - component: {fileID: 1992855802}
   - component: {fileID: 1992855804}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_6
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21744,6 +21969,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 1578911638}
+  topCell: {fileID: 0}
+  bottomCell: {fileID: 709791424}
+  coordinate: {x: 0, y: 2}
 --- !u!1 &2028048723
 GameObject:
   m_ObjectHideFlags: 0
@@ -22034,15 +22264,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 638116976}
-  - {fileID: 568166090}
   - {fileID: 2134430952}
-  - {fileID: 607068246}
-  - {fileID: 406060074}
+  - {fileID: 568166090}
+  - {fileID: 638116976}
   - {fileID: 709791424}
-  - {fileID: 417887388}
-  - {fileID: 1578911638}
+  - {fileID: 406060074}
+  - {fileID: 607068246}
   - {fileID: 1992855800}
+  - {fileID: 1578911638}
+  - {fileID: 417887388}
   m_Father: {fileID: 1923345809}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22060,7 +22290,7 @@ GameObject:
   - component: {fileID: 2085479805}
   - component: {fileID: 2085479807}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_3
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22195,6 +22425,11 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 0}
+  topCell: {fileID: 54469194}
+  bottomCell: {fileID: 1776321000}
+  coordinate: {x: 0, y: 1}
 --- !u!1 &2114366169
 GameObject:
   m_ObjectHideFlags: 0
@@ -22335,7 +22570,7 @@ GameObject:
   - component: {fileID: 2134430954}
   - component: {fileID: 2134430956}
   m_Layer: 0
-  m_Name: BlockA
+  m_Name: BlockA_0
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22470,3 +22705,8 @@ MonoBehaviour:
   BlockColor: 0
   SpawnPoint: {fileID: 0}
   isSnapped: 0
+  leftCell: {fileID: 0}
+  rightCell: {fileID: 568166090}
+  topCell: {fileID: 709791424}
+  bottomCell: {fileID: 0}
+  coordinate: {x: 0, y: 0}
