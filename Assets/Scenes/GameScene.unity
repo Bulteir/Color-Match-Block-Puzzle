@@ -11857,6 +11857,8 @@ MonoBehaviour:
   CreatedBlocksGroup: {fileID: 1821578375}
   gridForScale: {fileID: 2028048724}
   canvasForScale: {fileID: 1821578375}
+  gridCellForSpawnPointPosition: {fileID: 1535211027}
+  spawnPointADBannerHeight: 0
 --- !u!114 &1052310665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21418,9 +21420,9 @@ RectTransform:
   m_Father: {fileID: 1821578375}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 881, y: 2165}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 822.5, y: -367}
   m_SizeDelta: {x: 364, y: 364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927678677

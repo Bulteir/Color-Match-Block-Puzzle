@@ -10,9 +10,12 @@ public class CreateBlocks : MonoBehaviour
     public Transform CreatedBlocksGroup;
     public Transform gridForScale;
     public Transform canvasForScale;
+    public Transform gridCellForSpawnPointPosition;
+    public float spawnPointADBannerHeight;
     // Start is called before the first frame update
     void Start()
     {
+        SetSpawnPointPosition();
         CreateRandomBlocks(false);
     }
 
@@ -99,5 +102,16 @@ public class CreateBlocks : MonoBehaviour
         }
 
         #endregion
+    }
+
+    void SetSpawnPointPosition()
+    {
+        float gridBottomPoint = Camera.main.WorldToScreenPoint(gridCellForSpawnPointPosition.position).y -5.4f;
+        float spawnPointPositionY = (gridBottomPoint + spawnPointADBannerHeight) / 2f;
+
+        for (int i = 0; i < SpawnPoints.Count; i++)
+        {
+            SpawnPoints[i].position = new Vector3(SpawnPoints[i].position.x, Camera.main.ScreenToWorldPoint(new Vector3(0, spawnPointPositionY, 0)).y, SpawnPoints[i].position.z);
+        }
     }
 }
