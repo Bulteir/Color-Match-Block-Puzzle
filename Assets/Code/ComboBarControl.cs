@@ -14,18 +14,22 @@ public class ComboBarControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (comboBar.value > 0 && comboBar.value <= 100)
+        if (GlobalVariables.gameState == GlobalVariables.gameState_inGame)
         {
-            comboBar.value = comboBar.value - (comboBar.maxValue/comboDurationSecond) * Time.deltaTime;
-        }
-        if (comboBar.value == 0)
-        {
-            DecreaseComboMultiplier();
+            if (comboBar.value > 0 && comboBar.value <= 100)
+            {
+                comboBar.value = comboBar.value - (comboBar.maxValue / comboDurationSecond) * Time.deltaTime;
+            }
+            if (comboBar.value == 0)
+            {
+                DecreaseComboMultiplier();
+            }
         }
     }
 

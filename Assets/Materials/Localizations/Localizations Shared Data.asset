@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Localizations Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Localizations
+  m_TableCollectionNameGuidString: b61fee0b49374e441aaebcd14f68c2de
+  m_Entries:
+  - m_Id: 300768428032
+    m_Key: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1190095093760
+    m_Key: High Scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154478829568
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228734787584
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2407449886720
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2477851279360
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3539777748992
+    m_Key: Reset High Scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3661878132736
+    m_Key: Rate Us
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006337335296000
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006365487464448
+    m_Key: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006401457815552
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 593346640737992815
+  references:
+    version: 2
+    RefIds:
+    - rid: 593346640737992815
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1669816486619

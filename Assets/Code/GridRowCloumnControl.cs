@@ -144,10 +144,11 @@ public class GridRowCloumnControl : MonoBehaviour
         }
     }
 
-    void CreateScore(Transform grid,int score)
+    void CreateScore(Transform grid, int score)
     {
         GameObject scoreLabel = GameObject.Instantiate(score_Prefab.gameObject);
         scoreLabel.transform.SetParent(canvas);
+        scoreLabel.transform.SetAsFirstSibling();
         scoreLabel.transform.localScale = new Vector3(1, 1, 1);
         Vector3 score_PrefabPos = grid.position;
         score_PrefabPos.z = 0;
@@ -162,12 +163,13 @@ public class GridRowCloumnControl : MonoBehaviour
     {
         while (score.transform.localScale.x < 3f)
         {
-            score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 10f * Time.deltaTime );
+            score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 10f * Time.deltaTime);
             if (score.transform.localScale.x > 2.99f)
             {
                 score.transform.localScale = new Vector3(3, 3, 1);
             }
-            yield return null;
+            yield return new WaitUntil(() => GlobalVariables.gameState == GlobalVariables.gameState_inGame);
+
         }
 
         float velocity = 0.2f;
@@ -175,7 +177,7 @@ public class GridRowCloumnControl : MonoBehaviour
         {
             score.transform.position = Vector3.Lerp(score.transform.position, scoreText.transform.position, velocity * 0.1f * Time.deltaTime);
             velocity = velocity * 1.05f;
-            yield return null;
+            yield return new WaitUntil(() => GlobalVariables.gameState == GlobalVariables.gameState_inGame);
         }
 
         int totalScore = int.Parse(scoreText.text);
@@ -186,14 +188,14 @@ public class GridRowCloumnControl : MonoBehaviour
     }
 
     //yeni bloklar spawn edildikten sonra çaðrýlýr ve spawn edilen bloklarýn grid üzerinde yerleþririlecek yeri olup olmadýðýný kontrol eder.
-    public bool IsGameOver (Transform spawnedBlock)
+    public bool IsGameOver(Transform spawnedBlock)
     {
         bool isThereAvaiblePlace = false;
         for (int i = 0; i < 10 && isThereAvaiblePlace == false; i++)
         {
             for (int j = 0; j < 10 && isThereAvaiblePlace == false; j++)
             {
-                if (IsGameOverHelper(spawnedBlock, i, j,0))
+                if (IsGameOverHelper(spawnedBlock, i, j, 0))
                 {
                     isThereAvaiblePlace = true;
                 }
@@ -217,7 +219,7 @@ public class GridRowCloumnControl : MonoBehaviour
         return !isThereAvaiblePlace;
     }
 
-    bool IsGameOverHelper(Transform spawnedBlock,int i,int j,int coordinate)
+    bool IsGameOverHelper(Transform spawnedBlock, int i, int j, int coordinate)
     {
         bool isThereAvaiblePlace = false;
         int availableGrids = 0;

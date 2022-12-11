@@ -33,14 +33,14 @@ public class CreateBlocks : MonoBehaviour
     //rastgele renkte rastgele bir küp oluþturur. Blok parçalarýnýn orta noktasýný bulur ve spawn noktasýna yerleþtirir.
     void createRandomBlock(Transform spawnPoint,bool playSpawnAnimation)
     {
-        //int randomBlockType = Random.Range(0, blocks.Count);
-        //int randomBlockColor = Random.Range(0, 2);
-        //int randomBlockAngle = Random.Range(0, 4);
+        int randomBlockType = Random.Range(0, blocks.Count);
+        int randomBlockColor = Random.Range(0, 2);
+        int randomBlockAngle = Random.Range(0, 4);
 
         //görsel test için
-        int randomBlockType = 5;
-        int randomBlockColor = 0;
-        int randomBlockAngle = 0;
+        //int randomBlockType = 5;
+        //int randomBlockColor = 0;
+        //int randomBlockAngle = 0;
 
 
         GameObject randomBlock = GameObject.Instantiate(blocks[randomBlockType].gameObject);
@@ -98,7 +98,7 @@ public class CreateBlocks : MonoBehaviour
 
         if (totalAvaiblePlace == 3)
         {
-            Debug.Log("oyun bitti.");
+            GlobalVariables.gameState = GlobalVariables.gameState_gameOver;
         }
 
         #endregion
