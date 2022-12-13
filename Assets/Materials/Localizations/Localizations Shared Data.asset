@@ -40,11 +40,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3539777748992
-    m_Key: Reset High Scores
+    m_Key: Delete High Scores
     m_Metadata:
       m_Items: []
   - m_Id: 3661878132736
-    m_Key: Rate Us
+    m_Key: Rate Game
     m_Metadata:
       m_Items: []
   - m_Id: 3006337335296000
@@ -57,6 +57,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3006401457815552
     m_Key: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335825264443392
+    m_Key: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335868092481536
+    m_Key: Date
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4663728707600384
+    m_Key: Select Language
     m_Metadata:
       m_Items: []
   m_Metadata:

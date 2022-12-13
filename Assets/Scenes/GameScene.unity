@@ -1269,7 +1269,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &130602040
 Rigidbody2D:
@@ -2384,7 +2384,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &259527759
 Rigidbody2D:
@@ -2771,6 +2771,7 @@ GameObject:
   - component: {fileID: 287626645}
   - component: {fileID: 287626644}
   - component: {fileID: 287626643}
+  - component: {fileID: 287626646}
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
@@ -2842,7 +2843,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 287626644}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 287626646}
+        m_TargetAssemblyTypeName: PauseMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &287626644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,6 +2894,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287626641}
   m_CullTransparentMesh: 1
+--- !u!114 &287626646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287626641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec6d420b87853b4ba5e1d6e61a4cb2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &302222523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,7 +3269,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &358899944
 Rigidbody2D:
@@ -4216,7 +4241,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &406060077
 Rigidbody2D:
@@ -5619,7 +5644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &545019866
 Rigidbody2D:
@@ -6483,6 +6508,7 @@ GameObject:
   - component: {fileID: 603204937}
   - component: {fileID: 603204936}
   - component: {fileID: 603204935}
+  - component: {fileID: 603204938}
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
@@ -6554,7 +6580,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 603204936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 603204938}
+        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &603204936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6593,6 +6631,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603204933}
   m_CullTransparentMesh: 1
+--- !u!114 &603204938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603204933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5085efcf154bbc45a243021bd12efa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &607068245
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,7 +10533,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &872336043
 Rigidbody2D:
@@ -11444,10 +11494,10 @@ RectTransform:
   m_Father: {fileID: 1821578375}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2340, y: 5070}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941838797
 MonoBehaviour:
@@ -13143,6 +13193,7 @@ GameObject:
   - component: {fileID: 1052310664}
   - component: {fileID: 1052310665}
   - component: {fileID: 1052310666}
+  - component: {fileID: 1052310667}
   m_Layer: 0
   m_Name: GeneralControls
   m_TagString: Untagged
@@ -13481,6 +13532,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1661253602}
   gameOverMenu: {fileID: 941838795}
+--- !u!114 &1052310667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052310659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef71e9f2aa4758d469ec6506ec5618d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoresUIList: []
 --- !u!1 &1065529752
 GameObject:
   m_ObjectHideFlags: 0
@@ -13888,7 +13952,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1112871329
 Rigidbody2D:
@@ -14227,7 +14291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1114675998
 Rigidbody2D:
@@ -15929,7 +15993,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1276206073
 Rigidbody2D:
@@ -17842,7 +17906,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1411949772
 Rigidbody2D:
@@ -20919,10 +20983,10 @@ RectTransform:
   m_Father: {fileID: 1821578375}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2340, y: 5070}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661253604
 MonoBehaviour:
@@ -21953,7 +22017,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1776321003
 Rigidbody2D:
@@ -24227,7 +24291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.8, y: 10.8}
+  m_Size: {x: 54, y: 54}
   m_EdgeRadius: 0
 --- !u!50 &1964076213
 Rigidbody2D:

@@ -17,14 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f08bcd198633e694ab201d40f5c1419b
   m_SerializeEntries:
-  - m_GUID: eb5f6c9ced636c14da7303c9cda8d701
-    m_Address: English (en)
+  - m_GUID: 71a5bc7d3d04a804997bba1a8434a6f6
+    m_Address: Turkish (tr)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 71a5bc7d3d04a804997bba1a8434a6f6
-    m_Address: Turkish (tr)
+  - m_GUID: eb5f6c9ced636c14da7303c9cda8d701
+    m_Address: English (en)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

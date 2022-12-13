@@ -23,24 +23,24 @@ public class InGameMenuController : MonoBehaviour
         if (GlobalVariables.gameState == GlobalVariables.gameState_gamePaused && pauseMenu.activeSelf == false)
         {
             pauseMenu.SetActive(true);
-            PauseMenuMaskHelper(true);
+            SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_inGame && pauseMenu.activeSelf == true)
         {
             pauseMenu.SetActive(false);
-            PauseMenuMaskHelper(false);
+            SpawnedBlocksMaskHelper(false);
             gameOverMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_gameOver && gameOverMenu.activeSelf == false)
         {
             pauseMenu.SetActive(false);
-            PauseMenuMaskHelper(false);
+            SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(true);
         }
     }
 
-    void PauseMenuMaskHelper(bool active)
+    void SpawnedBlocksMaskHelper(bool active)
     {
         foreach (Transform item in this.GetComponent<CreateBlocks>().SpawnPoints)
         {

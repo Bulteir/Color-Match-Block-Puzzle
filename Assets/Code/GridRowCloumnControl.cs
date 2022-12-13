@@ -163,19 +163,20 @@ public class GridRowCloumnControl : MonoBehaviour
     {
         while (score.transform.localScale.x < 3f)
         {
-            score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 10f * Time.deltaTime);
+            //score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 10f*Time.deltaTime);
+            score.transform.localScale = Vector3.Lerp(score.transform.localScale, new Vector3(3, 3, 1), 0.05f);
             if (score.transform.localScale.x > 2.99f)
             {
                 score.transform.localScale = new Vector3(3, 3, 1);
             }
             yield return new WaitUntil(() => GlobalVariables.gameState == GlobalVariables.gameState_inGame);
-
         }
 
         float velocity = 0.2f;
         while (Vector3.Distance(score.transform.position, scoreText.transform.position) > 5f)
         {
-            score.transform.position = Vector3.Lerp(score.transform.position, scoreText.transform.position, velocity * 0.1f * Time.deltaTime);
+            //score.transform.position = Vector3.Lerp(score.transform.position, scoreText.transform.position, velocity * 0.1f*Time.deltaTime);
+            score.transform.position = Vector3.Lerp(score.transform.position, scoreText.transform.position, velocity * 0.0005f);
             velocity = velocity * 1.05f;
             yield return new WaitUntil(() => GlobalVariables.gameState == GlobalVariables.gameState_inGame);
         }

@@ -98,6 +98,8 @@ public class CreateBlocks : MonoBehaviour
 
         if (totalAvaiblePlace == 3)
         {
+            int score = int.Parse(this.GetComponent<GridRowCloumnControl>().scoreText.text);
+            this.GetComponent<HighScoreControl>().SaveHighScore(score);
             GlobalVariables.gameState = GlobalVariables.gameState_gameOver;
         }
 

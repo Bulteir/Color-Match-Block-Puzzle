@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class MenuController : MonoBehaviour
 {
@@ -8,6 +9,14 @@ public class MenuController : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject highScoresMenu;
 
+    void Awake()
+    {
+        string selectedLangVal = PlayerPrefs.GetString("SelectedLang");
+        if (selectedLangVal != "")
+        {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[int.Parse(selectedLangVal)];
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

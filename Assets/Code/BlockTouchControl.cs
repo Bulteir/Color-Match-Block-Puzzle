@@ -119,6 +119,9 @@ public class BlockTouchControl : MonoBehaviour
                             }
 
                             toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+
+                            //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
+                            touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
                         }
 
                         //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
@@ -226,6 +229,9 @@ public class BlockTouchControl : MonoBehaviour
                         }
 
                         toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+
+                        //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
+                        touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
                     }
 
                     //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz

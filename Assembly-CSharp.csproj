@@ -60,10 +60,15 @@
     <Compile Include="Assets\Code\UI\PauseMenu_Resume_Btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
     <Compile Include="Assets\Code\UI\InGameMenuController.cs" />
+    <Compile Include="Assets\Code\UI\GameOverMenu_Restart_Btn.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_HighScore_Btn.cs" />
+    <Compile Include="Assets\Code\HighScoreControl.cs" />
+    <Compile Include="Assets\Code\UI\SettingsMenu_RateGame_Btn.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_Exit_Btn.cs" />
+    <Compile Include="Assets\Code\UI\PauseMenu_Restart_Btn.cs" />
     <Compile Include="Assets\Code\UI\PauseMenu_MainMenu_Btn.cs" />
     <Compile Include="Assets\Code\UI\Pause_Btn.cs" />
+    <Compile Include="Assets\Code\UI\SettingsMenu_DeleteHighScores_Btn.cs" />
     <Compile Include="Assets\Code\GridRowCloumnControl.cs" />
     <Compile Include="Assets\Code\BlockProperties.cs" />
     <Compile Include="Assets\Code\CreateBlocks.cs" />
@@ -71,6 +76,7 @@
     <Compile Include="Assets\Code\UI\MenuController.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_MainMenu_Btn.cs" />
     <Compile Include="Assets\Code\ComboBarControl.cs" />
+    <Compile Include="Assets\Code\UI\SettingsMenu_Language_Dropdown.cs" />
     <Compile Include="Assets\Code\GlobalVariables.cs" />
     <Compile Include="Assets\Code\GridRowColumnControlHelper.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_Settings_Btn.cs" />

@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1190095093760
-    m_Localized: "Y\xFCksek Puanlar??"
+    m_Localized: "Y\xFCksek Skorlar"
     m_Metadata:
       m_Items: []
   - m_Id: 2154478829568
@@ -43,11 +43,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3539777748992
-    m_Localized: "Y\xFCksek Puanlar\u0131 S\u0131f\u0131rla"
+    m_Localized: "Y\xFCksek Puanlar\u0131 Sil"
     m_Metadata:
       m_Items: []
   - m_Id: 3661878132736
-    m_Localized: Bize Puan verin
+    m_Localized: "Oyunu Puanlay\u0131n"
     m_Metadata:
       m_Items: []
   - m_Id: 3006337335296000
@@ -60,6 +60,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3006401457815552
     m_Localized: "Yeniden Ba\u015Flat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335825264443392
+    m_Localized: Skor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335868092481536
+    m_Localized: Tarih
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4663728707600384
+    m_Localized: "Dil Se\xE7in"
     m_Metadata:
       m_Items: []
   references:

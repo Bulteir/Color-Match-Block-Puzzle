@@ -8,7 +8,7 @@ public class GlobalVariables
     public const string gridBlock = "GridBlock";
     public const string scoreText = "ScoreText";
 
-    public static int gameState = gameState_inGame;
+    public static int gameState = gameState_MainMenu;
     public const int gameState_MainMenu = 0;
     public const int gameState_inGame = 1;
     public const int gameState_SettingsMenu = 2;
@@ -33,5 +33,15 @@ public class GlobalVariables
     
     public const int baseScore = 10;
     public const int maxScoreMultiplier = 5;
+
+    public static int selectedLanguage = notSelected;
+    public const int notSelected = -1;
+    public const int english = 0;
+    public const int turkish = 1;
+    public const int spanish = 2;
+    public const int chinese= 3;
+    public const int arabic = 4;
+    public const int german = 5;
+    public const int japanese = 6;
 
 }
