@@ -5,9 +5,63 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu_MainMenu_Btn : MonoBehaviour
 {
+    bool adIsReady = false;
+    public Transform GeneralControls;
+    Coroutine requestAdCorroutine;
+
     public void OnClick()
     {
-        GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.gameOverMenuMainMenu_btn;
+        if (adIsReady)
+        {
+            adIsReady = false;
+            GeneralControls.GetComponent<AdMobController>().ShowInterstitialAd();
+        }
+        else
+        {
+            GoMainMenu();
+        }
+
+    }
+    public void GoMainMenu()
+    {
+        if (GlobalVariables.requestInterstitialAd == true && GlobalVariables.whichButtonRequestInterstitialAd == GlobalVariables.gameOverMenuMainMenu_btn)
+        {
+            GlobalVariables.requestInterstitialAd = false;
+            GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
+            GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
+            GeneralControls.GetComponent<AdMobController>().DestroyInterstitialAd();
+
+            GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
+            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        }
+        else if (GlobalVariables.whichButtonRequestInterstitialAd == GlobalVariables.gameOverMenuMainMenu_btn)
+        {
+            GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
+            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        }
+    }
+    public void adLoaded()
+    {
+        if (GlobalVariables.requestInterstitialAd == true)
+        {
+            adIsReady = true;
+        }
+    }
+
+    public void RequestInsterstitialAdForFailed()
+    {
+        if (GlobalVariables.requestInterstitialAd == true)
+        {
+            StopCoroutine(requestAdCorroutine);
+            requestAdCorroutine = StartCoroutine(RequestInsterstitialAd());
+        }
+    }
+
+    IEnumerator RequestInsterstitialAd()
+    {
+        yield return new WaitForSeconds(5);
+        GlobalVariables.requestInterstitialAd = true;
+        GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
     }
 }

@@ -109,7 +109,7 @@ public class CreateBlocks : MonoBehaviour
     void SetSpawnPointPosition()
     {
         float gridBottomPoint = Camera.main.WorldToScreenPoint(gridCellForSpawnPointPosition.position).y -5.4f;
-        float spawnPointPositionY = (gridBottomPoint + spawnPointADBannerHeight) / 2f;
+        float spawnPointPositionY = ((gridBottomPoint - spawnPointADBannerHeight) / 2f) + spawnPointADBannerHeight;
 
         for (int i = 0; i < SpawnPoints.Count; i++)
         {

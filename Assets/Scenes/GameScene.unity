@@ -2179,6 +2179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44b52b539d973d24895b724f0b0a1f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GeneralControls: {fileID: 1052310660}
 --- !u!114 &248434027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,6 +2907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec6d420b87853b4ba5e1d6e61a4cb2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GeneralControls: {fileID: 1052310660}
 --- !u!1 &302222523
 GameObject:
   m_ObjectHideFlags: 0
@@ -6643,6 +6645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5085efcf154bbc45a243021bd12efa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GeneralControls: {fileID: 1052310660}
 --- !u!1 &607068245
 GameObject:
   m_ObjectHideFlags: 0
@@ -13194,6 +13197,7 @@ GameObject:
   - component: {fileID: 1052310665}
   - component: {fileID: 1052310666}
   - component: {fileID: 1052310667}
+  - component: {fileID: 1052310668}
   m_Layer: 0
   m_Name: GeneralControls
   m_TagString: Untagged
@@ -13501,7 +13505,7 @@ MonoBehaviour:
   gridForScale: {fileID: 2028048724}
   canvasForScale: {fileID: 1821578375}
   gridCellForSpawnPointPosition: {fileID: 1535211027}
-  spawnPointADBannerHeight: 0
+  spawnPointADBannerHeight: 100
 --- !u!114 &1052310665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13545,6 +13549,180 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScoresUIList: []
+--- !u!114 &1052310668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052310659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd793fdd071486f4ca78d6956eac8c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAdLoadedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287626646}
+        m_TargetAssemblyTypeName: PauseMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: adLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 603204938}
+        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: adLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 248434026}
+        m_TargetAssemblyTypeName: GameOverMenu_MainMenu_Btn, Assembly-CSharp
+        m_MethodName: adLoaded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  OnAdFailedToLoadEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287626646}
+        m_TargetAssemblyTypeName: PauseMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RequestInsterstitialAdForFailed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 603204938}
+        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RequestInsterstitialAdForFailed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 248434026}
+        m_TargetAssemblyTypeName: GameOverMenu_MainMenu_Btn, Assembly-CSharp
+        m_MethodName: RequestInsterstitialAdForFailed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  OnAdOpeningEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdFailedToShowEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287626646}
+        m_TargetAssemblyTypeName: PauseMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 603204938}
+        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 248434026}
+        m_TargetAssemblyTypeName: GameOverMenu_MainMenu_Btn, Assembly-CSharp
+        m_MethodName: GoMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  OnUserEarnedRewardEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdClosedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287626646}
+        m_TargetAssemblyTypeName: PauseMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 603204938}
+        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 248434026}
+        m_TargetAssemblyTypeName: GameOverMenu_MainMenu_Btn, Assembly-CSharp
+        m_MethodName: GoMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &1065529752
 GameObject:
   m_ObjectHideFlags: 0

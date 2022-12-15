@@ -11,6 +11,9 @@ public class InGameMenuController : MonoBehaviour
     void Start()
     {
         menuActiveControl();
+        GlobalVariables.requestInterstitialAd = true;
+        GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
+        this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
     }
 
     // Update is called once per frame
