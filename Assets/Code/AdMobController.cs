@@ -36,7 +36,7 @@ public class AdMobController : MonoBehaviour
 #if UNITY_IPHONE
         deviceIds.Add("DF229BBF2B1642998DFF3FFA52D9CD30");
 #elif UNITY_ANDROID
-        deviceIds.Add("75EF8D155528C04DACBBA6F36F433035");
+        deviceIds.Add("d8680638de874f76b5395ce4a5f5ad66");
 #endif
 
         // Configure TagForChildDirectedTreatment and test device IDs.
@@ -91,9 +91,9 @@ public class AdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-                string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+                string adUnitId = "ca-app-pub-3475441178822227/8469984595";
 #elif UNITY_IPHONE
-                string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+                string adUnitId = "";
 #else
                 string adUnitId = "unexpected_platform";
 #endif
@@ -169,9 +169,9 @@ public class AdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-                        string adUnitId = "ca-app-pub-3475441178822227/6017913476";
+                        string adUnitId = "ca-app-pub-3475441178822227/6094817285";
 #elif UNITY_IPHONE
-                        string adUnitId = "ca-app-pub-3475441178822227/3540673347";
+                        string adUnitId = "";
 #else
                         string adUnitId = "unexpected_platform";
 #endif
@@ -258,9 +258,9 @@ public class AdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-                        string adUnitId = "ca-app-pub-3475441178822227/9510898940";
+                        string adUnitId = "";
 #elif UNITY_IPHONE
-                        string adUnitId = "ca-app-pub-3475441178822227/5888183825";
+                        string adUnitId = "";
 #else
                         string adUnitId = "unexpected_platform";
 #endif
@@ -272,8 +272,6 @@ public class AdMobController : MonoBehaviour
         rewardedAd.OnAdLoaded += (sender, args) =>
         {
             PrintStatus("Reward ad loaded.");
-            //easyButton.GetComponent<NewGameMenu_EasyJoker_Btn>().adLoaded();
-            //veryEasyButton.GetComponent<NewGameMenu_VeryEasyJoker_Btn>().adLoaded();
             OnAdLoadedEvent.Invoke();
         };
         rewardedAd.OnAdFailedToLoad += (sender, args) =>

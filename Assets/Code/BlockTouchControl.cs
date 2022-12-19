@@ -97,46 +97,21 @@ public class BlockTouchControl : MonoBehaviour
             {
                 if (touchedBlock != null)
                 {
-                    SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
 
-                    #region snap ettirme yeri
-                    //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
-                    if (touchedBlockParent.childCount == toBePlacedGrids.Count)
+                    float blockTouchPositionDelta = Vector3.Distance(new Vector3(preCorrectPos.x, preCorrectPos.y, touchedBlockParent.position.z), touchedBlockParent.position);
+                    //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
+                    if (blockTouchPositionDelta < 3f)
                     {
-                        for (int i = 0; i < touchedBlockParent.childCount; i++)
+                        touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                        if (touchedBlockParent.rotation.z >= 360)
                         {
-                            Vector3 snapPos = toBePlacedGrids[i].position;
-                            snapPos.z = gridForScale.GetChild(1).position.z - 1;
-                            touchedBlockParent.GetChild(i).transform.position = snapPos;
-
-                            if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
-                            {
-                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
-                            }
-                            else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
-                            {
-                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
-                            }
-
-                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
-
-                            //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
-                            touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
+                            touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
                         }
 
-                        //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
-                        foreach (Transform item in touchedBlockParent)
-                        {
-                            item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().block = null;
-                            item.GetComponent<BlockProperties>().isSnapped = true;
-                            item.GetComponent<SpriteRenderer>().sortingOrder = 0;
-                        }
-                        touchedBlockParent.SetParent(canvasForScale);
-                        transform.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
-                    }
-                    else // deðilse eski doðru konumuna gönderilir
-                    {
+                        SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
                         touchedBlockParent.position = preCorrectPos;
+
                         //block spawn noktasýna gönderiliyorsa tekrar küçültülür
                         if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
                         {
@@ -146,23 +121,87 @@ public class BlockTouchControl : MonoBehaviour
                             }
                             BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
                         }
-                    }
-                    #endregion
 
-                    //snap yapýlan griddeki gölgeler kaldýrýlýr
-                    foreach (var item in toBePlacedGrids)
+                        touchedBlock = null;
+                        touchedBlockParent = null;
+                        deltaPos = Vector3.zero;
+                        toBePlacedGrids.Clear();
+                        preCorrectPos = Vector3.zero;
+                    }
+                    else
                     {
-                        item.GetComponent<SpriteRenderer>().color = Color.white;
+                        SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
+                        #region snap ettirme yeri
+                        //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
+                        if (touchedBlockParent.childCount == toBePlacedGrids.Count)
+                        {
+                            for (int i = 0; i < touchedBlockParent.childCount; i++)
+                            {
+                                Vector3 snapPos = toBePlacedGrids[i].position;
+                                snapPos.z = gridForScale.GetChild(1).position.z - 1;
+                                touchedBlockParent.GetChild(i).transform.position = snapPos;
+
+                                if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
+                                {
+                                    toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                                }
+                                else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
+                                {
+                                    toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
+                                }
+
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+
+                                //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
+                                touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
+                            }
+
+                            //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
+                            foreach (Transform item in touchedBlockParent)
+                            {
+                                item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().block = null;
+                                item.GetComponent<BlockProperties>().isSnapped = true;
+                                item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                            }
+                            touchedBlockParent.SetParent(canvasForScale);
+
+                            SnappedBlocksPositionAndScaleCorrection();
+
+                            transform.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
+
+                        }
+                        else // deðilse eski doðru konumuna gönderilir
+                        {
+                            touchedBlockParent.position = preCorrectPos;
+                            //block spawn noktasýna gönderiliyorsa tekrar küçültülür
+                            if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
+                            {
+                                if (blockScaleAnimationStarted)
+                                {
+                                    StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                                }
+                                BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                            }
+                        }
+                        #endregion
+
+                        //snap yapýlan griddeki gölgeler kaldýrýlýr
+                        foreach (var item in toBePlacedGrids)
+                        {
+                            item.GetComponent<SpriteRenderer>().color = Color.white;
+                        }
+
+                        //herhangi bir blok býrakýldýðýnda satýr/sütünlar kontrol edilir. 
+                        transform.GetComponent<GridRowCloumnControl>().RowColumnControl(touchedBlockParent);
+
+                        touchedBlock = null;
+                        touchedBlockParent = null;
+                        deltaPos = Vector3.zero;
+                        toBePlacedGrids.Clear();
+                        preCorrectPos = Vector3.zero;
                     }
 
-                    //herhangi bir blok býrakýldýðýnda satýr/sütünlar kontrol edilir. 
-                    transform.GetComponent<GridRowCloumnControl>().RowColumnControl(touchedBlockParent);
-
-                    touchedBlock = null;
-                    touchedBlockParent = null;
-                    deltaPos = Vector3.zero;
-                    toBePlacedGrids.Clear();
-                    preCorrectPos = Vector3.zero;
                 }
             }
         }
@@ -207,45 +246,18 @@ public class BlockTouchControl : MonoBehaviour
         {
             if (touchedBlock != null)
             {
-                SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
-
-                #region snap ettirme yeri
-                //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
-                if (touchedBlockParent.childCount == toBePlacedGrids.Count)
+                float blockTouchPositionDelta = Vector3.Distance(new Vector3(preCorrectPos.x,preCorrectPos.y,touchedBlockParent.position.z), touchedBlockParent.position);
+                //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
+                if (blockTouchPositionDelta < 3f)
                 {
-                    for (int i = 0; i < touchedBlockParent.childCount; i++)
+                    touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                    if (touchedBlockParent.rotation.z >= 360)
                     {
-                        Vector3 snapPos = toBePlacedGrids[i].position;
-                        snapPos.z = gridForScale.GetChild(1).position.z - 1;
-                        touchedBlockParent.GetChild(i).transform.position = snapPos;
-
-                        if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
-                        {
-                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
-                        }
-                        else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
-                        {
-                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
-                        }
-
-                        toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
-
-                        //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
-                        touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
+                        touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
                     }
 
-                    //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
-                    foreach (Transform item in touchedBlockParent)
-                    {
-                        item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().block = null;
-                        item.GetComponent<BlockProperties>().isSnapped = true;
-                        item.GetComponent<SpriteRenderer>().sortingOrder = 0;
-                    }
-                    touchedBlockParent.SetParent(canvasForScale);
-                    transform.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
-                }
-                else // deðilse eski doðru konumuna gönderilir
-                {
+                    SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
                     touchedBlockParent.position = preCorrectPos;
 
                     //block spawn noktasýna gönderiliyorsa tekrar küçültülür
@@ -257,24 +269,88 @@ public class BlockTouchControl : MonoBehaviour
                         }
                         BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
                     }
-                }
-                #endregion
 
-                //snap yapýlan griddeki gölgeler kaldýrýlýr
-                foreach (var item in toBePlacedGrids)
+                    touchedBlock = null;
+                    touchedBlockParent = null;
+                    deltaPos = Vector3.zero;
+                    toBePlacedGrids.Clear();
+                    preCorrectPos = Vector3.zero;
+                }
+                else
                 {
-                    item.GetComponent<SpriteRenderer>().color = Color.white;
+                    SetBlocksSpriteLayer(GlobalVariables.orderInLayer_blocks);
+
+                    #region snap ettirme yeri
+                    //hareket ettirilen blok grubunun tamamý grid üzerinde ise snap yapýlýr
+                    if (touchedBlockParent.childCount == toBePlacedGrids.Count)
+                    {
+                        for (int i = 0; i < touchedBlockParent.childCount; i++)
+                        {
+                            Vector3 snapPos = toBePlacedGrids[i].position;
+                            snapPos.z = gridForScale.GetChild(1).position.z - 1;
+                            touchedBlockParent.GetChild(i).transform.position = snapPos;
+
+                            if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockA)
+                            {
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokA;
+                            }
+                            else if (touchedBlockParent.GetChild(i).transform.GetComponent<BlockProperties>().BlockColor == GlobalVariables.blockColorType_BlockB)
+                            {
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_blokB;
+                            }
+
+                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+
+                            //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
+                            touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
+                        }
+
+                        //bir blok spawn noktasýndan alýnýp gride yerleþtirildiðinde spawn noktasýný boþ olarak iþaretliyoruz
+                        foreach (Transform item in touchedBlockParent)
+                        {
+                            item.GetComponent<BlockProperties>().SpawnPoint.GetComponent<SpawnPointHelper>().block = null;
+                            item.GetComponent<BlockProperties>().isSnapped = true;
+                            item.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                        }
+                        touchedBlockParent.SetParent(canvasForScale);
+                        
+                        SnappedBlocksPositionAndScaleCorrection();
+
+                        transform.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
+
+                    }
+                    else // deðilse eski doðru konumuna gönderilir
+                    {
+                        touchedBlockParent.position = preCorrectPos;
+
+                        //block spawn noktasýna gönderiliyorsa tekrar küçültülür
+                        if (touchedBlockParent.GetComponentInChildren<BlockProperties>().isSnapped == false)
+                        {
+                            if (blockScaleAnimationStarted)
+                            {
+                                StopCoroutine(BlockScaleSmoothLerpCoroutine);
+                            }
+                            BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                        }
+                    }
+                    #endregion
+
+                    //snap yapýlan griddeki gölgeler kaldýrýlýr
+                    foreach (var item in toBePlacedGrids)
+                    {
+                        item.GetComponent<SpriteRenderer>().color = Color.white;
+                    }
+
+                    //herhangi bir blok býrakýldýðýnda satýr/sütünlar kontrol edilir. 
+                    transform.GetComponent<GridRowCloumnControl>().RowColumnControl(touchedBlockParent);
+
+                    touchedBlock = null;
+                    touchedBlockParent = null;
+                    deltaPos = Vector3.zero;
+                    toBePlacedGrids.Clear();
+                    preCorrectPos = Vector3.zero;
+
                 }
-
-                //herhangi bir blok býrakýldýðýnda satýr/sütünlar kontrol edilir. 
-                transform.GetComponent<GridRowCloumnControl>().RowColumnControl(touchedBlockParent);
-
-                touchedBlock = null;
-                touchedBlockParent = null;
-                deltaPos = Vector3.zero;
-                toBePlacedGrids.Clear();
-                preCorrectPos = Vector3.zero;
-
             }
         }
 
@@ -385,5 +461,21 @@ public class BlockTouchControl : MonoBehaviour
 
         }
         blockScaleAnimationStarted = false;
+    }
+
+    void SnappedBlocksPositionAndScaleCorrection()
+    {
+        if (blockScaleAnimationStarted)
+        {
+            StopCoroutine(BlockScaleSmoothLerpCoroutine);
+        }
+        touchedBlockParent.localScale = gridForScale.localScale;
+
+        for (int i = 0; i < touchedBlockParent.childCount; i++)
+        {
+            Vector3 snapPos = toBePlacedGrids[i].position;
+            snapPos.z = gridForScale.GetChild(1).position.z - 1;
+            touchedBlockParent.GetChild(i).transform.position = snapPos;
+        }
     }
 }
