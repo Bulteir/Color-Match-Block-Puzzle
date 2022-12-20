@@ -71,6 +71,26 @@ MonoBehaviour:
     m_Key: Select Language
     m_Metadata:
       m_Items: []
+  - m_Id: 7225942886973440
+    m_Key: Rate Game Box Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227346305286144
+    m_Key: No Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227489347829760
+    m_Key: Later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227538370854912
+    m_Key: Rate Now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7228110947876864
+    m_Key: Rate Game Box Content
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -74,6 +74,27 @@ MonoBehaviour:
     m_Localized: Select Language
     m_Metadata:
       m_Items: []
+  - m_Id: 7225942886973440
+    m_Localized: Rate Game!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227346305286144
+    m_Localized: No Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227489347829760
+    m_Localized: Later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227538370854912
+    m_Localized: Rate Now!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7228110947876864
+    m_Localized: If you enjoy playing this game, please take a moment to rate it.
+      Thanks for your support.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
