@@ -40,7 +40,7 @@ public class CreateBlocks : MonoBehaviour
         //görsel test için
         //int randomBlockType = 5;
         //int randomBlockColor = 0;
-        //int randomBlockAngle = 0;
+        //int randomBlockAngle = 3;
 
         GameObject randomBlock = GameObject.Instantiate(blocks[randomBlockType].gameObject);
 
@@ -118,32 +118,11 @@ public class CreateBlocks : MonoBehaviour
 
     public void RotateBlock(Transform block,int blockAngle)
     {
+        block.rotation = Quaternion.Euler(0, 0, 90 * blockAngle);
+
         foreach (Transform child in block)
         {
-            if (blockAngle == 0)
-            {
-                child.GetComponent<SpriteRenderer>().flipX = false;
-                child.GetComponent<SpriteRenderer>().flipY = false;
-            }
-            else if (blockAngle == 1)
-            {
-                child.GetComponent<SpriteRenderer>().flipX = true;
-                child.GetComponent<SpriteRenderer>().flipY = false;
-            }
-            else if (blockAngle == 2)
-            {
-                child.GetComponent<SpriteRenderer>().flipX = true;
-                child.GetComponent<SpriteRenderer>().flipY = true;
-            }
-            else if (blockAngle == 3)
-            {
-                child.GetComponent<SpriteRenderer>().flipX = false;
-                child.GetComponent<SpriteRenderer>().flipY = true;
-            }
-            else
-                Debug.Log("farklý birþey geldi.");
-
+            child.rotation = Quaternion.Euler(0, 0, block.rotation.eulerAngles.z - 90 * blockAngle);
         }
-        block.rotation = Quaternion.Euler(0, 0, 90 * blockAngle);
     }
 }

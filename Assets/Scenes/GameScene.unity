@@ -13482,8 +13482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockSprites:
-  - {fileID: 21300000, guid: 2591cb07067c16c4c832394c4840bbaa, type: 3}
-  - {fileID: 21300000, guid: 079ea1847e0515749953a640183f90a1, type: 3}
+  - {fileID: 21300000, guid: 60d22f676f344524088bb0858fa1a80d, type: 3}
+  - {fileID: 21300000, guid: 7755c8fe620237d429f112dc71ee505c, type: 3}
   blocks:
   - {fileID: 1759161188}
   - {fileID: 1767019058}
