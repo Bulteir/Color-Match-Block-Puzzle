@@ -47,7 +47,12 @@ public class BlockTouchControl : MonoBehaviour
 
             if (touch2.phase == TouchPhase.Began)
             {
-                touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+
+                float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
+                angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;
+
+                this.GetComponent<CreateBlocks>().RotateBlock(touchedBlockParent, (int)angle);
+
                 if (touchedBlockParent.rotation.z >= 360)
                 {
                     touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
@@ -102,7 +107,11 @@ public class BlockTouchControl : MonoBehaviour
                     //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
                     if (blockTouchPositionDelta < 3f)
                     {
-                        touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                        float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
+                        angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;
+
+                        this.GetComponent<CreateBlocks>().RotateBlock(touchedBlockParent, (int)angle);
+
                         if (touchedBlockParent.rotation.z >= 360)
                         {
                             touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
@@ -120,6 +129,15 @@ public class BlockTouchControl : MonoBehaviour
                                 StopCoroutine(BlockScaleSmoothLerpCoroutine);
                             }
                             BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                        }
+
+                        foreach (var item in toBePlacedGrids)
+                        {
+                            item.GetComponent<SpriteRenderer>().color = Color.white;
+                            if (item.GetComponent<GridRowColumnControlHelper>().gridState == GlobalVariables.gridState_empty)
+                            {
+                                item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
+                            }
                         }
 
                         touchedBlock = null;
@@ -250,7 +268,11 @@ public class BlockTouchControl : MonoBehaviour
                 //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
                 if (blockTouchPositionDelta < 3f)
                 {
-                    touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+                    float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
+                    angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;
+
+                    this.GetComponent<CreateBlocks>().RotateBlock(touchedBlockParent, (int)angle);
+
                     if (touchedBlockParent.rotation.z >= 360)
                     {
                         touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
@@ -268,6 +290,15 @@ public class BlockTouchControl : MonoBehaviour
                             StopCoroutine(BlockScaleSmoothLerpCoroutine);
                         }
                         BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                    }
+
+                    foreach (var item in toBePlacedGrids)
+                    {
+                        item.GetComponent<SpriteRenderer>().color = Color.white;
+                        if (item.GetComponent<GridRowColumnControlHelper>().gridState == GlobalVariables.gridState_empty)
+                        {
+                            item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
+                        }
                     }
 
                     touchedBlock = null;
@@ -356,7 +387,11 @@ public class BlockTouchControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            touchedBlockParent.rotation = Quaternion.Euler(0, 0, 90 + touchedBlockParent.eulerAngles.z);
+            float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
+            angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;
+
+            this.GetComponent<CreateBlocks>().RotateBlock(touchedBlockParent, (int)angle);
+
             if (touchedBlockParent.rotation.z >= 360)
             {
                 touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);

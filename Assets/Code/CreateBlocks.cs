@@ -42,7 +42,6 @@ public class CreateBlocks : MonoBehaviour
         //int randomBlockColor = 0;
         //int randomBlockAngle = 0;
 
-
         GameObject randomBlock = GameObject.Instantiate(blocks[randomBlockType].gameObject);
 
         Vector3 sumVector = new Vector3(0f, 0f, 0f);
@@ -79,7 +78,7 @@ public class CreateBlocks : MonoBehaviour
         }
 
         blockGroupParent.position = spawnPoint.position;
-        blockGroupParent.rotation = Quaternion.Euler(0, 0, 90 * randomBlockAngle);
+        RotateBlock(blockGroupParent, randomBlockAngle);
         Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
         blockScale = Vector3.Scale(blockScale, GlobalVariables.scaleSpawnBlocks);
         blockGroupParent.localScale = blockScale;
@@ -115,5 +114,36 @@ public class CreateBlocks : MonoBehaviour
         {
             SpawnPoints[i].position = new Vector3(SpawnPoints[i].position.x, Camera.main.ScreenToWorldPoint(new Vector3(0, spawnPointPositionY, 0)).y, SpawnPoints[i].position.z);
         }
+    }
+
+    public void RotateBlock(Transform block,int blockAngle)
+    {
+        foreach (Transform child in block)
+        {
+            if (blockAngle == 0)
+            {
+                child.GetComponent<SpriteRenderer>().flipX = false;
+                child.GetComponent<SpriteRenderer>().flipY = false;
+            }
+            else if (blockAngle == 1)
+            {
+                child.GetComponent<SpriteRenderer>().flipX = true;
+                child.GetComponent<SpriteRenderer>().flipY = false;
+            }
+            else if (blockAngle == 2)
+            {
+                child.GetComponent<SpriteRenderer>().flipX = true;
+                child.GetComponent<SpriteRenderer>().flipY = true;
+            }
+            else if (blockAngle == 3)
+            {
+                child.GetComponent<SpriteRenderer>().flipX = false;
+                child.GetComponent<SpriteRenderer>().flipY = true;
+            }
+            else
+                Debug.Log("farklý birþey geldi.");
+
+        }
+        block.rotation = Quaternion.Euler(0, 0, 90 * blockAngle);
     }
 }
