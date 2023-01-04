@@ -35,7 +35,6 @@ public class GridRowCloumnControl : MonoBehaviour
     public TMP_Text scoreText;
     public Transform canvas;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -150,6 +149,7 @@ public class GridRowCloumnControl : MonoBehaviour
         GameObject scoreLabel = GameObject.Instantiate(score_Prefab.gameObject);
         scoreLabel.transform.SetParent(canvas);
         scoreLabel.transform.SetAsFirstSibling();
+
         scoreLabel.transform.localScale = new Vector3(1, 1, 1);
         Vector3 score_PrefabPos = grid.position;
         score_PrefabPos.z = 0;
