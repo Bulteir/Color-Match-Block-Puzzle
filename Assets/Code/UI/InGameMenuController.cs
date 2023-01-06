@@ -6,6 +6,9 @@ public class InGameMenuController : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
+    public GameObject cloud1;
+    public GameObject cloud2;
+    public GameObject cloud3;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +58,21 @@ public class InGameMenuController : MonoBehaviour
                     child.GetComponent<SpriteRenderer>().sortingOrder = GlobalVariables.orderInLayer_selectedBlock;
             }
         }
-        
+
+        if (active)
+        {
+            cloud1.GetComponent<Animator>().speed = 0;
+            cloud2.GetComponent<Animator>().speed = 0;
+            cloud3.GetComponent<Animator>().speed = 0;
+        }
+        else
+        {
+            cloud1.GetComponent<Animator>().speed = 1;
+            cloud2.GetComponent<Animator>().speed = 1;
+            cloud3.GetComponent<Animator>().speed = 1;
+        }
+
+
+
     }
 }

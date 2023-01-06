@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3539777748992
-    m_Localized: "Y\xFCksek Puanlar\u0131 Sil"
+    m_Localized: "Y\xFCksek Skorlar\u0131 Sil"
     m_Metadata:
       m_Items: []
   - m_Id: 3661878132736
@@ -94,6 +94,22 @@ MonoBehaviour:
     m_Localized: "E\u011Fer bu oyunu oynarken e\u011Flendiyseniz, l\xFCtfen birka\xE7
       dakikan\u0131z\u0131 ay\u0131rarak oyunu puanlay\u0131n. Deste\u011Finiz i\xE7in
       te\u015Fekk\xFCrler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13036286062493696
+    m_Localized: Duraklat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13038777990774784
+    m_Localized: Oyun Bitti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13047208881553408
+    m_Localized: Dikkat!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13048904382808064
+    m_Localized: "Y\xFCksek skorlar\u0131 silmek ister misiniz?"
     m_Metadata:
       m_Items: []
   references:

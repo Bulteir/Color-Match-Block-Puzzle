@@ -95,6 +95,22 @@ MonoBehaviour:
       Thanks for your support.
     m_Metadata:
       m_Items: []
+  - m_Id: 13036286062493696
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13038777990774784
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13047208881553408
+    m_Localized: Warning!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13048904382808064
+    m_Localized: Would you like to delete the high scores?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

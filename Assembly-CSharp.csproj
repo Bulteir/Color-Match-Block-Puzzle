@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\UI\MainMenu_NewGame_Btn.cs" />
+    <Compile Include="Assets\Code\UI\DeleteHighScoresPopup_Confirm_Btn.cs" />
     <Compile Include="Assets\Code\UI\PauseMenu_Resume_Btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
     <Compile Include="Assets\Code\UI\InGameMenuController.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Code\AdMobController.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_HighScore_Btn.cs" />
     <Compile Include="Assets\Code\HighScoreControl.cs" />
+    <Compile Include="Assets\Code\UI\ButtonPressEffect.cs" />
     <Compile Include="Assets\Code\ScoreAnimation.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_RateGame_Btn.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_Exit_Btn.cs" />

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SettingsMenu_DeleteHighScores_Btn : MonoBehaviour
+public class DeleteHighScoresPopup_Confirm_Btn : MonoBehaviour
 {
     public GameObject popUp;
     public void onClick()
     {
-        popUp.SetActive(true);
+        PlayerPrefs.DeleteKey("HighScores");
+        popUp.SetActive(false);
     }
 }
