@@ -100,33 +100,13 @@ public class GridRowCloumnControl : MonoBehaviour
             if (rowsCounter[i].x == 10 || rowsCounter[i].y == 10)
             {
                 sameTimeCompletedRowCount++;
-                foreach (var item in rows[i])
-                {
-                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile != null)
-                    {
-                        if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject)
-                        {
-                            Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
-                        }
-                        item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
-                        item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
-                    }
-                }
+                StartCoroutine(BlockDisapperAnimationDelayer(rows[i]));
             }
 
             if (columnsCounter[i].x == 10 || columnsCounter[i].y == 10)
             {
                 sameTimeCompletedColumnCount++;
-                foreach (var item in columns[i])
-                {
-
-                    if (item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile != null)
-                    {
-                        Destroy(item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject);
-                    }
-                    item.GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
-                    item.GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
-                }
+                StartCoroutine(BlockDisapperAnimationDelayer(columns[i]));
             }
         }
 
@@ -238,5 +218,21 @@ public class GridRowCloumnControl : MonoBehaviour
             isThereAvaiblePlace = true;
         }
         return isThereAvaiblePlace;
+    }
+
+    IEnumerator BlockDisapperAnimationDelayer(List<Transform> blocks)
+    {
+        for (int i = 0; i < blocks.Count;)
+        {
+            yield return new WaitUntil(() => GlobalVariables.gameState == GlobalVariables.gameState_inGame);
+            if (blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile != null)
+            {
+                blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject.GetComponent<Animator>().enabled = true;
+                blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
+                blocks[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;     
+                yield return new WaitForSeconds(0.1f);
+            }
+            i++;
+        }
     }
 }

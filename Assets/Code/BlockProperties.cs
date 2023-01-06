@@ -15,4 +15,9 @@ public class BlockProperties : MonoBehaviour
     public Vector2 coordinate90;
     public Vector2 coordinate180;
     public Vector2 coordinate270;
+
+    public void DestroyBlock()
+    {
+        Destroy(gameObject);
+    }
 }
