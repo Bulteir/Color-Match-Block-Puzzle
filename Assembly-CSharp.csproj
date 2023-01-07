@@ -59,6 +59,7 @@
     <Compile Include="Assets\Code\UI\MainMenu_NewGame_Btn.cs" />
     <Compile Include="Assets\Code\UI\DeleteHighScoresPopup_Confirm_Btn.cs" />
     <Compile Include="Assets\Code\UI\PauseMenu_Resume_Btn.cs" />
+    <Compile Include="Assets\Code\UI\GameOverMenu_Share_btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
     <Compile Include="Assets\Code\UI\InGameMenuController.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Restart_Btn.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Code\SpawnPointHelper.cs" />
     <Compile Include="Assets\Code\UI\MenuController.cs" />
     <Compile Include="Assets\Code\RateGame.cs" />
+    <Compile Include="Assets\Code\UI\HighScoreMenu_Share_btn.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_MainMenu_Btn.cs" />
     <Compile Include="Assets\Code\ComboBarControl.cs" />
     <Compile Include="Assets\Code\BannerAdCustomization.cs" />
@@ -930,6 +932,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NativeShare.Runtime.csproj">
+      <Project>{600035D7-42BA-5438-71CC-749ACB543732}</Project>
+      <Name>NativeShare.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="NativeShare.Editor.csproj">
+      <Project>{C05BD87E-9343-EA1D-75D9-DE12CEF7F52D}</Project>
+      <Name>NativeShare.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
       <Project>{0AFEBEB6-BF46-661B-F32D-7C637D9475B7}</Project>
       <Name>GoogleMobileAds.Editor</Name>

@@ -18730,7 +18730,7 @@ GameObject:
   - component: {fileID: 1340832053}
   - component: {fileID: 1340832052}
   - component: {fileID: 1340832051}
-  - component: {fileID: 1340832050}
+  - component: {fileID: 1340832054}
   m_Layer: 0
   m_Name: Share
   m_TagString: Untagged
@@ -18759,19 +18759,6 @@ RectTransform:
   m_AnchoredPosition: {x: -451, y: -868}
   m_SizeDelta: {x: 375, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1340832050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340832048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5085efcf154bbc45a243021bd12efa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GeneralControls: {fileID: 1052310660}
 --- !u!114 &1340832051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18816,9 +18803,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1340832050}
-        m_TargetAssemblyTypeName: GameOverMenu_Restart_Btn, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1340832054}
+        m_TargetAssemblyTypeName: GameOverMenu_Share_btn, Assembly-CSharp
+        m_MethodName: Onclick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18866,6 +18853,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340832048}
   m_CullTransparentMesh: 1
+--- !u!114 &1340832054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340832048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01e537d89ad4554ab1f86e6b34caf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1345526138
 GameObject:
   m_ObjectHideFlags: 0

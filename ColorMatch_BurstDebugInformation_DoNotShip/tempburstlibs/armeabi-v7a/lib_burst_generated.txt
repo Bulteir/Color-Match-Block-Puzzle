@@ -156,6 +156,7 @@ Library: lib_burst_generated
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.ResourceManager.dll
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
+--root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\NativeShare.Runtime.dll
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
 --root-assembly=E:\Program Files\Unity Projeler\Color Match Block Puzzle\Temp\StagingArea\Data\Managed\Unity.Services.Core.Analytics.dll

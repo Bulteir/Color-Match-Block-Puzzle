@@ -230,7 +230,7 @@ public class GridRowCloumnControl : MonoBehaviour
                 blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject.GetComponent<Animator>().enabled = true;
                 blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
                 blocks[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;     
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.05f);
             }
             i++;
         }
