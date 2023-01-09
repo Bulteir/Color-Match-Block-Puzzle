@@ -107,6 +107,14 @@ MonoBehaviour:
     m_Key: Delete High Score Popup Content
     m_Metadata:
       m_Items: []
+  - m_Id: 14403548858155008
+    m_Key: Congratulations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14404056985501696
+    m_Key: New High Score
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

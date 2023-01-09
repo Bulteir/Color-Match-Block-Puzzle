@@ -28,6 +28,9 @@ public class HighScoreControl : MonoBehaviour
     }
 
     public List<HighScoreListUIStruct> highScoresUIList;
+    public TMP_Text GameOverContent;
+    public TMP_Text GameOverTitle;
+    public GameObject victoryConfeti;
 
     void Start()
     {
@@ -56,43 +59,47 @@ public class HighScoreControl : MonoBehaviour
                 if (highScoreList[5].score != score)
                 {
                     //yeni yüksek skor mesajý
+                    NewHighScoreMessage(score);
+                }
+                else
+                {
+                    //eklenen skor en yüksek skorlar arasýnda deðildir.
+                    GameOverMessage(score);
 
-                    //victoryMessage.text = LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Congratulations!") + "\n" +
-                    //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "New Best Time") + "\n" +
-                    //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Time:") + time + " " +
-                    //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Moves:") + resolveMoves;
                 }
                 highScoreList.RemoveAt(5);
             }
             else
             {
                 //yeni yüksek skor mesajý
-
-                //victoryMessage.text = LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Congratulations!") + "\n" +
-                //       LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "New Best Time") + "\n" +
-                //       LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Time:") + time + " " +
-                //       LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Moves:") + resolveMoves;
+                NewHighScoreMessage(score);
             }
+            string tempJson = JsonUtility.ToJson(new JsonableListWrapper<HighScoreStruct>(highScoreList));
+
+            PlayerPrefs.SetString("HighScores", tempJson);
+            PlayerPrefs.Save();
         }
-        else
+        else if (json == "" && score > 0)
         {
+            //burasý daha player prefab oluþmadan ilk skor alýndýðýnda girer.
             HighScoreStruct newScore = new HighScoreStruct();
             newScore.score = score;
             newScore.date = System.DateTime.Today.ToShortDateString();
             highScoreList.Add(newScore);
 
             //yeni yüksek skor mesajý
+            NewHighScoreMessage(score);
+            string tempJson = JsonUtility.ToJson(new JsonableListWrapper<HighScoreStruct>(highScoreList));
 
-            //victoryMessage.text = LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Congratulations!") + "\n" +
-            //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "New Best Time") + "\n" +
-            //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Time:") + time + " " +
-            //    LocalizationSettings.StringDatabase.GetLocalizedString("GeneralTexts", "Moves:") + resolveMoves;
+            PlayerPrefs.SetString("HighScores", tempJson);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            //0 skor ile biterse
+            GameOverMessage(0);
         }
 
-        string tempJson = JsonUtility.ToJson(new JsonableListWrapper<HighScoreStruct>(highScoreList));
-
-        PlayerPrefs.SetString("HighScores", tempJson);
-        PlayerPrefs.Save();
     }
 
     public void getHighScores()
@@ -120,6 +127,19 @@ public class HighScoreControl : MonoBehaviour
                 item.date.text = "-";
             }
         }
+    }
+
+    void NewHighScoreMessage(int score)
+    {
+        GameOverTitle.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Congratulations");
+        GameOverContent.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "New High Score") + ": " + score.ToString();
+        Instantiate(victoryConfeti);
+    }
+
+    void GameOverMessage(int score)
+    {
+        GameOverTitle.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Game Over");
+        GameOverContent.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Score") + ": " + score.ToString();
     }
 
 }

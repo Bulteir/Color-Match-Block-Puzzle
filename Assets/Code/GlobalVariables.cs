@@ -8,7 +8,7 @@ public class GlobalVariables
     public const string gridBlock = "GridBlock";
     public const string scoreText = "ScoreText";
 
-    public static int gameState = gameState_MainMenu;
+    public static int gameState = gameState_inGame;
     public const int gameState_MainMenu = 0;
     public const int gameState_inGame = 1;
     public const int gameState_SettingsMenu = 2;

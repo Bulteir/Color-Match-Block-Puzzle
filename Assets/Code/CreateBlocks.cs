@@ -38,7 +38,7 @@ public class CreateBlocks : MonoBehaviour
         int randomBlockAngle = Random.Range(0, 4);
 
         //görsel test için
-        //int randomBlockType = 5;
+        //int randomBlockType = 7;
         //int randomBlockColor = 0;
         //int randomBlockAngle = 0;
 

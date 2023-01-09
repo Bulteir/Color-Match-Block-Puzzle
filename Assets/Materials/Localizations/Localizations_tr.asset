@@ -112,6 +112,14 @@ MonoBehaviour:
     m_Localized: "Y\xFCksek skorlar\u0131 silmek ister misiniz?"
     m_Metadata:
       m_Items: []
+  - m_Id: 14403548858155008
+    m_Localized: Tebrikler!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14404056985501696
+    m_Localized: "Yeni Y\xFCksek Skor"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
