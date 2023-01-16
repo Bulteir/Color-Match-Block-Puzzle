@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localizations_pt
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt
+  m_SharedData: {fileID: 11400000, guid: b61fee0b49374e441aaebcd14f68c2de, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 300768428032
+    m_Localized: Novo jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1190095093760
+    m_Localized: "Melhores pontua\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154478829568
+    m_Localized: "Configura\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228734787584
+    m_Localized: Sair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2407449886720
+    m_Localized: "Voltar Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2477851279360
+    m_Localized: "Linguagem\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3539777748992
+    m_Localized: "Excluir melhores pontua\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3661878132736
+    m_Localized: Avaliar jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006337335296000
+    m_Localized: Retomar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006365487464448
+    m_Localized: Menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006401457815552
+    m_Localized: Reiniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335825264443392
+    m_Localized: "Pontua\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335868092481536
+    m_Localized: Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4663728707600384
+    m_Localized: Selecionar idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7225942886973440
+    m_Localized: Avaliar jogo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227346305286144
+    m_Localized: "N\xE3o, obrigado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227489347829760
+    m_Localized: Mais tarde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227538370854912
+    m_Localized: Avaliar agora!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7228110947876864
+    m_Localized: "Se voc\xEA gosta de jogar este jogo, por favor, tire um momento
+      para avali\xE1-lo. Obrigado pelo seu apoio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13036286062493696
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13038777990774784
+    m_Localized: Fim de jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13047208881553408
+    m_Localized: Aviso!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13048904382808064
+    m_Localized: ' Gostaria de excluir os melhores resultados?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14403548858155008
+    m_Localized: "Parab\xE9ns!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14404056985501696
+    m_Localized: Novo recorde
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

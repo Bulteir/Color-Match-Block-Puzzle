@@ -30,7 +30,8 @@ MonoBehaviour:
   - m_GUID: fe1d136a6abbd4140925d7b29c599064
     m_Address: Assets/Materials
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locale-zh-Hans
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: aeea355bde5bc6e4a9b044803f90bdb7, type: 2}

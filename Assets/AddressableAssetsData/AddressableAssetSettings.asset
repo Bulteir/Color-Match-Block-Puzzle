@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 45e53113359ff1644893752e8ca592e2
   m_CachedHash:
     serializedVersion: 2
-    Hash: f9084d046a271e2340d9b770d548f57c
+    Hash: 42af31b4c3cf14ccea331a26dbd17426
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -51,6 +51,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: afe0f109ddeebe94d851978e56480087, type: 2}
   - {fileID: 11400000, guid: 8ad8da6ea88494647ae6213fb5e94a97, type: 2}
   - {fileID: 11400000, guid: 5f4b19ed86d56f044b59f9aedd32d387, type: 2}
+  - {fileID: 11400000, guid: f3d3450675d2390458a5445009711eff, type: 2}
+  - {fileID: 11400000, guid: b0d55c5a6a673c94588e4d861a79aa56, type: 2}
+  - {fileID: 11400000, guid: 6076b681426652a48bc8a0a54ca6ec21, type: 2}
+  - {fileID: 11400000, guid: a36a43385d804ae4b92747d5e495beb7, type: 2}
+  - {fileID: 11400000, guid: 7c21885358ae4da43aa522858011f812, type: 2}
+  - {fileID: 11400000, guid: 903bdc59fa6b3b143b6273a4892f6984, type: 2}
+  - {fileID: 11400000, guid: 7558f04baf713614abb117c0fbb3940d, type: 2}
+  - {fileID: 11400000, guid: a92051c1e58862e4f97b9a201b61ac37, type: 2}
+  - {fileID: 11400000, guid: 1ac8bcbcd6c6f784eb7d3257783a87b1, type: 2}
+  - {fileID: 11400000, guid: 12cd244e0a9709d4a905d38854e00137, type: 2}
+  - {fileID: 11400000, guid: d4eb462f248ef7c4984955936513768e, type: 2}
+  - {fileID: 11400000, guid: 3639fd69144dd484799ffb13f39822d9, type: 2}
+  - {fileID: 11400000, guid: 6997b5c21f5de0e40829b472cad3581b, type: 2}
+  - {fileID: 11400000, guid: 20a875bfc6793b04dbce738a0976de6c, type: 2}
+  - {fileID: 11400000, guid: b4e3f5f497f3082418f262796f16527a, type: 2}
+  - {fileID: 11400000, guid: 2c76c4e0306f0b84190250ffe1b478c3, type: 2}
+  - {fileID: 11400000, guid: d2480b67907a7bc45bc4550275236b53, type: 2}
+  - {fileID: 11400000, guid: 24c3e60d0ad22a949a5767aee3d194ce, type: 2}
+  - {fileID: 11400000, guid: 3fcdef79c60e7fa49b536ecab6bed8d8, type: 2}
+  - {fileID: 11400000, guid: b557db90c2fb3544ca679b18866dfb37, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -97,6 +117,14 @@ MonoBehaviour:
     - Preload
     - Locale-tr
     - Locale-tr-TR
+    - Locale-zh-Hans
+    - Locale-ar
+    - Locale-fr
+    - Locale-de
+    - Locale-ja
+    - Locale-pt
+    - Locale-ru
+    - Locale-es
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: c8202ced36ede9b48b729890bf839414, type: 2}

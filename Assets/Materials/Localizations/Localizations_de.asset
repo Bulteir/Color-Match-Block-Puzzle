@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localizations_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: b61fee0b49374e441aaebcd14f68c2de, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 300768428032
+    m_Localized: Neues Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1190095093760
+    m_Localized: "H\xF6chste Punktzahlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154478829568
+    m_Localized: "Einstellungen\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228734787584
+    m_Localized: Beenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2407449886720
+    m_Localized: "Zur\xFCck\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2477851279360
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3539777748992
+    m_Localized: "H\xF6chstpunktzahlen l\xF6schen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3661878132736
+    m_Localized: Spiel bewerten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006337335296000
+    m_Localized: Fortsetzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006365487464448
+    m_Localized: "Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006401457815552
+    m_Localized: "Neustart\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335825264443392
+    m_Localized: Punktzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335868092481536
+    m_Localized: Datum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4663728707600384
+    m_Localized: "Sprache ausw\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7225942886973440
+    m_Localized: Spiel bewerten!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227346305286144
+    m_Localized: Kein Danke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227489347829760
+    m_Localized: "Sp\xE4ter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227538370854912
+    m_Localized: Jetzt bewerten!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7228110947876864
+    m_Localized: "Wenn Sie dieses Spiel spielen, nehmen Sie bitte einen Moment Zeit,
+      um es zu bewerten. Danke f\xFCr Ihre Unterst\xFCtzung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13036286062493696
+    m_Localized: "Pause\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13038777990774784
+    m_Localized: Spiel vorbei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13047208881553408
+    m_Localized: Warnung!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13048904382808064
+    m_Localized: "M\xF6chten Sie die Highscores l\xF6schen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14403548858155008
+    m_Localized: "Herzlichen Gl\xFCckwunsch!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14404056985501696
+    m_Localized: Neuer Highscore
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

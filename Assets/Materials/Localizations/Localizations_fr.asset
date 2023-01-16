@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localizations_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: b61fee0b49374e441aaebcd14f68c2de, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 300768428032
+    m_Localized: Nouveau jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1190095093760
+    m_Localized: "Meilleurs scores\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154478829568
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2228734787584
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2407449886720
+    m_Localized: "Retour\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2477851279360
+    m_Localized: "Langue\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3539777748992
+    m_Localized: Supprimer les meilleurs scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3661878132736
+    m_Localized: Noter le jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006337335296000
+    m_Localized: Reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006365487464448
+    m_Localized: Menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3006401457815552
+    m_Localized: "Red\xE9marrer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335825264443392
+    m_Localized: "Score\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4335868092481536
+    m_Localized: "Date\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4663728707600384
+    m_Localized: "S\xE9lectionner la langue"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7225942886973440
+    m_Localized: Noter le jeu!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227346305286144
+    m_Localized: Non merci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227489347829760
+    m_Localized: Plus tard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7227538370854912
+    m_Localized: Noter maintenant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7228110947876864
+    m_Localized: "Si vous appr\xE9ciez jouer \xE0 ce jeu, veuillez prendre un moment
+      pour le noter. Merci pour votre soutien."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13036286062493696
+    m_Localized: "Pause\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13038777990774784
+    m_Localized: "Jeu termin\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13047208881553408
+    m_Localized: Attention!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13048904382808064
+    m_Localized: Voulez-vous effacer les meilleurs scores?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14403548858155008
+    m_Localized: "F\xE9licitations!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14404056985501696
+    m_Localized: Nouveau record
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
