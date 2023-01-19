@@ -119,6 +119,10 @@ MonoBehaviour:
     m_Localized: New High Score
     m_Metadata:
       m_Items: []
+  - m_Id: 17777234948521984
+    m_Localized: "\u0644\u0639\u0628\u0629 \u062C\u062F\u064A\u062F\u0629"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

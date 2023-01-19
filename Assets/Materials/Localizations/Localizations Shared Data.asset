@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: New High Score
     m_Metadata:
       m_Items: []
+  - m_Id: 17777234948521984
+    m_Key: MainMenu/Canvas/MainMenu/New Game/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{00E29494-D551-6897-1273-948303794CFE}</ProjectGuid>
+    <ProjectGuid>{C065F50E-A5CC-AC4F-E4A1-A1FA391AC25C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,6 +64,7 @@
     <Compile Include="Assets\Code\UI\InGameMenuController.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Restart_Btn.cs" />
     <Compile Include="Assets\Code\AdMobController.cs" />
+    <Compile Include="Assets\CrystalFramework\Utility\SafeArea.cs" />
     <Compile Include="Assets\Code\UI\MainMenu_HighScore_Btn.cs" />
     <Compile Include="Assets\Code\HighScoreControl.cs" />
     <Compile Include="Assets\Code\UI\ButtonPressEffect.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="Assets\Code\UI\MainMenu_Settings_Btn.cs" />
     <Compile Include="Assets\Code\UI\HighScoresMenu_Back_Btn.cs" />
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
-    <Compile Include="Assets\CrystalFramework\Utility\SafeArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -361,23 +361,29 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>E:\Program Files\Unity Hub\Editor\2022.1.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.7.4\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
     <Reference Include="GoogleMobileAds">
       <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleMobileAds.Unity">
-      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds.Core">
       <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.7.4\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
@@ -387,12 +393,6 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.4\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds.Common">
-      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>E:\Program Files\Unity Hub\Editor\2022.1.20f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -934,15 +934,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NativeShare.Runtime.csproj">
-      <Project>{600035D7-42BA-5438-71CC-749ACB543732}</Project>
+      <Project>{567E7FD2-5438-6745-353D-91823DC911A5}</Project>
       <Name>NativeShare.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="NativeShare.Editor.csproj">
-      <Project>{C05BD87E-9343-EA1D-75D9-DE12CEF7F52D}</Project>
+      <Project>{3AE7B49C-74DA-5A03-E2B2-CB18AADEB009}</Project>
       <Name>NativeShare.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{0AFEBEB6-BF46-661B-F32D-7C637D9475B7}</Project>
+      <Project>{A6CA1B8B-843B-44E0-B66F-FEAABA2633DA}</Project>
       <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
   </ItemGroup>

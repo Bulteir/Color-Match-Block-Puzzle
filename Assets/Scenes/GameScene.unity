@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 29705451}
   - component: {fileID: 29705450}
   - component: {fileID: 29705452}
+  - component: {fileID: 29705453}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -299,6 +300,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &29705453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29705448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688102912006
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688102912006
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 29705450}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688102912007
+        m_UpdateType: 0
+    - rid: 648285688102912007
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!1 &44133144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,6 +9015,7 @@ GameObject:
   - component: {fileID: 933643929}
   - component: {fileID: 933643928}
   - component: {fileID: 933643930}
+  - component: {fileID: 933643931}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9118,6 +9180,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &933643931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933643926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688102912004
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688102912004
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 933643928}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688102912005
+        m_UpdateType: 0
+    - rid: 648285688102912005
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!1 &941838795
 GameObject:
   m_ObjectHideFlags: 0
@@ -9462,6 +9584,7 @@ GameObject:
   - component: {fileID: 977264077}
   - component: {fileID: 977264079}
   - component: {fileID: 977264078}
+  - component: {fileID: 977264080}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -9588,6 +9711,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977264076}
   m_CullTransparentMesh: 1
+--- !u!114 &977264080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977264076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688195973120
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688195973120
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 977264078}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688195973121
+        m_UpdateType: 0
+    - rid: 648285688195973121
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!1 &980230489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,6 +9783,7 @@ GameObject:
   - component: {fileID: 980230492}
   - component: {fileID: 980230491}
   - component: {fileID: 980230493}
+  - component: {fileID: 980230494}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9764,6 +9948,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &980230494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980230489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688102912002
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688102912002
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 980230491}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688102912003
+        m_UpdateType: 0
+    - rid: 648285688102912003
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!4 &985341556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2243878266404023950, guid: 0918ebef864745f428dfef48ba9b7811, type: 3}
@@ -13705,6 +13949,7 @@ GameObject:
   - component: {fileID: 1416506545}
   - component: {fileID: 1416506544}
   - component: {fileID: 1416506543}
+  - component: {fileID: 1416506546}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -13739,7 +13984,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416506541}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
   m_Name: 
@@ -13869,6 +14114,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416506541}
   m_CullTransparentMesh: 1
+--- !u!114 &1416506546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416506541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688102912008
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688102912008
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1416506544}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688102912009
+        m_UpdateType: 0
+    - rid: 648285688102912009
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!1 &1422326858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19384,6 +19689,7 @@ GameObject:
   - component: {fileID: 2083122561}
   - component: {fileID: 2083122560}
   - component: {fileID: 2083122562}
+  - component: {fileID: 2083122563}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -19548,6 +19854,66 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &2083122563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083122558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 648285688102912000
+  references:
+    version: 2
+    RefIds:
+    - rid: 648285688102912000
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 2083122560}
+        m_TrackedProperties:
+          items:
+          - rid: 648285688102912001
+        m_UpdateType: 0
+    - rid: 648285688102912001
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_isRightToLeft
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: tr
+          value: 0
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0
+        - localeIdentifier:
+            m_Code: ar
+          value: 1
+        - localeIdentifier:
+            m_Code: fr
+          value: 0
+        - localeIdentifier:
+            m_Code: de
+          value: 0
+        - localeIdentifier:
+            m_Code: ja
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 0
+        - localeIdentifier:
+            m_Code: ru
+          value: 0
+        - localeIdentifier:
+            m_Code: es
+          value: 0
 --- !u!1 &2100125521
 GameObject:
   m_ObjectHideFlags: 0
