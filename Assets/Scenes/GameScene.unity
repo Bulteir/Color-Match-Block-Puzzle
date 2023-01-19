@@ -324,6 +324,7 @@ MonoBehaviour:
         m_TrackedProperties:
           items:
           - rid: 648285688102912007
+          - rid: 648285690477674500
         m_UpdateType: 0
     - rid: 648285688102912007
       type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
@@ -360,6 +361,17 @@ MonoBehaviour:
         - localeIdentifier:
             m_Code: es
           value: 0
+    - rid: 648285690477674500
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 125
+        - localeIdentifier:
+            m_Code: ar
+          value: 110
 --- !u!1 &44133144
 GameObject:
   m_ObjectHideFlags: 0
@@ -14138,6 +14150,8 @@ MonoBehaviour:
         m_TrackedProperties:
           items:
           - rid: 648285688102912009
+          - rid: 648285690477674502
+          - rid: 648285690477674550
         m_UpdateType: 0
     - rid: 648285688102912009
       type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
@@ -14174,6 +14188,31 @@ MonoBehaviour:
         - localeIdentifier:
             m_Code: es
           value: 0
+    - rid: 648285690477674502
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 170
+        - localeIdentifier:
+            m_Code: ar
+          value: 125
+        - localeIdentifier:
+            m_Code: es
+          value: 150
+    - rid: 648285690477674550
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSizeBase
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 170
+        - localeIdentifier:
+            m_Code: es
+          value: 150
 --- !u!1 &1422326858
 GameObject:
   m_ObjectHideFlags: 0
