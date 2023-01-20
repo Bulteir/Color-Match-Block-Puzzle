@@ -7,8 +7,9 @@ public class GlobalVariables
     public const string block = "Block";
     public const string gridBlock = "GridBlock";
     public const string scoreText = "ScoreText";
+    public const string bomb = "Bomb";
 
-    public static int gameState = gameState_MainMenu;
+    public static int gameState = gameState_inGame;
     public const int gameState_MainMenu = 0;
     public const int gameState_inGame = 1;
     public const int gameState_SettingsMenu = 2;
@@ -52,4 +53,8 @@ public class GlobalVariables
     public const int pauseMenuRestart_btn = 1;
     public const int gameOverMenuRestart_btn = 2;
     public const int gameOverMenuMainMenu_btn = 3;
+
+    public static int whichJokerRequestRewardAd = joker_non;
+    public const int joker_non= 0;
+    public const int joker_bomb = 1;
 }

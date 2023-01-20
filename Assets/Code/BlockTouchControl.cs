@@ -170,6 +170,7 @@ public class BlockTouchControl : MonoBehaviour
                                 }
 
                                 toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+                                toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
 
                                 //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
                                 touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);
@@ -331,6 +332,7 @@ public class BlockTouchControl : MonoBehaviour
                             }
 
                             toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = touchedBlockParent.GetChild(i).transform;
+                            toBePlacedGrids[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
 
                             //dokunmayý kolaylaþtýrmak için kullanýdýðýmýz collider olmasý gerektiði hale getiriliyor.
                             touchedBlockParent.GetChild(i).GetComponent<BoxCollider2D>().size = new Vector2(10.8f, 10.8f);

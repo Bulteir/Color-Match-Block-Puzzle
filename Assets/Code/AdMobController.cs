@@ -258,7 +258,7 @@ public class AdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-                        string adUnitId = "";
+                        string adUnitId = "ca-app-pub-3475441178822227/4832683372";
 #elif UNITY_IPHONE
                         string adUnitId = "";
 #else

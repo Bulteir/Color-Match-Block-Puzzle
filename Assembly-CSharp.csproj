@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Code\UI\MainMenu_NewGame_Btn.cs" />
     <Compile Include="Assets\Code\UI\DeleteHighScoresPopup_Confirm_Btn.cs" />
+    <Compile Include="Assets\Code\Joker_Bomb_TouchControl.cs" />
     <Compile Include="Assets\Code\UI\PauseMenu_Resume_Btn.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Share_btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AddressableAssetsData\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Common.dll" />

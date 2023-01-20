@@ -17,6 +17,11 @@ public class InGameMenuController : MonoBehaviour
         GlobalVariables.requestInterstitialAd = true;
         GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
         this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+
+        GlobalVariables.requestRewardedAd = true;
+        GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
+        this.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+
     }
 
     // Update is called once per frame
