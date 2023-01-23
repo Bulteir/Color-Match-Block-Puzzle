@@ -57,4 +57,5 @@ public class GlobalVariables
     public static int whichJokerRequestRewardAd = joker_non;
     public const int joker_non= 0;
     public const int joker_bomb = 1;
+    public const int joker_blockChanger = 2;
 }

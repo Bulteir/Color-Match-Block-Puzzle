@@ -7,7 +7,7 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
 {
     bool adIsReady = false;
     public Transform GeneralControls;
-    Coroutine requestAdCorroutine;
+    IEnumerator requestAdCorroutine;
 
     public void OnClick()
     {
@@ -53,8 +53,12 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
     {
         if (GlobalVariables.requestInterstitialAd == true)
         {
-            StopCoroutine(requestAdCorroutine);
-            requestAdCorroutine = StartCoroutine(RequestInsterstitialAd());
+            if (requestAdCorroutine != null)
+            {
+                StopCoroutine(requestAdCorroutine);
+            }
+            requestAdCorroutine = RequestInsterstitialAd();
+            StartCoroutine(requestAdCorroutine);
         }
     }
 

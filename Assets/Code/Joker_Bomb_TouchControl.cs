@@ -16,7 +16,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
     List<Transform> toBePlacedGrids;
 
     bool adIsReady = false;
-    Coroutine requestAdCorroutine;
+    IEnumerator requestAdCorroutine;
     bool requestAdFirstTime = true;//bomba jokerinin oyun baþýna sadece bir kez kullanýlmasý için
 
     // Start is called before the first frame update
@@ -59,8 +59,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     touchedBlock = raycastHit.transform;
 
                     deltaPos = touchedBlock.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    deltaPos.z = 0;
-                    deltaPos.y += 2;
+                    //deltaPos.z = 0;
+                    //deltaPos.y += 2;
 
                     touchedBlock.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
                 }
@@ -181,9 +181,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                         touchedBlock = raycastHit.transform;
 
                         deltaPos = touchedBlock.position - Camera.main.ScreenToWorldPoint(touch.position);
-                        deltaPos.z = 0;
+                        //deltaPos.z = 0;
                         //deltaPos.y += 2;
-                        deltaPos.y += 0;
 
                         touchedBlock.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
                     }
@@ -315,8 +314,12 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
     {
         if (GlobalVariables.requestRewardedAd == true)
         {
-            StopCoroutine(requestAdCorroutine);
-            requestAdCorroutine = StartCoroutine(RequestRewardAd());
+            if (requestAdCorroutine != null)
+            {
+                StopCoroutine(requestAdCorroutine);
+            }
+            requestAdCorroutine = RequestRewardAd();
+            StartCoroutine(requestAdCorroutine);
         }
     }
 

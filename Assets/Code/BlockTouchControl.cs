@@ -13,7 +13,7 @@ public class BlockTouchControl : MonoBehaviour
     Vector3 deltaPos;
     Vector3 preCorrectPos;
     bool blockScaleAnimationStarted = false;
-    Coroutine BlockScaleSmoothLerpCoroutine;
+    IEnumerator BlockScaleSmoothLerpCoroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -88,7 +88,8 @@ public class BlockTouchControl : MonoBehaviour
                         {
                             StopCoroutine(BlockScaleSmoothLerpCoroutine);
                         }
-                        BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, true));
+                        BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, true);
+                        StartCoroutine(BlockScaleSmoothLerpCoroutine);
                     }
                 }
             }
@@ -128,7 +129,8 @@ public class BlockTouchControl : MonoBehaviour
                             {
                                 StopCoroutine(BlockScaleSmoothLerpCoroutine);
                             }
-                            BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                            BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, false);
+                            StartCoroutine(BlockScaleSmoothLerpCoroutine);
                         }
 
                         foreach (var item in toBePlacedGrids)
@@ -200,7 +202,8 @@ public class BlockTouchControl : MonoBehaviour
                                 {
                                     StopCoroutine(BlockScaleSmoothLerpCoroutine);
                                 }
-                                BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                                BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, false);
+                                StartCoroutine(BlockScaleSmoothLerpCoroutine);
                             }
                         }
                         #endregion
@@ -256,7 +259,9 @@ public class BlockTouchControl : MonoBehaviour
                     {
                         StopCoroutine(BlockScaleSmoothLerpCoroutine);
                     }
-                    BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, true));
+                    BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, true);
+                    StartCoroutine(BlockScaleSmoothLerpCoroutine);
+
                 }
             }
         }
@@ -290,7 +295,8 @@ public class BlockTouchControl : MonoBehaviour
                         {
                             StopCoroutine(BlockScaleSmoothLerpCoroutine);
                         }
-                        BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                        BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, false);
+                        StartCoroutine(BlockScaleSmoothLerpCoroutine);
                     }
 
                     foreach (var item in toBePlacedGrids)
@@ -363,7 +369,8 @@ public class BlockTouchControl : MonoBehaviour
                             {
                                 StopCoroutine(BlockScaleSmoothLerpCoroutine);
                             }
-                            BlockScaleSmoothLerpCoroutine = StartCoroutine(BlockScaleSmoothLerp(touchedBlockParent, false));
+                            BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, false);
+                            StartCoroutine(BlockScaleSmoothLerpCoroutine);
                         }
                     }
                     #endregion
