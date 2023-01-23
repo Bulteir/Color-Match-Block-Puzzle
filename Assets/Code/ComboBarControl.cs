@@ -42,6 +42,10 @@ public class ComboBarControl : MonoBehaviour
             comboBarText.text = "x" + comboMultiplier.ToString();
             comboBar.value = 100;
         }
+        else if (comboMultiplier == GlobalVariables.maxScoreMultiplier)
+        {
+            comboBar.value = 100;
+        }
     }
 
     void DecreaseComboMultiplier()
@@ -57,4 +61,11 @@ public class ComboBarControl : MonoBehaviour
         }
     }
 
+    //maxcombo jokerinde kullanýyoruz
+    public void MaximizeComboBar()
+    {
+        comboMultiplier = GlobalVariables.maxScoreMultiplier;
+        comboBarText.text = "x" + comboMultiplier.ToString();
+        comboBar.value = 100;
+    }
 }

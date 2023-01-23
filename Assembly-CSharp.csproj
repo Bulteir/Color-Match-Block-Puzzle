@@ -93,6 +93,7 @@
     <Compile Include="Assets\Code\UI\HighScoresMenu_Back_Btn.cs" />
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
     <Compile Include="Assets\Code\Joker_ChangeSpawnedBlocks.cs" />
+    <Compile Include="Assets\Code\Joker_MaxCombo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -58,4 +58,5 @@ public class GlobalVariables
     public const int joker_non= 0;
     public const int joker_bomb = 1;
     public const int joker_blockChanger = 2;
+    public const int joker_maxCombo = 3;
 }
