@@ -62,7 +62,9 @@
     <Compile Include="Assets\Code\UI\PauseMenu_Resume_Btn.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Share_btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
+    <Compile Include="Assets\Code\Joker_ChangeSpawnedBlocks.cs" />
     <Compile Include="Assets\Code\UI\InGameMenuController.cs" />
+    <Compile Include="Assets\Code\Joker_MaxCombo.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Restart_Btn.cs" />
     <Compile Include="Assets\Code\AdMobController.cs" />
     <Compile Include="Assets\CrystalFramework\Utility\SafeArea.cs" />
@@ -92,8 +94,6 @@
     <Compile Include="Assets\Code\UI\MainMenu_Settings_Btn.cs" />
     <Compile Include="Assets\Code\UI\HighScoresMenu_Back_Btn.cs" />
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
-    <Compile Include="Assets\Code\Joker_ChangeSpawnedBlocks.cs" />
-    <Compile Include="Assets\Code\Joker_MaxCombo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

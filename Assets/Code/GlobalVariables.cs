@@ -9,7 +9,7 @@ public class GlobalVariables
     public const string scoreText = "ScoreText";
     public const string bomb = "Bomb";
 
-    public static int gameState = gameState_inGame;
+    public static int gameState = gameState_MainMenu;
     public const int gameState_MainMenu = 0;
     public const int gameState_inGame = 1;
     public const int gameState_SettingsMenu = 2;
