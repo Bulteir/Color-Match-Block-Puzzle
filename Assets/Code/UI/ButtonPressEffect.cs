@@ -8,6 +8,7 @@ using UnityEngine.UI;
 //[RequireComponent (typeof(Button))]
 public class ButtonPressEffect : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
+    public AudioSource click;
     public void OnPointerUp(PointerEventData eventData)
     {
         Button button;
@@ -18,6 +19,7 @@ public class ButtonPressEffect : MonoBehaviour,IPointerDownHandler,IPointerUpHan
         }
         else if (this.TryGetComponent<TMP_Dropdown>(out dropdown))
         {
+            click.Play();
             dropdown.placeholder.GetComponent<TMP_Text>().color = Color.white;
             dropdown.captionText.GetComponent<TMP_Text>().color = Color.white;
         }

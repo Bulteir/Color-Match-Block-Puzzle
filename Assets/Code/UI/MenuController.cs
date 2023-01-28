@@ -8,6 +8,8 @@ public class MenuController : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settingsMenu;
     public GameObject highScoresMenu;
+    public Transform musics;
+    public Transform sfx;
 
     void Awake()
     {
@@ -16,11 +18,72 @@ public class MenuController : MonoBehaviour
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[int.Parse(selectedLangVal)];
         }
+
+        #region oyun baþlangýcý muzik tercihi kontrolü
+        string musicPref = PlayerPrefs.GetString("Music");
+        if (musicPref != "")
+        {
+            if (musicPref == "on")
+            {
+                foreach (Transform item in musics)
+                {
+                    item.GetComponent<AudioSource>().mute = false;
+                }
+            }
+            else
+            {
+                foreach (Transform item in musics)
+                {
+                    item.GetComponent<AudioSource>().mute = true;
+                }
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetString("Music", "on");
+            foreach (Transform item in musics)
+            {
+                item.GetComponent<AudioSource>().mute = false;
+            }
+        }
+        PlayerPrefs.Save();
+        #endregion
+        #region oyun baþlangýcý ses efektleri tercihi kontrolü
+        string soundPref = PlayerPrefs.GetString("Sound");
+        if (soundPref != "")
+        {
+            if (soundPref == "on")
+            {
+                foreach (Transform item in sfx)
+                {
+                    item.GetComponent<AudioSource>().mute = false;
+                }
+            }
+            else
+            {
+                foreach (Transform item in sfx)
+                {
+                    item.GetComponent<AudioSource>().mute = true;
+                }
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetString("Sound", "on");
+            foreach (Transform item in sfx)
+            {
+                item.GetComponent<AudioSource>().mute = false;
+            }
+        }
+        PlayerPrefs.Save();
+        #endregion
+
     }
     // Start is called before the first frame update
     void Start()
     {
         menuActiveControl();
+        //menuMusic.Play();
     }
 
     // Update is called once per frame

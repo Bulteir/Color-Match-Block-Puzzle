@@ -15,6 +15,7 @@ public class BlockTouchControl : MonoBehaviour
     bool blockScaleAnimationStarted = false;
     IEnumerator BlockScaleSmoothLerpCoroutine;
 
+    public AudioSource blokSnap;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class BlockTouchControl : MonoBehaviour
                 {
                     touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
                 }
+                blokSnap.Play();
             }
         }
         else if (Input.touchCount == 1)
@@ -90,6 +92,7 @@ public class BlockTouchControl : MonoBehaviour
                         }
                         BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, true);
                         StartCoroutine(BlockScaleSmoothLerpCoroutine);
+                        blokSnap.Play();
                     }
                 }
             }
@@ -223,7 +226,7 @@ public class BlockTouchControl : MonoBehaviour
                         toBePlacedGrids.Clear();
                         preCorrectPos = Vector3.zero;
                     }
-
+                    blokSnap.Play();
                 }
             }
         }
@@ -261,7 +264,7 @@ public class BlockTouchControl : MonoBehaviour
                     }
                     BlockScaleSmoothLerpCoroutine = BlockScaleSmoothLerp(touchedBlockParent, true);
                     StartCoroutine(BlockScaleSmoothLerpCoroutine);
-
+                    blokSnap.Play();
                 }
             }
         }
@@ -391,6 +394,7 @@ public class BlockTouchControl : MonoBehaviour
                     preCorrectPos = Vector3.zero;
 
                 }
+                blokSnap.Play();
             }
         }
 
@@ -405,6 +409,7 @@ public class BlockTouchControl : MonoBehaviour
             {
                 touchedBlockParent.rotation = Quaternion.Euler(0, 0, 0);
             }
+            blokSnap.Play();
         }
     }
     #endregion

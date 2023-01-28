@@ -12,6 +12,9 @@ public class CreateBlocks : MonoBehaviour
     public Transform canvasForScale;
     public Transform gridCellForSpawnPointPosition;
     public float spawnPointADBannerHeight;
+    
+    public AudioSource spawn;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -84,6 +87,11 @@ public class CreateBlocks : MonoBehaviour
         blockGroupParent.localScale = blockScale;
         spawnPoint.GetComponent<SpawnPointHelper>().block = blockGroupParent;
         blockGroupParent.GetComponent<Animator>().enabled = playSpawnAnimation;
+        
+        if (playSpawnAnimation)
+        {
+            spawn.Play();
+        }
 
         #region oyun bitiþini anlamak için spawn olmuþ olan bloklarýn tümümün grid üzerinde uygun yeri var mý kontrol ediliyor
         int totalAvaiblePlace = 0;

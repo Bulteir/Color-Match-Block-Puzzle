@@ -9,7 +9,8 @@ public class InGameMenuController : MonoBehaviour
     public GameObject cloud1;
     public GameObject cloud2;
     public GameObject cloud3;
-
+    public Transform musics;
+    public Transform sfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,48 @@ public class InGameMenuController : MonoBehaviour
         GlobalVariables.requestRewardedAd = true;
         GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
         this.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+
+        #region oyun baþlangýcý muzik tercihi kontrolü
+        string musicPref = PlayerPrefs.GetString("Music");
+        if (musicPref != "")
+        {
+            if (musicPref == "on")
+            {
+                foreach (Transform item in musics)
+                {
+                    item.GetComponent<AudioSource>().mute = false;
+                }
+            }
+            else
+            {
+                foreach (Transform item in musics)
+                {
+                    item.GetComponent<AudioSource>().mute = true;
+                }
+            }
+        }
+
+        #endregion
+        #region oyun baþlangýcý ses efektleri tercihi kontrolü
+        string soundPref = PlayerPrefs.GetString("Sound");
+        if (soundPref != "")
+        {
+            if (soundPref == "on")
+            {
+                foreach (Transform item in sfx)
+                {
+                    item.GetComponent<AudioSource>().mute = false;
+                }
+            }
+            else
+            {
+                foreach (Transform item in sfx)
+                {
+                    item.GetComponent<AudioSource>().mute = true;
+                }
+            }
+        }
+        #endregion
 
     }
 

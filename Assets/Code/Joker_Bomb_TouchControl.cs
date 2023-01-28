@@ -19,6 +19,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
     IEnumerator requestAdCorroutine;
     bool requestAdFirstTime = true;//bomba jokerinin oyun baþýna sadece bir kez kullanýlmasý için
 
+    public AudioSource click;
+    public AudioSource bomb;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     //deltaPos.y += 2;
 
                     touchedBlock.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+                    click.Play();
                 }
             }
         }
@@ -185,6 +188,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                         //deltaPos.y += 2;
 
                         touchedBlock.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+                        click.Play();
+
                     }
                 }
             }
@@ -253,6 +258,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
         touchedBlock = null;
         deltaPos = Vector3.zero;
         toBePlacedGrids.Clear();
+        bomb.Play();
     }
 
     #region Reklam methodlarý
@@ -268,6 +274,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     if (raycastHit.collider.gameObject.tag == GlobalVariables.bomb && requestAdFirstTime)
                     {
                         ShowAd();
+                        click.Play();
                     }
                 }
             }
@@ -285,6 +292,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                         if (raycastHit.collider.gameObject.tag == GlobalVariables.bomb && requestAdFirstTime)
                         {
                             ShowAd();
+                            click.Play();
                         }
                     }
                 }

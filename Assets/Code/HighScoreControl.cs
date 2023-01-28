@@ -31,6 +31,10 @@ public class HighScoreControl : MonoBehaviour
     public TMP_Text GameOverContent;
     public TMP_Text GameOverTitle;
     public GameObject victoryConfeti;
+    public AudioSource fireworks;
+    public AudioSource gameWin;
+    public AudioSource gameOver;
+    public AudioSource inGameMusic;
 
     void Start()
     {
@@ -134,12 +138,17 @@ public class HighScoreControl : MonoBehaviour
         GameOverTitle.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Congratulations");
         GameOverContent.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "New High Score") + ": " + score.ToString();
         Instantiate(victoryConfeti);
+        fireworks.Play();
+        gameWin.Play();
+        inGameMusic.Stop();
     }
 
     void GameOverMessage(int score)
     {
         GameOverTitle.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Game Over");
         GameOverContent.text = LocalizationSettings.StringDatabase.GetLocalizedString("Localizations", "Score") + ": " + score.ToString();
+        gameOver.Play();
+        inGameMusic.Stop();
     }
 
 }

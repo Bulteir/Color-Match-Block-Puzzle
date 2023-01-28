@@ -34,6 +34,7 @@ public class GridRowCloumnControl : MonoBehaviour
     public TMP_Text score_Prefab;
     public TMP_Text scoreText;
     public Transform canvas;
+    public AudioSource pop;
 
     // Start is called before the first frame update
     void Start()
@@ -229,7 +230,8 @@ public class GridRowCloumnControl : MonoBehaviour
             {
                 blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile.gameObject.GetComponent<Animator>().enabled = true;
                 blocks[i].GetComponent<GridRowColumnControlHelper>().snapedBlockTile = null;
-                blocks[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;     
+                blocks[i].GetComponent<GridRowColumnControlHelper>().gridState = GlobalVariables.gridState_empty;
+                pop.Play();
                 yield return new WaitForSeconds(0.05f);
             }
             i++;

@@ -11,6 +11,9 @@ public class ComboBarControl : MonoBehaviour
     public TMP_Text comboBarText;
     public int comboMultiplier = 1;
     public float comboDurationSecond = 2f;
+    public AudioSource comboUp;
+    public AudioSource comboDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,10 +44,12 @@ public class ComboBarControl : MonoBehaviour
             comboMultiplier++;
             comboBarText.text = "x" + comboMultiplier.ToString();
             comboBar.value = 100;
+            comboUp.Play();
         }
         else if (comboMultiplier == GlobalVariables.maxScoreMultiplier)
         {
             comboBar.value = 100;
+            comboUp.Play();
         }
     }
 
@@ -58,6 +63,7 @@ public class ComboBarControl : MonoBehaviour
             {
                 comboBar.value = 100;
             }
+            comboDown.Play();
         }
     }
 
@@ -67,5 +73,6 @@ public class ComboBarControl : MonoBehaviour
         comboMultiplier = GlobalVariables.maxScoreMultiplier;
         comboBarText.text = "x" + comboMultiplier.ToString();
         comboBar.value = 100;
+        comboUp.Play();
     }
 }
