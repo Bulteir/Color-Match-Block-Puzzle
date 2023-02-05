@@ -88,7 +88,7 @@ public class RateGame : MonoBehaviour
     public void ClickRateNowBtn()
     {
         //burasý oyun markete çýkýnca deðiþecek
-        Application.OpenURL("market://details?id=com.Alpay.Kubiks");
+        Application.OpenURL("market://details?id=com.Alpay.BlockPuzzle");
 
         ratedAlredy = true;
         PlayerPrefs.SetString("DoesPlayerRatedGame", ratedAlredy.ToString());
