@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+#if UNITY_IOS
+using Unity.Advertisement.IosSupport;
+#endif
 
 public class MenuController : MonoBehaviour
 {
@@ -82,8 +85,19 @@ public class MenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        #region iosta reklam gösterebilmek için gerekli olan izin kontrolü
+#if UNITY_IOS
+        // check with iOS to see if the user has accepted or declined tracking
+        var status = ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
+
+        if (status == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
+        {
+            ATTrackingStatusBinding.RequestAuthorizationTracking();
+        }
+#endif
+        #endregion
+
         menuActiveControl();
-        //menuMusic.Play();
     }
 
     // Update is called once per frame

@@ -93,7 +93,7 @@ public class AdMobController : MonoBehaviour
 #elif UNITY_ANDROID
                 string adUnitId = "ca-app-pub-3475441178822227/8469984595";
 #elif UNITY_IPHONE
-                string adUnitId = "";
+                string adUnitId = "ca-app-pub-3475441178822227/1594991968";
 #else
                 string adUnitId = "unexpected_platform";
 #endif
@@ -145,7 +145,7 @@ public class AdMobController : MonoBehaviour
             PrintStatus(msg);
         };
 
-        
+
         // Load a banner ad
         bannerView.LoadAd(CreateAdRequest());
     }
@@ -171,7 +171,7 @@ public class AdMobController : MonoBehaviour
 #elif UNITY_ANDROID
                         string adUnitId = "ca-app-pub-3475441178822227/6094817285";
 #elif UNITY_IPHONE
-                        string adUnitId = "";
+                        string adUnitId = "ca-app-pub-3475441178822227/6315731953";
 #else
                         string adUnitId = "unexpected_platform";
 #endif
@@ -260,7 +260,7 @@ public class AdMobController : MonoBehaviour
 #elif UNITY_ANDROID
                         string adUnitId = "ca-app-pub-3475441178822227/4832683372";
 #elif UNITY_IPHONE
-                        string adUnitId = "";
+                        string adUnitId = "ca-app-pub-3475441178822227/7585685247";
 #else
                         string adUnitId = "unexpected_platform";
 #endif
