@@ -79,7 +79,11 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                 if (touchedBlock.GetChild(0).childCount == toBePlacedGrids.Count)
                 {
                     StartCoroutine(BlockDisapperAnimationDelayer());
-                    touchedBlock.position = BombPlaceHolderPos.position;
+                    Vector3 _bombPlaceHolderPos = BombPlaceHolderPos.localPosition;
+                    _bombPlaceHolderPos.z = 1;
+                    touchedBlock.localPosition = _bombPlaceHolderPos;
+                   
+
                     touchedBlock.gameObject.layer = LayerMask.NameToLayer("Default");
 
                     //bomba patladýðý için bomba sayýsýný düþür
@@ -88,7 +92,9 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                 }
                 else // deðilse eski doðru konumuna gönderilir
                 {
-                    touchedBlock.position = BombPlaceHolderPos.position;
+                    Vector3 _bombPlaceHolderPos = BombPlaceHolderPos.localPosition;
+                    _bombPlaceHolderPos.z = 1;
+                    touchedBlock.localPosition = _bombPlaceHolderPos;
                     touchedBlock.gameObject.layer = LayerMask.NameToLayer("Default");
 
                 }
@@ -208,7 +214,9 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     if (touchedBlock.GetChild(0).childCount == toBePlacedGrids.Count)
                     {
                         StartCoroutine(BlockDisapperAnimationDelayer());
-                        touchedBlock.position = BombPlaceHolderPos.position;
+                        Vector3 _bombPlaceHolderPos = BombPlaceHolderPos.localPosition;
+                        _bombPlaceHolderPos.z = 1;
+                        touchedBlock.localPosition = _bombPlaceHolderPos;
                         touchedBlock.gameObject.layer = LayerMask.NameToLayer("Default");
 
                         //bomba patladýðý için bomba sayýsýný düþür
@@ -217,7 +225,9 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     }
                     else // deðilse eski doðru konumuna gönderilir
                     {
-                        touchedBlock.position = BombPlaceHolderPos.position;
+                        Vector3 _bombPlaceHolderPos = BombPlaceHolderPos.localPosition;
+                        _bombPlaceHolderPos.z = 1;
+                        touchedBlock.localPosition = _bombPlaceHolderPos;
                         touchedBlock.gameObject.layer = LayerMask.NameToLayer("Default");
                     }
                     #endregion
