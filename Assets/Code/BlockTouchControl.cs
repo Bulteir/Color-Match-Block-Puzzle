@@ -81,7 +81,7 @@ public class BlockTouchControl : MonoBehaviour
 
                         deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(touch.position);
                         deltaPos.z = 0;
-                        deltaPos.y += 2;
+                        deltaPos.y += 1;
 
                         preCorrectPos = touchedBlockParent.position;
 
@@ -109,7 +109,7 @@ public class BlockTouchControl : MonoBehaviour
 
                     float blockTouchPositionDelta = Vector3.Distance(new Vector3(preCorrectPos.x, preCorrectPos.y, touchedBlockParent.position.z), touchedBlockParent.position);
                     //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
-                    if (blockTouchPositionDelta < 3f)
+                    if (blockTouchPositionDelta < 2f)
                     {
                         float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
                         angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;
@@ -253,7 +253,7 @@ public class BlockTouchControl : MonoBehaviour
 
                     deltaPos = touchedBlockParent.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     deltaPos.z = 0;
-                    deltaPos.y += 2;
+                    deltaPos.y += 1;
 
                     preCorrectPos = touchedBlockParent.position;
 
@@ -275,7 +275,7 @@ public class BlockTouchControl : MonoBehaviour
             {
                 float blockTouchPositionDelta = Vector3.Distance(new Vector3(preCorrectPos.x,preCorrectPos.y,touchedBlockParent.position.z), touchedBlockParent.position);
                 //eðer blok spawn notkasýnda olduðu yerde üzerine týklanýrsa döndürme yaptýrmaya yarar
-                if (blockTouchPositionDelta < 3f)
+                if (blockTouchPositionDelta < 2f)
                 {
                     float angle = (90 + touchedBlockParent.eulerAngles.z) / 90;
                     angle = (90 + touchedBlockParent.eulerAngles.z) >= 360 ? 0 : angle;

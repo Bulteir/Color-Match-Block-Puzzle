@@ -11,6 +11,7 @@ public class InGameMenuController : MonoBehaviour
     public GameObject cloud3;
     public Transform musics;
     public Transform sfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,18 +80,21 @@ public class InGameMenuController : MonoBehaviour
             pauseMenu.SetActive(true);
             SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(false);
+            this.GetComponent<AdMobController>().DestroyBannerAd();
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_inGame && pauseMenu.activeSelf == true)
         {
             pauseMenu.SetActive(false);
             SpawnedBlocksMaskHelper(false);
             gameOverMenu.SetActive(false);
+            this.GetComponent<AdMobController>().RequestBannerAd();
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_gameOver && gameOverMenu.activeSelf == false)
         {
             pauseMenu.SetActive(false);
             SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(true);
+            this.GetComponent<AdMobController>().DestroyBannerAd();
         }
     }
 

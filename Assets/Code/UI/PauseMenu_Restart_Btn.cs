@@ -36,6 +36,7 @@ public class PauseMenu_Restart_Btn : MonoBehaviour
         }
         else if (GlobalVariables.whichButtonRequestInterstitialAd == GlobalVariables.pauseMenuRestart_btn)
         {
+            GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
             GlobalVariables.gameState = GlobalVariables.gameState_inGame;
             SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
         }

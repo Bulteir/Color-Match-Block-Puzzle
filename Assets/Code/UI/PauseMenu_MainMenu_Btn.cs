@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu_MainMenu_Btn : MonoBehaviour
 {
+    public Transform generalControls;
     public void OnClick()
     {
+        generalControls.GetComponent<AdMobController>().DestroyBannerAd();
         GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
