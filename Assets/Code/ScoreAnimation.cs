@@ -18,12 +18,12 @@ public class ScoreAnimation : MonoBehaviour
     {
         if (isScoreAnimationStart && GlobalVariables.gameState == GlobalVariables.gameState_inGame)
         {
-            if (transform.localScale.x < 3f)
+            if (transform.localScale.x < 3f* 0.461f)
             {
-                transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(3, 3, 1), 0.05f * 2.5f);
-                if (transform.localScale.x > 2.99f)
+                transform.localScale = Vector3.Lerp(transform.localScale, Vector3.Scale(new Vector3(3, 3, 1), new Vector3(0.461f, 0.461f, 0.461f)), 0.05f * 2.5f);
+                if (transform.localScale.x > 2.99f * 0.461f)
                 {
-                    transform.localScale = new Vector3(3, 3, 1);
+                    transform.localScale = Vector3.Scale(new Vector3(3, 3, 1), new Vector3(0.461f, 0.461f, 0.461f));
                 }
             }
             else if (Vector3.Distance(transform.position, mainScoreText.transform.position) > 5f)

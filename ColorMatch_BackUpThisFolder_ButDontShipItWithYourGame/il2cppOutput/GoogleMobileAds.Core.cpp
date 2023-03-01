@@ -186,10 +186,10 @@ struct AdRequest_tB2AC2CD266CFD5D636C917BC2D938BE96E72BF4D  : public RuntimeObje
 };
 struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158  : public RuntimeObject
 {
-	int32_t ___type_0;
-	int32_t ___orientation_1;
-	int32_t ___width_2;
-	int32_t ___height_3;
+	int32_t ____type_0;
+	int32_t ____orientation_1;
+	int32_t ____width_2;
+	int32_t ____height_3;
 };
 struct AdValue_t3D87DDD4D06FAAA212BD2119CA464B4F0FEBBCFD  : public RuntimeObject
 {
@@ -1017,12 +1017,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdSize__ctor_m3135618F57F2ABBC18CD548238
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		__this->___type_0 = 0;
+		__this->____type_0 = 0;
 		int32_t L_0 = ___0_width;
-		__this->___width_2 = L_0;
+		__this->____width_2 = L_0;
 		int32_t L_1 = ___1_height;
-		__this->___height_3 = L_1;
-		__this->___orientation_1 = 0;
+		__this->____height_3 = L_1;
+		__this->____orientation_1 = 0;
 		return;
 	}
 }
@@ -1033,7 +1033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdSize__ctor_mF8EE31157BD7A396CD2ACA8C79
 		int32_t L_1 = ___1_height;
 		AdSize__ctor_m3135618F57F2ABBC18CD548238DB0078A781884D(__this, L_0, L_1, NULL);
 		int32_t L_2 = ___2_type;
-		__this->___type_0 = L_2;
+		__this->____type_0 = L_2;
 		return;
 	}
 }
@@ -1054,7 +1054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_2 = V_0;
 		int32_t L_3 = ___1_orientation;
 		NullCheck(L_2);
-		L_2->___orientation_1 = L_3;
+		L_2->____orientation_1 = L_3;
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_4 = V_0;
 		return L_4;
 	}
@@ -1110,28 +1110,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AdSize_get_Width_m3A441FF13816512B5B9F7E76BCA3C33663801454 (AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___width_2;
+		int32_t L_0 = __this->____width_2;
 		return L_0;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AdSize_get_Height_m27BD54A87A022614A731DDE44EBBF21887F79C05 (AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___height_3;
+		int32_t L_0 = __this->____height_3;
 		return L_0;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AdSize_get_AdType_mB7503D13611ABD8F59904F20D2BFA2DE1100DF7A (AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___type_0;
+		int32_t L_0 = __this->____type_0;
 		return L_0;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AdSize_get_Orientation_m9F0124F3CB2E79001129E206C089D326B8EF4D61 (AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___orientation_1;
+		int32_t L_0 = __this->____orientation_1;
 		return L_0;
 	}
 }
@@ -1174,40 +1174,40 @@ IL_0019:
 	{
 		RuntimeObject* L_4 = ___0_obj;
 		V_0 = ((AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158*)CastclassClass((RuntimeObject*)L_4, AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158_il2cpp_TypeInfo_var));
-		int32_t L_5 = __this->___width_2;
+		int32_t L_5 = __this->____width_2;
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_6 = V_0;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->___width_2;
+		int32_t L_7 = L_6->____width_2;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_7))))
 		{
 			goto IL_0063;
 		}
 	}
 	{
-		int32_t L_8 = __this->___height_3;
+		int32_t L_8 = __this->____height_3;
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_9 = V_0;
 		NullCheck(L_9);
-		int32_t L_10 = L_9->___height_3;
+		int32_t L_10 = L_9->____height_3;
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_10))))
 		{
 			goto IL_0063;
 		}
 	}
 	{
-		int32_t L_11 = __this->___type_0;
+		int32_t L_11 = __this->____type_0;
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_12 = V_0;
 		NullCheck(L_12);
-		int32_t L_13 = L_12->___type_0;
+		int32_t L_13 = L_12->____type_0;
 		if ((!(((uint32_t)L_11) == ((uint32_t)L_13))))
 		{
 			goto IL_0063;
 		}
 	}
 	{
-		int32_t L_14 = __this->___orientation_1;
+		int32_t L_14 = __this->____orientation_1;
 		AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158* L_15 = V_0;
 		NullCheck(L_15);
-		int32_t L_16 = L_15->___orientation_1;
+		int32_t L_16 = L_15->____orientation_1;
 		G_B8_0 = ((((int32_t)L_14) == ((int32_t)L_16))? 1 : 0);
 		goto IL_0064;
 	}
@@ -1282,25 +1282,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AdSize_GetHashCode_mF8FDC407FD639A12E
 		V_2 = L_0;
 		int32_t L_1 = V_2;
 		int32_t L_2 = V_1;
-		int32_t* L_3 = (&__this->___width_2);
+		int32_t* L_3 = (&__this->____width_2);
 		int32_t L_4;
 		L_4 = Int32_GetHashCode_m253D60FF7527A483E91004B7A2366F13E225E295(L_3, NULL);
 		V_2 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_1, L_2))^L_4));
 		int32_t L_5 = V_2;
 		int32_t L_6 = V_1;
-		int32_t* L_7 = (&__this->___height_3);
+		int32_t* L_7 = (&__this->____height_3);
 		int32_t L_8;
 		L_8 = Int32_GetHashCode_m253D60FF7527A483E91004B7A2366F13E225E295(L_7, NULL);
 		V_2 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_5, L_6))^L_8));
 		int32_t L_9 = V_2;
 		int32_t L_10 = V_1;
-		int32_t* L_11 = (&__this->___type_0);
+		int32_t* L_11 = (&__this->____type_0);
 		int32_t L_12;
 		L_12 = Int32_GetHashCode_m253D60FF7527A483E91004B7A2366F13E225E295(L_11, NULL);
 		V_2 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_9, L_10))^L_12));
 		int32_t L_13 = V_2;
 		int32_t L_14 = V_1;
-		int32_t* L_15 = (&__this->___orientation_1);
+		int32_t* L_15 = (&__this->____orientation_1);
 		int32_t L_16;
 		L_16 = Int32_GetHashCode_m253D60FF7527A483E91004B7A2366F13E225E295(L_15, NULL);
 		V_2 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_13, L_14))^L_16));
@@ -1524,22 +1524,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaxAdContentRating__ctor_mB941F1C15423BA
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MaxAdContentRating_get_Value_m41F2B893E27FDCE7C4FFF245BD24F1692F0F297E (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = __this->___U3CValueU3Ek__BackingField_0;
-		return L_0;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaxAdContentRating_set_Value_mED6650BB4FC02D217E2A8A57D6C57634881BD64E (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, String_t* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = ___0_value;
-		__this->___U3CValueU3Ek__BackingField_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CValueU3Ek__BackingField_0), (void*)L_0);
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* MaxAdContentRating_get_G_m32A78326A233108F3124F6F4F0ACEB8760A6963F (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1552,21 +1536,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F3698
 	{
 		MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* L_0 = (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17*)il2cpp_codegen_object_new(MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
 		MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856(L_0, _stringLiteral3DCC6243286938BE75C3FA773B9BA71160A2E869, NULL);
-		return L_0;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* MaxAdContentRating_get_MA_mCFF75243CADADFCCA246FA2FA76892F1827E8D40 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC2B62D0606C4484FD57AE89C52F445AB84F8CF1);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* L_0 = (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17*)il2cpp_codegen_object_new(MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
-		MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856(L_0, _stringLiteralFC2B62D0606C4484FD57AE89C52F445AB84F8CF1, NULL);
 		return L_0;
 	}
 }
@@ -1600,6 +1569,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F3698
 		return L_0;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* MaxAdContentRating_get_MA_mCFF75243CADADFCCA246FA2FA76892F1827E8D40 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC2B62D0606C4484FD57AE89C52F445AB84F8CF1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* L_0 = (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17*)il2cpp_codegen_object_new(MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
+		MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856(L_0, _stringLiteralFC2B62D0606C4484FD57AE89C52F445AB84F8CF1, NULL);
+		return L_0;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* MaxAdContentRating_get_Unspecified_m43010C5EF539F41AE14995A0754D894A9FD10607 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1629,6 +1613,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MaxAdContentRating_t8F4AA13668EB7FF7A5F6F3698
 		MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* L_1 = (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17*)il2cpp_codegen_object_new(MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17_il2cpp_TypeInfo_var);
 		MaxAdContentRating__ctor_mB941F1C15423BA11C1D70F68B0FF19A3C8673856(L_1, L_0, NULL);
 		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MaxAdContentRating_get_Value_m41F2B893E27FDCE7C4FFF245BD24F1692F0F297E (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CValueU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaxAdContentRating_set_Value_mED6650BB4FC02D217E2A8A57D6C57634881BD64E (MaxAdContentRating_t8F4AA13668EB7FF7A5F6F369845B5280BBE0BF17* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CValueU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CValueU3Ek__BackingField_0), (void*)L_0);
+		return;
 	}
 }
 #ifdef __clang__

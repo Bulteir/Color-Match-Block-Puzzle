@@ -46,6 +46,8 @@ extern void AppOpenAdClient_add_OnAdDidDismissFullScreenContent_m60D5BC495067B1B
 extern void AppOpenAdClient_remove_OnAdDidDismissFullScreenContent_mCE166B329D7E18C9247F96F09E4FD8553FB1DDDC (void);
 extern void AppOpenAdClient_add_OnAdDidRecordImpression_mFBF4070CFC1C9BB028437FD118082BD8572A4A03 (void);
 extern void AppOpenAdClient_remove_OnAdDidRecordImpression_m738814410D3671514A09FD0A11C4D4ED5394B9E1 (void);
+extern void AppOpenAdClient_add_OnAdClicked_m286233DF6F67B44E6CA01C157036A26054042A2C (void);
+extern void AppOpenAdClient_remove_OnAdClicked_mF345B1E2A8409022E61AF1AA3EC17094CB88E9E9 (void);
 extern void AppOpenAdClient_CreateAppOpenAd_m1261CA2D18446A2DFA216165DB4982D9B48C1450 (void);
 extern void AppOpenAdClient_LoadAd_mE589EC1C825052491FD446C361BA345CA551B6A5 (void);
 extern void AppOpenAdClient_Show_m1E86C944E26AD298277031AAF2FFAEA15D0F0B22 (void);
@@ -57,6 +59,7 @@ extern void AppOpenAdClient_onAdFailedToShowFullScreenContent_m2E8311D06935F5058
 extern void AppOpenAdClient_onAdShowedFullScreenContent_m824EB057901C14E6C30C9BC6847C9028C3E58497 (void);
 extern void AppOpenAdClient_onAdDismissedFullScreenContent_m39D6400BFB219F9DE439CEDD1DB70A1D5DDFA3CC (void);
 extern void AppOpenAdClient_onAdImpression_m8761B82F00493DBD3821096969516E4D70CED677 (void);
+extern void AppOpenAdClient_onAdClicked_m4CE850BB55D897B734D899401ABB4420DBE0830F (void);
 extern void AppOpenAdClient_onPaidEvent_m82844CEF3194744E3CC7003465B4D04A63BB9218 (void);
 extern void AppStateEventClient__ctor_m4C240F785BCC2D2C26649A4F76B7D5D9132BAF30 (void);
 extern void AppStateEventClient_add_appStateChanged_m2820A831E5CEC722234335227B18692391C3A4D6 (void);
@@ -75,6 +78,10 @@ extern void BannerClient_add_OnAdClosed_m7D4598C4D8F07EB44BFBCD2B46317730C1D2C76
 extern void BannerClient_remove_OnAdClosed_m6C3BE9E5A82B2EBC1A785AF9ED632F22F5EEDAD3 (void);
 extern void BannerClient_add_OnPaidEvent_m474A676D20BD725E546FE676D50EE909E2718ABE (void);
 extern void BannerClient_remove_OnPaidEvent_m854FD62547909909512199A6AA63FD36F775C881 (void);
+extern void BannerClient_add_OnAdClicked_m8A2BFFF9C066D6281E71D3DA1F6A355272CF238C (void);
+extern void BannerClient_remove_OnAdClicked_m3307B46C723DAFD9B2005CCA8F2552BFCA5E2CF0 (void);
+extern void BannerClient_add_OnAdImpressionRecorded_m2E41A8A18EC99BACEACA1A7E20273AB29B1FD525 (void);
+extern void BannerClient_remove_OnAdImpressionRecorded_mE489F864528F273F12AE731D3C277646913FD24A (void);
 extern void BannerClient_CreateBannerView_m6C38246E4FDDE07A257BEC5520636D0A11202B9C (void);
 extern void BannerClient_CreateBannerView_m545E5F3D9502F7FA9E3314DBFF11481369773517 (void);
 extern void BannerClient_LoadAd_mA0475B8FF6AD8A08E379E3182F0163B437456738 (void);
@@ -91,6 +98,8 @@ extern void BannerClient_onAdFailedToLoad_mF0B7DFE4403FF3405FAC63F8A59D7C43A405A
 extern void BannerClient_onAdOpened_mDC8C60A191781B683699C254120EE50A0048CB87 (void);
 extern void BannerClient_onAdClosed_m0D8AAA6C2F2EADB3B91AF9494D1893E6439BD7D2 (void);
 extern void BannerClient_onPaidEvent_mAF7BE811BE76C62824D043DE640475A5A206728B (void);
+extern void BannerClient_onAdClicked_mF3A7326E8C2C2F2EE431729E57648A956AEAB6C7 (void);
+extern void BannerClient_onAdImpression_m4739D123B68191C2A4C193F1E7B807E5277683D3 (void);
 extern void DisplayMetrics__ctor_m8F895C80EBCA4AED8758E3DEBD2CF65248BFC2B4 (void);
 extern void DisplayMetrics_get_Density_mD688C6F9AAA4C676BFAA2B772C5E622A808236BD (void);
 extern void DisplayMetrics_set_Density_m3D0B71F3B81BB60A34574A5325F28A3274EC2B37 (void);
@@ -125,6 +134,8 @@ extern void InterstitialClient_add_OnAdDidRecordImpression_m8764F9C580F3B8341A34
 extern void InterstitialClient_remove_OnAdDidRecordImpression_m0C444B50E64989149B59DB9BEF6077411A5CB2F8 (void);
 extern void InterstitialClient_add_OnPaidEvent_m23C42F957692B5DCE0C7B0D1A7F99D467ABA9DA3 (void);
 extern void InterstitialClient_remove_OnPaidEvent_m539FB593B32D86449D668B44D68F9E83D993223B (void);
+extern void InterstitialClient_add_OnAdClicked_m5C8BAA0D0B8F29608ADA456703F9E9B3D4A584B8 (void);
+extern void InterstitialClient_remove_OnAdClicked_m529A9963C15FFDF0C89816C5C796A4AE75C65931 (void);
 extern void InterstitialClient_CreateInterstitialAd_m2D34F34A4EE6AC30888D5E42FE7F387752A066C1 (void);
 extern void InterstitialClient_LoadAd_m797AED7355744DEB02084DEEA67040F2E149DC42 (void);
 extern void InterstitialClient_Show_m38BEFDBA16B5A9DCE8EC0BCE0AF9960D954E610D (void);
@@ -136,6 +147,7 @@ extern void InterstitialClient_onAdFailedToShowFullScreenContent_m9300E7914F254E
 extern void InterstitialClient_onAdShowedFullScreenContent_m713BEBACEEACF05906AC1D6A726C62A0F0CBE7CB (void);
 extern void InterstitialClient_onAdDismissedFullScreenContent_m639D15141E9D8555FFFCFE0ACBF53337BE053640 (void);
 extern void InterstitialClient_onAdImpression_m917C895516B08862159F2BAE1B063E0FCC9AE747 (void);
+extern void InterstitialClient_onAdClicked_m580B81D56B1DF03C99755F0E8CBA3EFE0FDBEFBE (void);
 extern void InterstitialClient_onPaidEvent_m7D99A23A9739A07FDC4775DD8A5316FFC331271D (void);
 extern void LoadAdErrorClient__ctor_mAAB2CB3CA79F7FC1CDDA014A8194DDB6A26F9967 (void);
 extern void LoadAdErrorClient_GetCode_m1E3E3BAE9933C1C80B2F302BBE61D3EA4DA9638C (void);
@@ -185,6 +197,8 @@ extern void RewardedAdClient_add_OnAdDidDismissFullScreenContent_mFC264149FD303B
 extern void RewardedAdClient_remove_OnAdDidDismissFullScreenContent_mD9A14E399471D6A39D4B523D2E440CF345950F2C (void);
 extern void RewardedAdClient_add_OnAdDidRecordImpression_mBC469B8B2290A444847C444CF7724E7A83BF749A (void);
 extern void RewardedAdClient_remove_OnAdDidRecordImpression_m58353D0EB123644A534F52B095EF86E63F434272 (void);
+extern void RewardedAdClient_add_OnAdClicked_m6E08AE90876C3ECC9903B6272ED8CA3E740A4783 (void);
+extern void RewardedAdClient_remove_OnAdClicked_mD16DD234D085AF2753C60255FDD93550EC29274C (void);
 extern void RewardedAdClient_CreateRewardedAd_m251A1B20C3726BFED8A9397DC1960FBB39E30FA4 (void);
 extern void RewardedAdClient_LoadAd_m5AE53471AF85CA169C5BFAC9A15073BD717D5172 (void);
 extern void RewardedAdClient_Show_m73423F0E14613315864F0C933C6244FBBA3CCA21 (void);
@@ -198,6 +212,7 @@ extern void RewardedAdClient_onAdFailedToShowFullScreenContent_mAC11D570CB1C6E39
 extern void RewardedAdClient_onAdShowedFullScreenContent_mD010B5B214BFF75B94C96AC3E4CACD36F41FD931 (void);
 extern void RewardedAdClient_onAdDismissedFullScreenContent_mDDAFDD797E0F08646BF92024F729622BA03A224F (void);
 extern void RewardedAdClient_onAdImpression_mF9E29BE592138FCA88C4ED6749D0A5911FE9ECD4 (void);
+extern void RewardedAdClient_onAdClicked_m23B3C998A6FAAECDC0BB49F1C2BAD077E3E7E541 (void);
 extern void RewardedAdClient_onUserEarnedReward_m2A49D078B6795CAFD1D690BFD3B6C2D9EA1CD155 (void);
 extern void RewardedAdClient_onPaidEvent_m9808D3DA5A710D7D8E3E84F36E1B79520D954E67 (void);
 extern void RewardedInterstitialAdClient__ctor_m7DCD4A3A92E137ADC479BF330963BD4676375E11 (void);
@@ -217,6 +232,8 @@ extern void RewardedInterstitialAdClient_add_OnAdDidDismissFullScreenContent_mA9
 extern void RewardedInterstitialAdClient_remove_OnAdDidDismissFullScreenContent_m6319B9040A03378437283C9F59FB54623AE2DBB4 (void);
 extern void RewardedInterstitialAdClient_add_OnAdDidRecordImpression_mB5A227A3AD02FEF148C2E39B7C141BDE897BE9EB (void);
 extern void RewardedInterstitialAdClient_remove_OnAdDidRecordImpression_m5AAD9D74B407DED10906F9EF5C736768A33C838F (void);
+extern void RewardedInterstitialAdClient_add_OnAdClicked_mDD0AF7B806B0558A61CA4B9663439609A8789F7E (void);
+extern void RewardedInterstitialAdClient_remove_OnAdClicked_m453176735897016B916E8DC4B47A70E3D6020C09 (void);
 extern void RewardedInterstitialAdClient_CreateRewardedInterstitialAd_m721A8F8D1915ECA4A0759F6AD278E1B6EFE90FD6 (void);
 extern void RewardedInterstitialAdClient_LoadAd_m2950E1CB22284C315B13263EDBEBE8311DB027E0 (void);
 extern void RewardedInterstitialAdClient_Show_m348AEC7D9D65FC6DC7C160615008AAD3EFA934FA (void);
@@ -230,6 +247,7 @@ extern void RewardedInterstitialAdClient_onAdFailedToShowFullScreenContent_m8537
 extern void RewardedInterstitialAdClient_onAdShowedFullScreenContent_mF70285F43F6E05885DB3A7BC4CF9337FF65A4BBF (void);
 extern void RewardedInterstitialAdClient_onAdDismissedFullScreenContent_m51F1F86A8E4F74F94D596E480B2086DC41DBC682 (void);
 extern void RewardedInterstitialAdClient_onAdImpression_m2BEDE09D31150879FF91B30C300CD57B88B431A1 (void);
+extern void RewardedInterstitialAdClient_onAdClicked_m1BA2E359C6C6A21DCCB8A50A8D021FB5A7E8166A (void);
 extern void RewardedInterstitialAdClient_onUserEarnedReward_m35797F6B822515A1A775B0FB9B2C868C82EECF5F (void);
 extern void RewardedInterstitialAdClient_onPaidEvent_mE92D596D43C191C3CDC49C4221433D48C6B4C51F (void);
 extern void Utils__ctor_m4005C63CB1C37042333363AA9055D2E96CC9E877 (void);
@@ -241,7 +259,7 @@ extern void Utils_GetAdRequestJavaObject_m1B081FD57A546B7181D07C58C1101E57A227EF
 extern void Utils_GetJavaListObject_mD6C5663A9E13A398147EFCD17EC9283239B257B8 (void);
 extern void Utils_GetCsTypeList_m14B7F25395CB6945B5F1DD35C713B627AE02DAB8 (void);
 extern void Utils_GetServerSideVerificationOptionsJavaObject_m167BC5038C51E5F410DAC9BB86617E8A4F4389C7 (void);
-static Il2CppMethodPointer s_methodPointers[229] = 
+static Il2CppMethodPointer s_methodPointers[247] = 
 {
 	AdErrorClient__ctor_m88DBD2BAF730F42FE760FD01615B69CD260FC334,
 	AdErrorClient_GetCode_m76DE51A678EBE5ED59E61C0E38DF817A7A1FBCFA,
@@ -277,6 +295,8 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	AppOpenAdClient_remove_OnAdDidDismissFullScreenContent_mCE166B329D7E18C9247F96F09E4FD8553FB1DDDC,
 	AppOpenAdClient_add_OnAdDidRecordImpression_mFBF4070CFC1C9BB028437FD118082BD8572A4A03,
 	AppOpenAdClient_remove_OnAdDidRecordImpression_m738814410D3671514A09FD0A11C4D4ED5394B9E1,
+	AppOpenAdClient_add_OnAdClicked_m286233DF6F67B44E6CA01C157036A26054042A2C,
+	AppOpenAdClient_remove_OnAdClicked_mF345B1E2A8409022E61AF1AA3EC17094CB88E9E9,
 	AppOpenAdClient_CreateAppOpenAd_m1261CA2D18446A2DFA216165DB4982D9B48C1450,
 	AppOpenAdClient_LoadAd_mE589EC1C825052491FD446C361BA345CA551B6A5,
 	AppOpenAdClient_Show_m1E86C944E26AD298277031AAF2FFAEA15D0F0B22,
@@ -288,6 +308,7 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	AppOpenAdClient_onAdShowedFullScreenContent_m824EB057901C14E6C30C9BC6847C9028C3E58497,
 	AppOpenAdClient_onAdDismissedFullScreenContent_m39D6400BFB219F9DE439CEDD1DB70A1D5DDFA3CC,
 	AppOpenAdClient_onAdImpression_m8761B82F00493DBD3821096969516E4D70CED677,
+	AppOpenAdClient_onAdClicked_m4CE850BB55D897B734D899401ABB4420DBE0830F,
 	AppOpenAdClient_onPaidEvent_m82844CEF3194744E3CC7003465B4D04A63BB9218,
 	AppStateEventClient__ctor_m4C240F785BCC2D2C26649A4F76B7D5D9132BAF30,
 	AppStateEventClient_add_appStateChanged_m2820A831E5CEC722234335227B18692391C3A4D6,
@@ -306,6 +327,10 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	BannerClient_remove_OnAdClosed_m6C3BE9E5A82B2EBC1A785AF9ED632F22F5EEDAD3,
 	BannerClient_add_OnPaidEvent_m474A676D20BD725E546FE676D50EE909E2718ABE,
 	BannerClient_remove_OnPaidEvent_m854FD62547909909512199A6AA63FD36F775C881,
+	BannerClient_add_OnAdClicked_m8A2BFFF9C066D6281E71D3DA1F6A355272CF238C,
+	BannerClient_remove_OnAdClicked_m3307B46C723DAFD9B2005CCA8F2552BFCA5E2CF0,
+	BannerClient_add_OnAdImpressionRecorded_m2E41A8A18EC99BACEACA1A7E20273AB29B1FD525,
+	BannerClient_remove_OnAdImpressionRecorded_mE489F864528F273F12AE731D3C277646913FD24A,
 	BannerClient_CreateBannerView_m6C38246E4FDDE07A257BEC5520636D0A11202B9C,
 	BannerClient_CreateBannerView_m545E5F3D9502F7FA9E3314DBFF11481369773517,
 	BannerClient_LoadAd_mA0475B8FF6AD8A08E379E3182F0163B437456738,
@@ -322,6 +347,8 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	BannerClient_onAdOpened_mDC8C60A191781B683699C254120EE50A0048CB87,
 	BannerClient_onAdClosed_m0D8AAA6C2F2EADB3B91AF9494D1893E6439BD7D2,
 	BannerClient_onPaidEvent_mAF7BE811BE76C62824D043DE640475A5A206728B,
+	BannerClient_onAdClicked_mF3A7326E8C2C2F2EE431729E57648A956AEAB6C7,
+	BannerClient_onAdImpression_m4739D123B68191C2A4C193F1E7B807E5277683D3,
 	DisplayMetrics__ctor_m8F895C80EBCA4AED8758E3DEBD2CF65248BFC2B4,
 	DisplayMetrics_get_Density_mD688C6F9AAA4C676BFAA2B772C5E622A808236BD,
 	DisplayMetrics_set_Density_m3D0B71F3B81BB60A34574A5325F28A3274EC2B37,
@@ -356,6 +383,8 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	InterstitialClient_remove_OnAdDidRecordImpression_m0C444B50E64989149B59DB9BEF6077411A5CB2F8,
 	InterstitialClient_add_OnPaidEvent_m23C42F957692B5DCE0C7B0D1A7F99D467ABA9DA3,
 	InterstitialClient_remove_OnPaidEvent_m539FB593B32D86449D668B44D68F9E83D993223B,
+	InterstitialClient_add_OnAdClicked_m5C8BAA0D0B8F29608ADA456703F9E9B3D4A584B8,
+	InterstitialClient_remove_OnAdClicked_m529A9963C15FFDF0C89816C5C796A4AE75C65931,
 	InterstitialClient_CreateInterstitialAd_m2D34F34A4EE6AC30888D5E42FE7F387752A066C1,
 	InterstitialClient_LoadAd_m797AED7355744DEB02084DEEA67040F2E149DC42,
 	InterstitialClient_Show_m38BEFDBA16B5A9DCE8EC0BCE0AF9960D954E610D,
@@ -367,6 +396,7 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	InterstitialClient_onAdShowedFullScreenContent_m713BEBACEEACF05906AC1D6A726C62A0F0CBE7CB,
 	InterstitialClient_onAdDismissedFullScreenContent_m639D15141E9D8555FFFCFE0ACBF53337BE053640,
 	InterstitialClient_onAdImpression_m917C895516B08862159F2BAE1B063E0FCC9AE747,
+	InterstitialClient_onAdClicked_m580B81D56B1DF03C99755F0E8CBA3EFE0FDBEFBE,
 	InterstitialClient_onPaidEvent_m7D99A23A9739A07FDC4775DD8A5316FFC331271D,
 	LoadAdErrorClient__ctor_mAAB2CB3CA79F7FC1CDDA014A8194DDB6A26F9967,
 	LoadAdErrorClient_GetCode_m1E3E3BAE9933C1C80B2F302BBE61D3EA4DA9638C,
@@ -416,6 +446,8 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	RewardedAdClient_remove_OnAdDidDismissFullScreenContent_mD9A14E399471D6A39D4B523D2E440CF345950F2C,
 	RewardedAdClient_add_OnAdDidRecordImpression_mBC469B8B2290A444847C444CF7724E7A83BF749A,
 	RewardedAdClient_remove_OnAdDidRecordImpression_m58353D0EB123644A534F52B095EF86E63F434272,
+	RewardedAdClient_add_OnAdClicked_m6E08AE90876C3ECC9903B6272ED8CA3E740A4783,
+	RewardedAdClient_remove_OnAdClicked_mD16DD234D085AF2753C60255FDD93550EC29274C,
 	RewardedAdClient_CreateRewardedAd_m251A1B20C3726BFED8A9397DC1960FBB39E30FA4,
 	RewardedAdClient_LoadAd_m5AE53471AF85CA169C5BFAC9A15073BD717D5172,
 	RewardedAdClient_Show_m73423F0E14613315864F0C933C6244FBBA3CCA21,
@@ -429,6 +461,7 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	RewardedAdClient_onAdShowedFullScreenContent_mD010B5B214BFF75B94C96AC3E4CACD36F41FD931,
 	RewardedAdClient_onAdDismissedFullScreenContent_mDDAFDD797E0F08646BF92024F729622BA03A224F,
 	RewardedAdClient_onAdImpression_mF9E29BE592138FCA88C4ED6749D0A5911FE9ECD4,
+	RewardedAdClient_onAdClicked_m23B3C998A6FAAECDC0BB49F1C2BAD077E3E7E541,
 	RewardedAdClient_onUserEarnedReward_m2A49D078B6795CAFD1D690BFD3B6C2D9EA1CD155,
 	RewardedAdClient_onPaidEvent_m9808D3DA5A710D7D8E3E84F36E1B79520D954E67,
 	RewardedInterstitialAdClient__ctor_m7DCD4A3A92E137ADC479BF330963BD4676375E11,
@@ -448,6 +481,8 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	RewardedInterstitialAdClient_remove_OnAdDidDismissFullScreenContent_m6319B9040A03378437283C9F59FB54623AE2DBB4,
 	RewardedInterstitialAdClient_add_OnAdDidRecordImpression_mB5A227A3AD02FEF148C2E39B7C141BDE897BE9EB,
 	RewardedInterstitialAdClient_remove_OnAdDidRecordImpression_m5AAD9D74B407DED10906F9EF5C736768A33C838F,
+	RewardedInterstitialAdClient_add_OnAdClicked_mDD0AF7B806B0558A61CA4B9663439609A8789F7E,
+	RewardedInterstitialAdClient_remove_OnAdClicked_m453176735897016B916E8DC4B47A70E3D6020C09,
 	RewardedInterstitialAdClient_CreateRewardedInterstitialAd_m721A8F8D1915ECA4A0759F6AD278E1B6EFE90FD6,
 	RewardedInterstitialAdClient_LoadAd_m2950E1CB22284C315B13263EDBEBE8311DB027E0,
 	RewardedInterstitialAdClient_Show_m348AEC7D9D65FC6DC7C160615008AAD3EFA934FA,
@@ -461,6 +496,7 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	RewardedInterstitialAdClient_onAdShowedFullScreenContent_mF70285F43F6E05885DB3A7BC4CF9337FF65A4BBF,
 	RewardedInterstitialAdClient_onAdDismissedFullScreenContent_m51F1F86A8E4F74F94D596E480B2086DC41DBC682,
 	RewardedInterstitialAdClient_onAdImpression_m2BEDE09D31150879FF91B30C300CD57B88B431A1,
+	RewardedInterstitialAdClient_onAdClicked_m1BA2E359C6C6A21DCCB8A50A8D021FB5A7E8166A,
 	RewardedInterstitialAdClient_onUserEarnedReward_m35797F6B822515A1A775B0FB9B2C868C82EECF5F,
 	RewardedInterstitialAdClient_onPaidEvent_mE92D596D43C191C3CDC49C4221433D48C6B4C51F,
 	Utils__ctor_m4005C63CB1C37042333363AA9055D2E96CC9E877,
@@ -473,7 +509,7 @@ static Il2CppMethodPointer s_methodPointers[229] =
 	Utils_GetCsTypeList_m14B7F25395CB6945B5F1DD35C713B627AE02DAB8,
 	Utils_GetServerSideVerificationOptionsJavaObject_m167BC5038C51E5F410DAC9BB86617E8A4F4389C7,
 };
-static const int32_t s_InvokerIndices[229] = 
+static const int32_t s_InvokerIndices[247] = 
 {
 	5204,
 	6245,
@@ -509,6 +545,8 @@ static const int32_t s_InvokerIndices[229] =
 	5204,
 	5204,
 	5204,
+	5204,
+	5204,
 	6398,
 	1584,
 	6398,
@@ -520,6 +558,7 @@ static const int32_t s_InvokerIndices[229] =
 	6398,
 	6398,
 	6398,
+	6398,
 	1523,
 	6398,
 	5204,
@@ -528,6 +567,10 @@ static const int32_t s_InvokerIndices[229] =
 	5204,
 	5115,
 	6398,
+	5204,
+	5204,
+	5204,
+	5204,
 	5204,
 	5204,
 	5204,
@@ -554,6 +597,8 @@ static const int32_t s_InvokerIndices[229] =
 	6398,
 	6398,
 	1523,
+	6398,
+	6398,
 	6398,
 	6320,
 	5241,
@@ -588,6 +633,8 @@ static const int32_t s_InvokerIndices[229] =
 	5204,
 	5204,
 	5204,
+	5204,
+	5204,
 	6398,
 	2921,
 	6398,
@@ -596,6 +643,7 @@ static const int32_t s_InvokerIndices[229] =
 	6398,
 	5204,
 	5204,
+	6398,
 	6398,
 	6398,
 	6398,
@@ -648,6 +696,8 @@ static const int32_t s_InvokerIndices[229] =
 	5204,
 	5204,
 	5204,
+	5204,
+	5204,
 	6398,
 	2921,
 	6398,
@@ -658,6 +708,7 @@ static const int32_t s_InvokerIndices[229] =
 	6398,
 	5204,
 	5204,
+	6398,
 	6398,
 	6398,
 	6398,
@@ -680,6 +731,8 @@ static const int32_t s_InvokerIndices[229] =
 	5204,
 	5204,
 	5204,
+	5204,
+	5204,
 	6398,
 	2921,
 	6398,
@@ -690,6 +743,7 @@ static const int32_t s_InvokerIndices[229] =
 	6398,
 	5204,
 	5204,
+	6398,
 	6398,
 	6398,
 	6398,
@@ -709,7 +763,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_GoogleMobileAds_Android_CodeGenModul
 const Il2CppCodeGenModule g_GoogleMobileAds_Android_CodeGenModule = 
 {
 	"GoogleMobileAds.Android.dll",
-	229,
+	247,
 	s_methodPointers,
 	0,
 	NULL,

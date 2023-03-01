@@ -490,6 +490,7 @@ public class BlockTouchControl : MonoBehaviour
         blockParent.GetComponent<Animator>().enabled = false;
         blockScaleAnimationStarted = true;
         Vector3 blockScale = Vector3.Scale(gridForScale.localScale, canvasForScale.localScale);
+        
         if (scaleUp)
         {
             while (blockParent.localScale != blockScale)
