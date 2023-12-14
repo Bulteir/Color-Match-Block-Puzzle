@@ -15,7 +15,8 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
         if (adIsReady)
         {
             adIsReady = false;
-            GeneralControls.GetComponent<AdMobController>().ShowInterstitialAd();
+            //GeneralControls.GetComponent<AdMobController>().ShowInterstitialAd();
+            GeneralControls.GetComponent<AdMobInterstitialAdController>().ShowAd();
         }
         else
         {
@@ -29,8 +30,10 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
         {
             GlobalVariables.requestInterstitialAd = false;
             GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
-            GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
-            GeneralControls.GetComponent<AdMobController>().DestroyInterstitialAd();
+            GeneralControls.GetComponent<AdMobBannerViewController>().DestroyAd();
+            GeneralControls.GetComponent<AdMobInterstitialAdController>().DestroyAd();
+            //GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
+            //GeneralControls.GetComponent<AdMobController>().DestroyInterstitialAd();
 
             GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
             SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
@@ -66,6 +69,8 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         GlobalVariables.requestInterstitialAd = true;
-        GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        //GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        GeneralControls.GetComponent<AdMobBannerViewController>().LoadAd();
+
     }
 }

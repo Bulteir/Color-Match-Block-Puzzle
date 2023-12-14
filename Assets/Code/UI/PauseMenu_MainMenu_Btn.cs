@@ -8,7 +8,8 @@ public class PauseMenu_MainMenu_Btn : MonoBehaviour
     public Transform generalControls;
     public void OnClick()
     {
-        generalControls.GetComponent<AdMobController>().DestroyBannerAd();
+        generalControls.GetComponent<AdMobBannerViewController>().DestroyAd();
+        //generalControls.GetComponent<AdMobController>().DestroyBannerAd();
         GlobalVariables.gameState = GlobalVariables.gameState_MainMenu;
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }

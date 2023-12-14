@@ -17,3 +17,4 @@ MonoBehaviour:
   delayAppMeasurementInit: 1
   optimizeInitialization: 1
   optimizeAdLoading: 1
+  userTrackingUsageDescription: We will use the data to show you personalized ads.

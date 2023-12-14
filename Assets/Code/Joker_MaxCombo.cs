@@ -44,7 +44,8 @@ public class Joker_MaxCombo : MonoBehaviour
         if (adIsReady)
         {
             adIsReady = false;
-            GeneralControls.GetComponent<AdMobController>().ShowRewardedAd();
+            //GeneralControls.GetComponent<AdMobController>().ShowRewardedAd();
+            GeneralControls.GetComponent<AdMobRewardedAdController>().ShowAd();
         }
     }
 
@@ -73,7 +74,8 @@ public class Joker_MaxCombo : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         GlobalVariables.requestRewardedAd = true;
-        GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        //GeneralControls.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+        GeneralControls.GetComponent<AdMobRewardedAdController>().LoadAd();
     }
 
     public void SetRewardForAd()
@@ -86,7 +88,8 @@ public class Joker_MaxCombo : MonoBehaviour
 
             GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
             GlobalVariables.requestRewardedAd = true;//hiç bir yerde false yapmýyoruz!!!
-            GeneralControls.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+            //GeneralControls.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+            GeneralControls.GetComponent<AdMobRewardedAdController>().LoadAd();
         }
     }
     #endregion

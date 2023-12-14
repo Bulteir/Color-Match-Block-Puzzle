@@ -15,7 +15,8 @@ public class PauseMenu_Restart_Btn : MonoBehaviour
         if (adIsReady)
         {
             adIsReady = false;
-            GeneralControls.GetComponent<AdMobController>().ShowInterstitialAd();
+            //GeneralControls.GetComponent<AdMobController>().ShowInterstitialAd();
+            GeneralControls.GetComponent<AdMobInterstitialAdController>().ShowAd();
         }
         else
         {
@@ -29,14 +30,17 @@ public class PauseMenu_Restart_Btn : MonoBehaviour
         {
             GlobalVariables.requestInterstitialAd = false;
             GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
-            GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
-            GeneralControls.GetComponent<AdMobController>().DestroyInterstitialAd();
+            GeneralControls.GetComponent<AdMobBannerViewController>().DestroyAd();
+            GeneralControls.GetComponent<AdMobInterstitialAdController>().DestroyAd();
+            //GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
+            //GeneralControls.GetComponent<AdMobController>().DestroyInterstitialAd();
             GlobalVariables.gameState = GlobalVariables.gameState_inGame;
             SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
         }
         else if (GlobalVariables.whichButtonRequestInterstitialAd == GlobalVariables.pauseMenuRestart_btn)
         {
-            GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
+            GeneralControls.GetComponent<AdMobBannerViewController>().DestroyAd();
+            //GeneralControls.GetComponent<AdMobController>().DestroyBannerAd();
             GlobalVariables.gameState = GlobalVariables.gameState_inGame;
             SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
         }
@@ -67,6 +71,7 @@ public class PauseMenu_Restart_Btn : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         GlobalVariables.requestInterstitialAd = true;
-        GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        //GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        GeneralControls.GetComponent<AdMobInterstitialAdController>().LoadAd();
     }
 }

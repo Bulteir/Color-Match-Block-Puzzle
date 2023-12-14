@@ -15,15 +15,21 @@ public class InGameMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menuActiveControl();
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+        this.GetComponent<AdMobBannerViewController>().LoadAd();
+        this.GetComponent<AdMobInterstitialAdController>().LoadAd();
+        this.GetComponent<AdMobRewardedAdController>().LoadAd();
+        
         GlobalVariables.requestInterstitialAd = true;
         GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
-        this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        //this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
 
         GlobalVariables.requestRewardedAd = true;
         GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
-        this.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+        //this.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
 
+        menuActiveControl();
         #region oyun baþlangýcý muzik tercihi kontrolü
         string musicPref = PlayerPrefs.GetString("Music");
         if (musicPref != "")
@@ -66,6 +72,7 @@ public class InGameMenuController : MonoBehaviour
         }
         #endregion
 
+
     }
 
     // Update is called once per frame
@@ -80,21 +87,24 @@ public class InGameMenuController : MonoBehaviour
             pauseMenu.SetActive(true);
             SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(false);
-            this.GetComponent<AdMobController>().DestroyBannerAd();
+            this.GetComponent<AdMobBannerViewController>().HideAd();
+            //this.GetComponent<AdMobController>().DestroyBannerAd();
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_inGame && pauseMenu.activeSelf == true)
         {
             pauseMenu.SetActive(false);
             SpawnedBlocksMaskHelper(false);
             gameOverMenu.SetActive(false);
-            this.GetComponent<AdMobController>().RequestBannerAd();
+            this.GetComponent<AdMobBannerViewController>().ShowAd();
+            //this.GetComponent<AdMobController>().RequestBannerAd();
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_gameOver && gameOverMenu.activeSelf == false)
         {
             pauseMenu.SetActive(false);
             SpawnedBlocksMaskHelper(true);
             gameOverMenu.SetActive(true);
-            this.GetComponent<AdMobController>().DestroyBannerAd();
+            this.GetComponent<AdMobBannerViewController>().DestroyAd();
+            //this.GetComponent<AdMobController>().DestroyBannerAd();
         }
     }
 

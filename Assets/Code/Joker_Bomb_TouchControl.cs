@@ -316,7 +316,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
         if (adIsReady)
         {
             adIsReady = false;
-            GeneralControl.GetComponent<AdMobController>().ShowRewardedAd();
+            //GeneralControl.GetComponent<AdMobController>().ShowRewardedAd();
+            GeneralControl.GetComponent<AdMobRewardedAdController>().ShowAd();
         }
     }
 
@@ -345,7 +346,9 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         GlobalVariables.requestRewardedAd = true;
-        GeneralControl.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
+        //GeneralControl.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+        GeneralControl.GetComponent<AdMobRewardedAdController>().LoadAd();
+
     }
 
     public void SetRewardForAd()
@@ -358,7 +361,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
 
             GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
             GlobalVariables.requestRewardedAd = true;//hiç bir yerde false yapmýyoruz!!!
-            GeneralControl.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+            //GeneralControl.GetComponent<AdMobController>().RequestAndLoadRewardedAd();
+            GeneralControl.GetComponent<AdMobRewardedAdController>().LoadAd();
         }
     }
     #endregion
