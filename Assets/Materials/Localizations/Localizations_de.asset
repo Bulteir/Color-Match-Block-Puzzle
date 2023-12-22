@@ -153,6 +153,11 @@ MonoBehaviour:
     m_Localized: "Text eingeben\r"
     m_Metadata:
       m_Items: []
+  - m_Id: 140247809393819648
+    m_Localized: "Dieses Spiel erfordert eine Internetverbindung. Stellen Sie bitte
+      sicher, dass Ihr Ger\xE4t mit dem Internet verbunden ist."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

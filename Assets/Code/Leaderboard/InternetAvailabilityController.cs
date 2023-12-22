@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class InternetAvailabilityController : MonoBehaviour
 {
+    public GameObject InternetRequiredPopup;
 
     void Start()
     {
@@ -17,10 +18,12 @@ public class InternetAvailabilityController : MonoBehaviour
         {
 
             GlobalVariables.internetAvaible = false;
+            InternetRequiredPopup.SetActive(true);
         }
         else
         {
             GlobalVariables.internetAvaible = true;
+            InternetRequiredPopup.SetActive(false);
         }
     }
 }

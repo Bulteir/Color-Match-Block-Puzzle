@@ -154,6 +154,12 @@ MonoBehaviour:
     m_Localized: Metin Girin
     m_Metadata:
       m_Items: []
+  - m_Id: 140247809393819648
+    m_Localized: "Bu oyunun oynanmas\u0131 i\xE7in internet ba\u011Flant\u0131s\u0131
+      gerekmektedir. L\xFCtfen cihaz\u0131n\u0131z\u0131n internete ba\u011Fl\u0131
+      oldu\u011Fundan emin olun."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
