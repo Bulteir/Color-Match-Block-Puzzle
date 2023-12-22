@@ -107,6 +107,7 @@ public class CreateBlocks : MonoBehaviour
         {
             int score = int.Parse(this.GetComponent<GridRowCloumnControl>().scoreText.text);
             this.GetComponent<HighScoreControl>().SaveHighScore(score);
+            this.GetComponent<LeaderboardController_InGameHelper>().AddScore(score);
             GlobalVariables.gameState = GlobalVariables.gameState_gameOver;
         }
 

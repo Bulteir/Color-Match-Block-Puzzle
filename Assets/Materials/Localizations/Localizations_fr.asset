@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: fr
   m_SharedData: {fileID: 11400000, guid: b61fee0b49374e441aaebcd14f68c2de, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2034359780881203206
   m_TableData:
   - m_Id: 300768428032
     m_Localized: Nouveau jeu
@@ -119,6 +120,27 @@ MonoBehaviour:
     m_Localized: Nouveau record
     m_Metadata:
       m_Items: []
+  - m_Id: 139493276656992256
+    m_Localized: "Classement\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139511837077143552
+    m_Localized: "Magasin\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139514880770310144
+    m_Localized: Classement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139874957511491584
+    m_Localized: Total:{value}
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203206
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2034359780881203206
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0000726388eff001

@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
     public GameObject mainMenu;
     public GameObject settingsMenu;
     public GameObject highScoresMenu;
+    public GameObject leaderboardMenu;
     public Transform musics;
     public Transform sfx;
 
@@ -113,18 +114,28 @@ public class MenuController : MonoBehaviour
             mainMenu.SetActive(true);
             settingsMenu.SetActive(false);
             highScoresMenu.SetActive(false);
+            leaderboardMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_SettingsMenu && settingsMenu.activeSelf == false)
         {
             mainMenu.SetActive(false);
             settingsMenu.SetActive(true);
             highScoresMenu.SetActive(false);
+            leaderboardMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_HighScoresMenu && highScoresMenu.activeSelf == false)
         {
             mainMenu.SetActive(false);
             settingsMenu.SetActive(false);
             highScoresMenu.SetActive(true);
+            leaderboardMenu.SetActive(false);
+        }
+        else if (GlobalVariables.gameState == GlobalVariables.gameState_LeaderboardMenu && leaderboardMenu.activeSelf == false)
+        {
+            mainMenu.SetActive(false);
+            settingsMenu.SetActive(false);
+            highScoresMenu.SetActive(false);
+            leaderboardMenu.SetActive(true);
         }
     }
 }

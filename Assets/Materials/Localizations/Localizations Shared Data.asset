@@ -119,6 +119,24 @@ MonoBehaviour:
     m_Key: MainMenu/Canvas/MainMenu/New Game/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 139493276656992256
+    m_Key: Leaderboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139511837077143552
+    m_Key: 'Store
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139514880770310144
+    m_Key: Leaderboard Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139874957511491584
+    m_Key: Total
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

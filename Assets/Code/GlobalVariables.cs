@@ -17,6 +17,8 @@ public class GlobalVariables
     public const int gameState_LoadingGame = 4;
     public const int gameState_gamePaused = 5;
     public const int gameState_gameOver = 6;
+    public const int gameState_LeaderboardMenu = 7;
+    public const int gameState_StoreMenu = 8;
 
     public const int orderInLayer_background = 0;
     public const int orderInLayer_blocks = 1;
@@ -59,4 +61,7 @@ public class GlobalVariables
     public const int joker_bomb = 1;
     public const int joker_blockChanger = 2;
     public const int joker_maxCombo = 3;
+
+    public const string LeaderboardId_BestTime = "Leaderboard";
+    public static bool internetAvaible = true;
 }
