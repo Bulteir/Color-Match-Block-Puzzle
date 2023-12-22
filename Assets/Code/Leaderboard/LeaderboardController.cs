@@ -40,6 +40,8 @@ public class LeaderboardController : MonoBehaviour
         {
             await SignInAnonymously();
         }
+
+     
     }
 
     async Task SignInAnonymously()

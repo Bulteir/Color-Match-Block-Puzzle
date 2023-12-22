@@ -9,8 +9,8 @@ showPackageIndexes = false
 showStatusBar = false
 scopes = {
 	"picker_window_position_offset.45F317DD" = "36;192,8;320;550,4"
-	"picker_search_text.45F317DD" = "score"
-	"last_search.45F317DD" = "score"
+	"picker_search_text.45F317DD" = "Kullanıcı Adını Değiştir"
+	"last_search.45F317DD" = "Kullanıcı Adını Değiştir"
 	"OpenInspectorPreview.45F317DD" = "0"
 	"currentGroup.45F317DD" = "all"
 }
@@ -74,6 +74,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"Kullanıcı Adını Değiştir"
 ]
 searchItemFavorites = [
 ]

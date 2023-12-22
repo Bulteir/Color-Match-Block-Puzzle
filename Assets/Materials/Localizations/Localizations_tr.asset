@@ -138,6 +138,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2034359780881203204
+  - m_Id: 140231613546102784
+    m_Localized: "S\u0131ra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140231874830270464
+    m_Localized: Ad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140240175823454208
+    m_Localized: "Kullan\u0131c\u0131 Ad\u0131n\u0131 De\u011Fi\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140241345732280320
+    m_Localized: Metin Girin
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

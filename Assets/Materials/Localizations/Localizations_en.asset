@@ -141,6 +141,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2034359780881203203
+  - m_Id: 140231613546102784
+    m_Localized: Rank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140231874830270464
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140240175823454208
+    m_Localized: Change User Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140241345732280320
+    m_Localized: Enter Text
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

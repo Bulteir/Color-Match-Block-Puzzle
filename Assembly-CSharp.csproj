@@ -90,6 +90,7 @@
     <Compile Include="Assets\Code\ComboBarControl.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_MainMenu_Btn.cs" />
     <Compile Include="Assets\Code\BlockTouchControl.cs" />
+    <Compile Include="Assets\Code\UI\SettingsMenu_ChangeUserNameConfirm_Btn.cs" />
     <Compile Include="Assets\Code\UI\LeaderboardMenu_Back_Btn.cs" />
     <Compile Include="Assets\Code\AdMob\AdMobBannerViewController.cs" />
     <Compile Include="Assets\Code\Leaderboard\LeaderboardController_InGameHelper.cs" />

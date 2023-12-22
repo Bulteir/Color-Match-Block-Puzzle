@@ -137,6 +137,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2034359780881203211
+  - m_Id: 140231613546102784
+    m_Localized: "Rango\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140231874830270464
+    m_Localized: "Nombre\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140240175823454208
+    m_Localized: "Cambiar nombre de usuario\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140241345732280320
+    m_Localized: "Ingresar texto\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

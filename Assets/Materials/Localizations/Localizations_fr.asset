@@ -137,6 +137,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2034359780881203206
+  - m_Id: 140231613546102784
+    m_Localized: "Classement\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140231874830270464
+    m_Localized: "Nom\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140240175823454208
+    m_Localized: "Changer le nom d'utilisateur\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140241345732280320
+    m_Localized: "Entrer le texte\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
