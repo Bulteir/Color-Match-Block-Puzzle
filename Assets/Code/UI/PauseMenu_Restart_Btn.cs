@@ -56,7 +56,8 @@ public class PauseMenu_Restart_Btn : MonoBehaviour
 
     public void RequestInsterstitialAdForFailed()
     {
-        if (GlobalVariables.requestInterstitialAd == true)
+        string noAdsActive = PlayerPrefs.GetString("NoAdsActive");
+        if (GlobalVariables.requestInterstitialAd == true && noAdsActive == "")
         {
             if (requestAdCorroutine != null)
             {

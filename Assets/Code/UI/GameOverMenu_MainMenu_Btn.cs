@@ -54,7 +54,9 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
 
     public void RequestInsterstitialAdForFailed()
     {
-        if (GlobalVariables.requestInterstitialAd == true)
+        string noAdsActive = PlayerPrefs.GetString("NoAdsActive");
+
+        if (GlobalVariables.requestInterstitialAd == true && noAdsActive == "")
         {
             if (requestAdCorroutine != null)
             {
@@ -70,7 +72,7 @@ public class GameOverMenu_MainMenu_Btn : MonoBehaviour
         yield return new WaitForSeconds(5);
         GlobalVariables.requestInterstitialAd = true;
         //GeneralControls.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
-        GeneralControls.GetComponent<AdMobBannerViewController>().LoadAd();
+        GeneralControls.GetComponent<AdMobInterstitialAdController>().LoadAd();
 
     }
 }

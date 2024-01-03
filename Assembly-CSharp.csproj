@@ -62,6 +62,7 @@
     <Compile Include="Assets\Code\GridRowCloumnControl.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Music_Btn.cs" />
     <Compile Include="Assets\AMGLogoScene\LogoAnimationFinish.cs" />
+    <Compile Include="Assets\Code\InAppPurchase\StoreController.cs" />
     <Compile Include="Assets\Code\Leaderboard\InternetAvailabilityController.cs" />
     <Compile Include="Assets\Code\CreateBlocks.cs" />
     <Compile Include="Assets\Code\Leaderboard\LeaderboardController.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Code\UI\HighScoreMenu_Share_btn.cs" />
     <Compile Include="Assets\Code\SpawnPointHelper.cs" />
     <Compile Include="Assets\Code\AdMob\AdMobRewardedAdController.cs" />
+    <Compile Include="Assets\Code\UI\MainMenu_Store_Btn.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Back_btn.cs" />
     <Compile Include="Assets\Code\UI\ButtonPressEffect.cs" />
     <Compile Include="Assets\CrystalFramework\Utility\SafeArea.cs" />
@@ -89,8 +91,8 @@
     <Compile Include="Assets\Code\UI\DeleteHighScoresPopup_Confirm_Btn.cs" />
     <Compile Include="Assets\Code\ComboBarControl.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_MainMenu_Btn.cs" />
-    <Compile Include="Assets\Code\BlockTouchControl.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_ChangeUserNameConfirm_Btn.cs" />
+    <Compile Include="Assets\Code\BlockTouchControl.cs" />
     <Compile Include="Assets\Code\UI\LeaderboardMenu_Back_Btn.cs" />
     <Compile Include="Assets\Code\AdMob\AdMobBannerViewController.cs" />
     <Compile Include="Assets\Code\Leaderboard\LeaderboardController_InGameHelper.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Assets\Code\Joker_MaxCombo.cs" />
     <Compile Include="Assets\Code\ScoreAnimation.cs" />
     <Compile Include="Assets\Code\AdMob\AdMobInterstitialAdController.cs" />
+    <Compile Include="Assets\Code\InAppPurchase\StoreItem.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_Sounds_Btn.cs" />
     <Compile Include="Assets\Code\AdMob\AdMobUMPController.cs" />
     <Compile Include="Assets\Code\UI\GameOverMenu_Share_btn.cs" />
@@ -791,8 +794,8 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>E:\Program Files\Unity Hub\Editor\2022.3.10f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Advertisement.IosSupport">
-      <HintPath>Library\ScriptAssemblies\Unity.Advertisement.IosSupport.dll</HintPath>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Advertisement.IosSupport.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Advertisement.IosSupport.Editor.dll</HintPath>
@@ -800,20 +803,65 @@
     <Reference Include="Unity.ResourceManager">
       <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Authentication.Editor.Shared">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.Editor.Shared.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Localization.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Advertisement.IosSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.Advertisement.IosSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Authentication.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Localization">
       <HintPath>Library\ScriptAssemblies\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -827,20 +875,8 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Localization.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Localization.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -857,14 +893,8 @@
     <Reference Include="Unity.Services.Authentication.PlayerAccounts">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -874,9 +904,6 @@
     </Reference>
     <Reference Include="Unity.Services.Leaderboards">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Leaderboards.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Leaderboards.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Leaderboards.Editor.dll</HintPath>

@@ -12,6 +12,7 @@ public class MenuController : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject highScoresMenu;
     public GameObject leaderboardMenu;
+    public GameObject storeMenu;
     public Transform musics;
     public Transform sfx;
 
@@ -86,6 +87,10 @@ public class MenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        //oyun açýlýrken store initial yapacaðýz. Çünkü restore buton için loadcatalog'un çalýþmýþ olmasý ve OnInitialized fonksiyonuna girmiþ olmasý gerekiyor
+        storeMenu.GetComponent<StoreController>().UnityServicesInitial();
+
         #region iosta reklam gösterebilmek için gerekli olan izin kontrolü
 #if UNITY_IOS
         // check with iOS to see if the user has accepted or declined tracking
@@ -115,6 +120,7 @@ public class MenuController : MonoBehaviour
             settingsMenu.SetActive(false);
             highScoresMenu.SetActive(false);
             leaderboardMenu.SetActive(false);
+            storeMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_SettingsMenu && settingsMenu.activeSelf == false)
         {
@@ -122,6 +128,7 @@ public class MenuController : MonoBehaviour
             settingsMenu.SetActive(true);
             highScoresMenu.SetActive(false);
             leaderboardMenu.SetActive(false);
+            storeMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_HighScoresMenu && highScoresMenu.activeSelf == false)
         {
@@ -129,6 +136,7 @@ public class MenuController : MonoBehaviour
             settingsMenu.SetActive(false);
             highScoresMenu.SetActive(true);
             leaderboardMenu.SetActive(false);
+            storeMenu.SetActive(false);
         }
         else if (GlobalVariables.gameState == GlobalVariables.gameState_LeaderboardMenu && leaderboardMenu.activeSelf == false)
         {
@@ -136,6 +144,15 @@ public class MenuController : MonoBehaviour
             settingsMenu.SetActive(false);
             highScoresMenu.SetActive(false);
             leaderboardMenu.SetActive(true);
+            storeMenu.SetActive(false);
+        }
+        else if (GlobalVariables.gameState == GlobalVariables.gameState_StoreMenu && storeMenu.activeSelf == false)
+        {
+            mainMenu.SetActive(false);
+            settingsMenu.SetActive(false);
+            highScoresMenu.SetActive(false);
+            leaderboardMenu.SetActive(false);
+            storeMenu.SetActive(true);
         }
     }
 }

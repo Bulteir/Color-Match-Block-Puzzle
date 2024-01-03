@@ -157,6 +157,22 @@ MonoBehaviour:
     m_Key: Internet Required Info
     m_Metadata:
       m_Items: []
+  - m_Id: 142386168891310080
+    m_Key: IAP_NoAds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142425369934430208
+    m_Key: IAP_BombJoker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142425413785878528
+    m_Key: IAP_ChangerJoker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142425457704435712
+    m_Key: IAP_MaxComboJoker
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -24,6 +24,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetJokerCountFromPlayerPrefs();
         toBePlacedGrids = new List<Transform>();
         BombCounter.text = bombCount.ToString();
     }
@@ -89,6 +90,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     //bomba patladýðý için bomba sayýsýný düþür
                     bombCount--;
                     BombCounter.text = bombCount.ToString();
+                    SetJokerCountFromPlayerPrefs();
                 }
                 else // deðilse eski doðru konumuna gönderilir
                 {
@@ -222,6 +224,7 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                         //bomba patladýðý için bomba sayýsýný düþür
                         bombCount--;
                         BombCounter.text = bombCount.ToString();
+                        SetJokerCountFromPlayerPrefs();
                     }
                     else // deðilse eski doðru konumuna gönderilir
                     {
@@ -366,4 +369,32 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
         }
     }
     #endregion
+    public void GetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            string jokerCount_ = PlayerPrefs.GetString("BombJoker");
+            if (jokerCount_ != "")
+            {
+                bombCount = int.Parse(jokerCount_);
+            }
+        }
+        catch
+        {
+
+        }
+
+    }
+    public void SetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            PlayerPrefs.SetString("BombJoker", bombCount.ToString());
+            PlayerPrefs.Save();
+        }
+        catch
+        {
+
+        }
+    }
 }

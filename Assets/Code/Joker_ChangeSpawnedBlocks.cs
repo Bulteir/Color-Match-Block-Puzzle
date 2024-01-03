@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization.Settings;
 
 public class Joker_ChangeSpawnedBlocks : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetJokerCountFromPlayerPrefs();
         Counter.text = jokerCount.ToString();
     }
 
@@ -26,6 +28,7 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
         {
             jokerCount--;
             Counter.text = jokerCount.ToString();
+            SetJokerCountFromPlayerPrefs();
             DestroySpawnedBlocks();
             GeneralControls.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
         }
@@ -91,6 +94,7 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
 
     public void SetRewardForAd()
     {
+
         if (GlobalVariables.whichJokerRequestRewardAd == GlobalVariables.joker_blockChanger)
         {
             jokerCount = MaxJokerCount;
@@ -104,4 +108,33 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
         }
     }
     #endregion
+
+    public void GetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            string jokerCount_ = PlayerPrefs.GetString("ChangerJoker");
+            if (jokerCount_ != "")
+            {
+                jokerCount = int.Parse(jokerCount_);
+            }
+        }
+        catch
+        {
+
+        }
+
+    }
+    public void SetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            PlayerPrefs.SetString("ChangerJoker", jokerCount.ToString());
+            PlayerPrefs.Save();
+        }
+        catch
+        {
+
+        }
+    }
 }

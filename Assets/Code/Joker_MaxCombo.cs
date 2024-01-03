@@ -17,6 +17,7 @@ public class Joker_MaxCombo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetJokerCountFromPlayerPrefs();
         Counter.text = jokerCount.ToString();
     }
 
@@ -26,6 +27,7 @@ public class Joker_MaxCombo : MonoBehaviour
         {
             jokerCount--;
             Counter.text = jokerCount.ToString();
+            SetJokerCountFromPlayerPrefs();
             GeneralControls.GetComponent<ComboBarControl>().MaximizeComboBar();
         }
         else
@@ -93,4 +95,33 @@ public class Joker_MaxCombo : MonoBehaviour
         }
     }
     #endregion
+
+    public void GetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            string jokerCount_ = PlayerPrefs.GetString("MaxComboJoker");
+            if (jokerCount_ != "")
+            {
+                jokerCount = int.Parse(jokerCount_);
+            }
+        }
+        catch
+        {
+
+        }
+
+    }
+    public void SetJokerCountFromPlayerPrefs()
+    {
+        try
+        {
+            PlayerPrefs.SetString("MaxComboJoker", jokerCount.ToString());
+            PlayerPrefs.Save();
+        }
+        catch
+        {
+
+        }
+    }
 }

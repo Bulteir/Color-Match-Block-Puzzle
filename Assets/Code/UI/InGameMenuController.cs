@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class InGameMenuController : MonoBehaviour
 {
@@ -17,11 +20,17 @@ public class InGameMenuController : MonoBehaviour
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
-        this.GetComponent<AdMobBannerViewController>().LoadAd();
-        this.GetComponent<AdMobInterstitialAdController>().LoadAd();
+        string noAdsActive = PlayerPrefs.GetString("NoAdsActive");
+
         this.GetComponent<AdMobRewardedAdController>().LoadAd();
-        
-        GlobalVariables.requestInterstitialAd = true;
+
+        if (noAdsActive == "")
+        {
+            this.GetComponent<AdMobBannerViewController>().LoadAd();
+            this.GetComponent<AdMobInterstitialAdController>().LoadAd();
+            GlobalVariables.requestInterstitialAd = true;
+        }
+
         GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
         //this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
 

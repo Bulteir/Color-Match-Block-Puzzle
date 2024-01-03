@@ -135,7 +135,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 1.2
+  bundleVersion: 1.2.1
   preloadedAssets:
   - {fileID: 11400000, guid: f8da23114d63a6b4a932eeab1cb6cdd6, type: 2}
   metroInputSource: 0
@@ -166,7 +166,7 @@ PlayerSettings:
     iPhone: 5
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 7
+  AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 33
   AndroidPreferredInstallLocation: 1
@@ -869,6 +869,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Collab: 0
+    Purchasing: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 

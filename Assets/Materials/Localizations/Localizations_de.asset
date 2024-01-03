@@ -158,10 +158,29 @@ MonoBehaviour:
       sicher, dass Ihr Ger\xE4t mit dem Internet verbunden ist."
     m_Metadata:
       m_Items: []
+  - m_Id: 142386168891310080
+    m_Localized: Entfernt obligatorische Werbung im Spiel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142425369934430208
+    m_Localized: '{val} Bomben Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203207
+  - m_Id: 142425413785878528
+    m_Localized: '{val} Wechsel Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203207
+  - m_Id: 142425457704435712
+    m_Localized: '{val} Max Combo Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203207
   references:
     version: 2
     RefIds:
     - rid: 2034359780881203207
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 0000726388eff001
+        m_Entries: 0000726388eff0010000f28d1efff9010000b2c328fff901000072fd32fff901

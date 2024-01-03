@@ -162,10 +162,29 @@ MonoBehaviour:
       device is connected to the internet.
     m_Metadata:
       m_Items: []
+  - m_Id: 142386168891310080
+    m_Localized: Removes mandatory advertisements in the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142425369934430208
+    m_Localized: '{val} Bomb Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203203
+  - m_Id: 142425413785878528
+    m_Localized: '{val} Changer Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203203
+  - m_Id: 142425457704435712
+    m_Localized: '{val} Max Combo Power-up'
+    m_Metadata:
+      m_Items:
+      - rid: 2034359780881203203
   references:
     version: 2
     RefIds:
     - rid: 2034359780881203203
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 0000726388eff001
+        m_Entries: 0000726388eff0010000f28d1efff9010000b2c328fff901000072fd32fff901
