@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "301143377586",
+    "project_id": "coma-66d8c",
+    "storage_bucket": "coma-66d8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301143377586:android:bc6624f4b09132aae9ebab",
+        "android_client_info": {
+          "package_name": "com.Alpay.BlockPuzzle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqDnXBBZfGyaqe7xLLfw8qeI4QNP4mQgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
