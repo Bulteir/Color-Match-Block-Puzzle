@@ -59,3 +59,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 /ios build
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_6_0.bundle
