@@ -187,6 +187,10 @@ MonoBehaviour:
     m_Localized: "T\xFCrk\xE7e"
     m_Metadata:
       m_Items: []
+  - m_Id: 145033635554263040
+    m_Localized: "Sat\u0131n Al\u0131mlar\u0131 Geri Y\xFCkle"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

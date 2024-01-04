@@ -185,6 +185,10 @@ MonoBehaviour:
     m_Localized: Deutsch
     m_Metadata:
       m_Items: []
+  - m_Id: 145033635554263040
+    m_Localized: "K\xE4ufe wiederherstellen\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

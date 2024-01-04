@@ -185,6 +185,10 @@ MonoBehaviour:
     m_Localized: "Fran\xE7ais"
     m_Metadata:
       m_Items: []
+  - m_Id: 145033635554263040
+    m_Localized: "Restaurer l'achat\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

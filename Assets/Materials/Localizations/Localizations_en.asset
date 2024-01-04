@@ -189,6 +189,10 @@ MonoBehaviour:
     m_Localized: English
     m_Metadata:
       m_Items: []
+  - m_Id: 145033635554263040
+    m_Localized: Restore Purchase
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
