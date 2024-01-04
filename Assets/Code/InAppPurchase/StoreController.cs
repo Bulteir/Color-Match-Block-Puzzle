@@ -34,9 +34,11 @@ public class StoreController : MonoBehaviour, IDetailedStoreListener
     //rubik oyun mantýðý gereði initialize baþka yerde baþlatýlýyor. Bu yüzden servis baþlatma fonskiyonunu kullanmýyoruz.
     public async void UnityServicesInitial()
     {
-        
+
         if (UnityServices.State != ServicesInitializationState.Initialized || UnityServices.State != ServicesInitializationState.Initializing)
+        {
             await UnityServices.InitializeAsync();
+        }
 
         LoadCatalog();
     }

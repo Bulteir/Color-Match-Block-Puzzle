@@ -88,6 +88,7 @@ public class MenuController : MonoBehaviour
     void Start()
     {
 
+      
         //oyun açýlýrken store initial yapacaðýz. Çünkü restore buton için loadcatalog'un çalýþmýþ olmasý ve OnInitialized fonksiyonuna girmiþ olmasý gerekiyor
         storeMenu.GetComponent<StoreController>().UnityServicesInitial();
 

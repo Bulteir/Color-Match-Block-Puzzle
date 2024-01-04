@@ -173,6 +173,14 @@ MonoBehaviour:
     m_Key: IAP_MaxComboJoker
     m_Metadata:
       m_Items: []
+  - m_Id: 144884174827945984
+    m_Key: Currencies symbols
+    m_Metadata:
+      m_Items: []
+  - m_Id: 144895258938966016
+    m_Key: Language Name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

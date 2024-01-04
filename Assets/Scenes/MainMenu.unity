@@ -4293,6 +4293,7 @@ GameObject:
   - component: {fileID: 254925574}
   - component: {fileID: 254925573}
   - component: {fileID: 254925575}
+  - component: {fileID: 254925576}
   m_Layer: 5
   m_Name: ChangeUserNameText
   m_TagString: Untagged
@@ -4374,7 +4375,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4456,6 +4457,72 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &254925576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254925571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8251225736955822091
+  references:
+    version: 2
+    RefIds:
+    - rid: 8251225736955822091
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 254925573}
+        m_TrackedProperties:
+          items:
+          - rid: 8251225736955822092
+          - rid: 8251225736955822093
+        m_UpdateType: 0
+    - rid: 8251225736955822092
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 126
+        - localeIdentifier:
+            m_Code: ar
+          value: 100
+        - localeIdentifier:
+            m_Code: fr
+          value: 100
+        - localeIdentifier:
+            m_Code: ru
+          value: 100
+        - localeIdentifier:
+            m_Code: es
+          value: 100
+    - rid: 8251225736955822093
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSizeBase
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 126
+        - localeIdentifier:
+            m_Code: ar
+          value: 100
+        - localeIdentifier:
+            m_Code: fr
+          value: 100
+        - localeIdentifier:
+            m_Code: ru
+          value: 100
+        - localeIdentifier:
+            m_Code: es
+          value: 100
 --- !u!1 &261127619
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,7 +10347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.269897, y: -49.145508}
+  m_AnchoredPosition: {x: 19, y: -49.145508}
   m_SizeDelta: {x: -212.8602, y: -372.90912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671069762
@@ -11020,6 +11087,7 @@ GameObject:
   - component: {fileID: 793193227}
   - component: {fileID: 793193226}
   - component: {fileID: 793193228}
+  - component: {fileID: 793193229}
   m_Layer: 5
   m_Name: Rank
   m_TagString: Untagged
@@ -11101,7 +11169,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -11183,6 +11251,75 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &793193229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793193224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8251225736955822082
+  references:
+    version: 2
+    RefIds:
+    - rid: 8251225736955822082
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 793193226}
+        m_TrackedProperties:
+          items:
+          - rid: 8251225736955822083
+          - rid: 8251225736955822084
+          - rid: 8251225736955822094
+        m_UpdateType: 0
+    - rid: 8251225736955822083
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
+        - localeIdentifier:
+            m_Code: fr
+          value: 33
+        - localeIdentifier:
+            m_Code: pt
+          value: 296
+    - rid: 8251225736955822084
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSizeBase
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
+        - localeIdentifier:
+            m_Code: fr
+          value: 33
+    - rid: 8251225736955822094
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_enableAutoSizing
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 1
 --- !u!1 &806993471
 GameObject:
   m_ObjectHideFlags: 0
@@ -14560,6 +14697,7 @@ GameObject:
   - component: {fileID: 1067626377}
   - component: {fileID: 1067626376}
   - component: {fileID: 1067626378}
+  - component: {fileID: 1067626379}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -14641,7 +14779,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14723,6 +14861,81 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1067626379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067626374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8251225736955822088
+  references:
+    version: 2
+    RefIds:
+    - rid: 8251225736955822088
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1067626376}
+        m_TrackedProperties:
+          items:
+          - rid: 8251225736955822089
+          - rid: 8251225736955822090
+          - rid: 8251225736955822095
+        m_UpdateType: 0
+    - rid: 8251225736955822089
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
+        - localeIdentifier:
+            m_Code: de
+          value: 40
+        - localeIdentifier:
+            m_Code: pt
+          value: 3735
+        - localeIdentifier:
+            m_Code: es
+          value: 3545
+    - rid: 8251225736955822090
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSizeBase
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
+        - localeIdentifier:
+            m_Code: de
+          value: 40
+    - rid: 8251225736955822095
+      type: {class: BoolTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_enableAutoSizing
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 0
+        - localeIdentifier:
+            m_Code: pt
+          value: 1
+        - localeIdentifier:
+            m_Code: es
+          value: 1
 --- !u!1 &1079235608
 GameObject:
   m_ObjectHideFlags: 0
@@ -15295,6 +15508,12 @@ MonoBehaviour:
         - localeIdentifier:
             m_Code: es
           value: 125
+        - localeIdentifier:
+            m_Code: ar
+          value: 130
+        - localeIdentifier:
+            m_Code: ru
+          value: 150
     - rid: 648285690477674526
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
       data:
@@ -15312,6 +15531,12 @@ MonoBehaviour:
         - localeIdentifier:
             m_Code: es
           value: 125
+        - localeIdentifier:
+            m_Code: ar
+          value: 130
+        - localeIdentifier:
+            m_Code: ru
+          value: 150
 --- !u!114 &1106530295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15740,10 +15965,10 @@ RectTransform:
   - {fileID: 298989197}
   m_Father: {fileID: 1933543632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1080, y: 2340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145861664
 MonoBehaviour:
@@ -24900,6 +25125,7 @@ GameObject:
   - component: {fileID: 1729937546}
   - component: {fileID: 1729937545}
   - component: {fileID: 1729937547}
+  - component: {fileID: 1729937548}
   m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
@@ -24981,7 +25207,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -25063,6 +25289,54 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1729937548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729937543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8251225736955822085
+  references:
+    version: 2
+    RefIds:
+    - rid: 8251225736955822085
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1729937545}
+        m_TrackedProperties:
+          items:
+          - rid: 8251225736955822086
+          - rid: 8251225736955822087
+        m_UpdateType: 0
+    - rid: 8251225736955822086
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSize
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
+    - rid: 8251225736955822087
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_fontSizeBase
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: en
+          value: 45
+        - localeIdentifier:
+            m_Code: ar
+          value: 30
 --- !u!1 &1746697796
 GameObject:
   m_ObjectHideFlags: 0
@@ -27960,7 +28234,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
