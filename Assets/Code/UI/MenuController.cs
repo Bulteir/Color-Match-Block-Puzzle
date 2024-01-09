@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using Firebase;
+using System;
 #if UNITY_IOS
 using Unity.Advertisement.IosSupport;
 #endif
@@ -92,16 +94,37 @@ public class MenuController : MonoBehaviour
         //oyun açýlýrken store initial yapacaðýz. Çünkü restore buton için loadcatalog'un çalýþmýþ olmasý ve OnInitialized fonksiyonuna girmiþ olmasý gerekiyor
         storeMenu.GetComponent<StoreController>().UnityServicesInitial();
 
-        #region iosta reklam gösterebilmek için gerekli olan izin kontrolü
-#if UNITY_IOS
-        // check with iOS to see if the user has accepted or declined tracking
-        var status = ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
+//        #region iosta reklam gösterebilmek için gerekli olan izin kontrolü
+//#if UNITY_IOS
+//        // check with iOS to see if the user has accepted or declined tracking
+//        var status = ATTrackingStatusBinding.GetAuthorizationTrackingStatus();
 
-        if (status == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
-        {
-            ATTrackingStatusBinding.RequestAuthorizationTracking();
-        }
-#endif
+//        if (status == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED)
+//        {
+//            ATTrackingStatusBinding.RequestAuthorizationTracking();
+//        }
+//#endif
+//        #endregion
+
+        #region firebase init iþlemi
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
+            var dependencyStatus = task.Result;
+
+            if (dependencyStatus == DependencyStatus.Available)
+            {
+                // Create and hold a reference to your FirebaseApp,
+                // where app is a Firebase.FirebaseApp property of your application class.
+                FirebaseApp app = FirebaseApp.DefaultInstance;
+                // Set a flag here to indicate whether Firebase is ready to use by your app.
+            }
+            else
+            {
+                Debug.LogError(String.Format(
+                  "Could not resolve all Firebase dependencies: {0}", dependencyStatus));
+                // Firebase Unity SDK is not safe to use here.
+            }
+        });
+
         #endregion
 
         menuActiveControl();

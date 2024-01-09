@@ -13,7 +13,7 @@ public class AdMobUMPController : MonoBehaviour
             AdRequest.TestDeviceSimulator,
             // Add your test device IDs (replace with your own device IDs).
             #if UNITY_IPHONE
-                "DF229BBF2B1642998DFF3FFA52D9CD30",
+                "5F10FDA361384581805E6D1779A4CA72",
             #elif UNITY_ANDROID
                 "6D5FF19D7D159049F551197DCDBCA3FA"
             #endif

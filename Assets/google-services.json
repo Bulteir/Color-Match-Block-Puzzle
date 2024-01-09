@@ -12,7 +12,20 @@
           "package_name": "com.Alpay.BlockPuzzle"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "301143377586-o34qhf5kvh5fnhg1mnu9536nkbd1hvrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Alpay.BlockPuzzle",
+            "certificate_hash": "a7059c7211cd73bcfc70534ffa3e8945daa603fc"
+          }
+        },
+        {
+          "client_id": "301143377586-2lmbsb6jh9o154j9gcb34uktd2r244j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAqDnXBBZfGyaqe7xLLfw8qeI4QNP4mQgI"
@@ -20,9 +33,23 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301143377586-2lmbsb6jh9o154j9gcb34uktd2r244j0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "301143377586-bh9or5h7p71m5es7bt6lo3fc21v33b64.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alpaymobilegames.colormatch",
+                "app_store_id": "1671237688"
+              }
+            }
+          ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-3475441178822227~2518534356"
     }
   ],
   "configuration_version": "1"

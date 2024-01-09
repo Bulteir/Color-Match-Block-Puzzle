@@ -17,7 +17,7 @@ public class AdMobControllerSKD8 : MonoBehaviour
 
         //Add some test device IDs(replace with your own device IDs).
 #if UNITY_IPHONE
-        deviceIds.Add("DF229BBF2B1642998DFF3FFA52D9CD30");
+        deviceIds.Add("5F10FDA361384581805E6D1779A4CA72");
 #elif UNITY_ANDROID
         deviceIds.Add("d8680638de874f76b5395ce4a5f5ad66");
 #endif
