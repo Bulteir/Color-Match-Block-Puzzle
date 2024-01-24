@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Joker_Bomb_TouchControl : MonoBehaviour
 {
     public Transform GeneralControl;
     public Transform BombPlaceHolderPos;
     public TMP_Text BombCounter;
+    public GameObject SetRewardAnim;
     public int MaxBombCount;
     int bombCount = 0;
 
@@ -91,6 +93,12 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                     bombCount--;
                     BombCounter.text = bombCount.ToString();
                     SetJokerCountFromPlayerPrefs();
+
+                    if (bombCount == 0 && requestAdFirstTime == false)
+                    {
+                        gameObject.GetComponent<SpriteRenderer>().color = new Color(255f / 255f, 255f / 255f, 255f / 255f, 130f / 255f);
+                        BombPlaceHolderPos.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f / 255f, 255f / 255f, 255f / 255f, 130f / 255f);
+                    }
                 }
                 else // deðilse eski doðru konumuna gönderilir
                 {
@@ -225,6 +233,11 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
                         bombCount--;
                         BombCounter.text = bombCount.ToString();
                         SetJokerCountFromPlayerPrefs();
+                        if (bombCount == 0 && requestAdFirstTime == false)
+                        {
+                            gameObject.GetComponent<SpriteRenderer>().color = new Color(255f / 255f, 255f / 255f, 255f / 255f, 130f / 255f);
+                            BombPlaceHolderPos.gameObject.GetComponent<SpriteRenderer>().color = new Color(255f / 255f, 255f / 255f, 255f / 255f, 130f / 255f);
+                        }
                     }
                     else // deðilse eski doðru konumuna gönderilir
                     {
@@ -361,6 +374,8 @@ public class Joker_Bomb_TouchControl : MonoBehaviour
             bombCount = MaxBombCount;
             BombCounter.text = bombCount.ToString();
             requestAdFirstTime = false;
+            SetRewardAnim.GetComponentInChildren<TMP_Text>().text = "+" + bombCount.ToString();
+            SetRewardAnim.SetActive(true);
 
             GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
             GlobalVariables.requestRewardedAd = true;//hiç bir yerde false yapmýyoruz!!!

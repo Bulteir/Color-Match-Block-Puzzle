@@ -80,6 +80,7 @@ public class AdMobRewardedAdController : MonoBehaviour
             // Inform the UI that the ad is ready.
             //if (AdLoadedStatus != null)
             //    AdLoadedStatus?.SetActive(true);
+            GlobalVariables.requestRewardedAd = true;
             JokerBomb.GetComponent<Joker_Bomb_TouchControl>().adLoaded();
             JokerChangeSpawnedBlock.GetComponent<Joker_ChangeSpawnedBlocks>().adLoaded();
             JokerMaxCombo.GetComponent<Joker_MaxCombo>().adLoaded();

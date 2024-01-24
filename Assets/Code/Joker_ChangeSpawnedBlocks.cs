@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using UnityEngine.UI;
+
 
 public class Joker_ChangeSpawnedBlocks : MonoBehaviour
 {
     public Transform GeneralControls;
     public TMP_Text Counter;
     public int MaxJokerCount;
+    public GameObject SetRewardAnim;
     int jokerCount = 0;
 
     bool adIsReady = false;
@@ -31,6 +34,10 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
             SetJokerCountFromPlayerPrefs();
             DestroySpawnedBlocks();
             GeneralControls.GetComponent<CreateBlocks>().CreateRandomBlocks(true);
+            if (jokerCount == 0 && requestAdFirstTime == false)
+            {
+                gameObject.GetComponent<Button>().interactable = false;
+            }
         }
         else
         {
@@ -101,6 +108,8 @@ public class Joker_ChangeSpawnedBlocks : MonoBehaviour
             Counter.text = jokerCount.ToString();
             requestAdFirstTime = false;
 
+            SetRewardAnim.GetComponentInChildren<TMP_Text>().text = "+" + jokerCount.ToString();
+            SetRewardAnim.SetActive(true);
             GlobalVariables.whichJokerRequestRewardAd = GlobalVariables.joker_non;
             GlobalVariables.requestRewardedAd = true;//hiç bir yerde false yapmýyoruz!!!
             //GeneralControls.GetComponent<AdMobController>().RequestAndLoadRewardedAd();

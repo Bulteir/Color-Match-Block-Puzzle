@@ -30,6 +30,7 @@ public class InGameMenuController : MonoBehaviour
             GlobalVariables.requestInterstitialAd = true;
         }
 
+        GlobalVariables.gameState = GlobalVariables.gameState_inGame;
         GlobalVariables.whichButtonRequestInterstitialAd = GlobalVariables.nonButton;
         //this.GetComponent<AdMobController>().RequestAndLoadInterstitialAd();
 

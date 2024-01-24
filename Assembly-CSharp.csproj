@@ -87,6 +87,7 @@
     <Compile Include="Assets\Code\AdMob\AdMobControllerSKD8.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_RateGame_Btn.cs" />
     <Compile Include="Assets\Code\GridRowColumnControlHelper.cs" />
+    <Compile Include="Assets\Code\Joker_MaxCombo_SetRewardAnim.cs" />
     <Compile Include="Assets\Code\UI\SettingsMenu_DeleteHighScores_Btn.cs" />
     <Compile Include="Assets\Code\UI\DeleteHighScoresPopup_Confirm_Btn.cs" />
     <Compile Include="Assets\Code\ComboBarControl.cs" />

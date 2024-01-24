@@ -85,12 +85,10 @@ public class AdMobInterstitialAdController : MonoBehaviour
 
             // Inform the UI that the ad is ready.
             //AdLoadedStatus?.SetActive(true);
+            GlobalVariables.requestInterstitialAd = true;
             PauseMenuRestartButton.GetComponent<PauseMenu_Restart_Btn>().adLoaded();
             GameOverMenuRestartButton.GetComponent<GameOverMenu_Restart_Btn>().adLoaded();
             GameOverMenuMainMenuButton.GetComponent<GameOverMenu_MainMenu_Btn>().adLoaded();
-            JokerBomb.GetComponent<Joker_Bomb_TouchControl>().adLoaded();
-            JokerChangeSpawnedBlock.GetComponent<Joker_ChangeSpawnedBlocks>().adLoaded();
-            JokerMaxCombo.GetComponent<Joker_MaxCombo>().adLoaded();
         });
     }
 
